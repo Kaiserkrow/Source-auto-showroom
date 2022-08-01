@@ -1,0 +1,13 @@
+.logo {
+  width: 130px;
+}
+.emblem {
+  width: 50px;
+}
+section {
+  border: solid 3px red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
