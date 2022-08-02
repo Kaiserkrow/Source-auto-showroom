@@ -1,13 +1,28 @@
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
 .logo {
   width: 130px;
 }
 .emblem {
   width: 50px;
 }
+#sections {
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+}
+
 section {
-  border: solid 3px red;
+  border: solid 5px red;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  scroll-snap-align: center;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
 }
