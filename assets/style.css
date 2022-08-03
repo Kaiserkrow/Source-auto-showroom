@@ -20,7 +20,9 @@ html {
   width: 55px;
   margin-top: -0.2rem;
 }
-
+.emblem-container li {
+  margin: 0 1rem;
+}
 #sections {
   scroll-snap-type: y mandatory;
   overflow: auto;
@@ -40,7 +42,28 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 990px) {
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.1s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+@media (max-width: 991px) {
   .icons {
     display: flex;
     align-items: center;
@@ -48,20 +71,26 @@ nav {
     justify-content: center;
     flex-direction: column-reverse;
   }
+  .emblem-container li {
+    margin-top: 1rem;
+  }
   .emblem-container {
     display: flex;
     flex-direction: row;
   }
-  .emblem-container li {
-    margin: 1rem;
-  }
-  /* .nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   .search {
     margin-top: 1rem;
     width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .emblem-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
