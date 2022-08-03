@@ -31,7 +31,7 @@ html {
 }
 
 section {
-  border: solid 5px red;
+  /* border: solid 5px red; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -39,11 +39,12 @@ section {
   scroll-snap-align: center;
 }
 nav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .nav-link {
   position: relative;
+  margin-top: 1rem;
 }
 
 .nav-link::before {
@@ -53,8 +54,8 @@ nav {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: red;
-  transition: width 0.1s ease;
+  background-color: #ea0f1e;
+  transition: width 0.2s ease;
 }
 
 .nav-link:hover::before {
