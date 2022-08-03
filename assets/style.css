@@ -2,10 +2,11 @@ html {
   scroll-behavior: smooth;
   overflow: hidden;
 }
+
 .logo {
   width: 130px;
 }
-.emblem {
+.toyota {
   width: 55px;
 }
 .honda {
@@ -19,11 +20,12 @@ html {
   width: 55px;
   margin-top: -0.2rem;
 }
+
 #sections {
   scroll-snap-type: y mandatory;
   overflow: auto;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 section {
@@ -36,4 +38,30 @@ section {
 }
 nav {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 990px) {
+  .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .emblem-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .emblem-container li {
+    margin: 1rem;
+  }
+  /* .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .search {
+    margin-top: 1rem;
+    width: 90%;
+  }
 }
