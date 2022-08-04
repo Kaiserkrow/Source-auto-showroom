@@ -1,13 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-</head>
-<body>
-</body>
-<script src="assets/js/bootstrap.bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/custom css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo-2.png" class="logo ms-2"
+        /></a>
+
+        <button
+          class="navbar-toggler mt-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-md-5 icons"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
+            <li class="nav-item">
+              <a class="nav-link" href="#toyota-section"
+                ><img
+                  src="assets/images/car-emblems/toyota-emblem.png"
+                  class="toyota emblem"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#honda-section">
+                <img
+                  src="assets/images/car-emblems/honda-emblem.png"
+                  class="honda emblem"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hyundai-section"
+                ><img
+                  src="assets/images/car-emblems/hyundai-emblem.png"
+                  class="hyundai emblem"
+              /></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#nissan-section"
+                ><img
+                  src="assets/images/car-emblems/nissan-emblem.png"
+                  class="nissan emblem"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mazda-section"
+                ><img
+                  src="assets/images/car-emblems/mazda-emblem.png"
+                  class="nissan emblem"
+              /></a>
+            </li>
+          </ul>
+          <form class="d-flex search me-3">
+            <button class="btn" type="submit">
+              <i class="fas fa-search fa-xl"></i>
+            </button>
+            <input
+              class="form-control search-border"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="sections">
+      <section
+        id="toyota-section"
+        style="background-image: url(assets/images/bg-img/toyota-bg.webp)"
+      >
+        <div
+          class="position-relative h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="position-absolute badge">
+            <img
+              src="assets/images/brand-center-icon/toyota.png"
+              class="center-icon"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        id="honda-section"
+        style="background-image: url(assets/images/bg-img/honda-bg.webp)"
+      ></section>
+      <section
+        id="hyundai-section"
+        style="background-image: url(assets/images/bg-img/hyundai-bg.jpg)"
+      ></section>
+      <section
+        id="nissan-section"
+        style="background-image: url(assets/images/bg-img/nissan-bg.webp)"
+      ></section>
+      <section
+        id="mazda-section"
+        style="background-image: url(assets/images/bg-img/mazda-bg.webp)"
+      ></section>
+    </div>
+  </body>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/custom js/navbar-options.js"></script>
+  <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
 </html>
