@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/custom css/main.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
@@ -24,7 +24,7 @@
         /></a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler mt-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -40,19 +40,19 @@
         >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link active" href="#toyota-section"
+                ><img
+                  src="assets/images/car-emblems/toyota-emblem.png"
+                  class="toyota emblem"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#honda-section">
                 <img
                   src="assets/images/car-emblems/honda-emblem.png"
                   class="honda emblem"
                 />
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#toyota-section"
-                ><img
-                  src="assets/images/car-emblems/toyota-emblem.png"
-                  class="toyota emblem"
-              /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"
@@ -78,15 +78,15 @@
             </li>
           </ul>
           <form class="d-flex search me-3">
+            <button class="btn" type="submit">
+              <i class="fas fa-search fa-xl"></i>
+            </button>
             <input
-              class="form-control me-2"
+              class="form-control search-border"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-danger" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
           </form>
         </div>
       </div>
@@ -106,5 +106,5 @@
     </div>
   </body>
   <script src="assets/js/bootstrap.bundle.js"></script>
-  <script src="assets/custom js/scroll.js"></script>
+  <script src="assets/custom js/navbar-options.js"></script>
 </html>
