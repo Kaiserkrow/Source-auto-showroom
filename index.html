@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link
       rel="stylesheet"
@@ -82,7 +88,7 @@
               <i class="fas fa-search fa-xl"></i>
             </button>
             <input
-              class="form-control search-border"
+              class="form-control search-border rounded"
               type="search"
               placeholder="Search"
               aria-label="Search"
@@ -95,7 +101,14 @@
       <section
         id="toyota-section"
         style="background-image: url(assets/images/bg-img/toyota-bg.webp)"
+        class="position-relative"
       >
+        <div
+          class="button-container position-absolute d-md-flex justify-content-center align-items-center w-100"
+        >
+          <button class="btn btn-custom me-md-4 py-2">Check out lineup</button>
+          <button class="btn btn-custom py-2">Check out lineup</button>
+        </div>
         <div
           class="position-relative h-100 d-flex justify-content-center align-items-center"
         >
@@ -107,6 +120,7 @@
           </div>
         </div>
       </section>
+
       <section
         id="honda-section"
         style="background-image: url(assets/images/bg-img/honda-bg.webp)"

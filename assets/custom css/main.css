@@ -88,6 +88,27 @@ section {
 .badge {
   top: 25%;
 }
+.button-container {
+  bottom: 20%;
+}
+.btn-custom {
+  font-family: "M PLUS 1p", sans-serif;
+  border: black 1px solid;
+  border-radius: 50px;
+  background-color: rgb(58, 61, 65);
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  width: 300px;
+  text-transform: uppercase;
+  z-index: 999;
+  letter-spacing: 0.5px;
+}
+.btn-custom:hover {
+  background-color: grey;
+  color: white;
+  opacity: 0.9;
+}
 @media (max-width: 991px) {
   .icons {
     display: flex;
@@ -111,6 +132,15 @@ section {
     margin-top: 0;
   }
 }
+@media (max-width: 760px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-custom {
+    margin-top: 1rem;
+  }
+}
 @media (max-width: 450px) {
   .emblem-container {
     display: flex;
@@ -123,5 +153,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .btn-custom {
+    width: 90vw;
   }
 }
