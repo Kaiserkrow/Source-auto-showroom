@@ -41,7 +41,8 @@ nav {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  /* width: 100vw; */
+  width: 100vw;
+ 
 }
 
 section {
@@ -51,12 +52,14 @@ section {
   background-position: center center;
   height: 100vh;
   scroll-snap-align: start;
+  
 }
 
 .nav-link {
   position: relative;
   margin-top: 1rem;
 }
+
 
 .underline {
   position: absolute;
@@ -67,25 +70,53 @@ section {
   background-color: #ea0f1e;
   transition: width 0.2s ease;
 }
+
+.badge-button-container{
+left: 50%;
+
+}
+
+.animate{
+  opacity: 0;
+  transition: .5s ease-in;
+}
+.animate-active{
+  opacity: 1;
+ 
+}
 .active {
   width: 100%;
   left: 0;
   right: auto;
 }
 
-.center-icon {
+.toyota-center-icon {
   width: 150px;
 }
+.honda-center-icon{
+  width: 170px;
+  filter: contrast(1.5)
+}
+.hyundai-center-icon{
+  width: 170px;
+ filter: brightness(2);
 
-/* .active {
-  border-top: 1px solid #ea0f1e;
-} */
+}
+.nissan-center-icon{
+  width: 140px;
 
+}
+.mazda-center-icon{
+  width: 160px;
+  filter: brightness(1.2);
+
+}
 .badge {
   top: 25%;
 }
 .button-container {
   bottom: 20%;
+
 }
 .btn-custom {
   font-family: "M PLUS 1p", sans-serif;
@@ -105,6 +136,8 @@ section {
   color: white;
   opacity: 0.9;
 }
+
+
 @media (max-width: 991px) {
   .icons {
     display: flex;
