@@ -1,9 +1,12 @@
 * {
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 nav {
-  z-index: 99;
+  z-index: 999999;
 }
 .logo {
   width: 130px;
@@ -41,25 +44,22 @@ nav {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  width: 100vw;
- 
 }
 
 section {
-  /* border: solid 5px red; */
+  border: solid 5px red;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
   scroll-snap-align: start;
-  
 }
 
 .nav-link {
   position: relative;
   margin-top: 1rem;
 }
-
 
 .underline {
   position: absolute;
@@ -71,64 +71,62 @@ section {
   transition: width 0.2s ease;
 }
 
-.badge-button-container{
-left: 50%;
-
+.badge-button-container {
+  left: 50%;
 }
 
-.animate{
+.animate {
   opacity: 0;
-  transition: .5s ease-in;
+  transition: 0.5s ease-in;
 }
-.animate-active{
+.animate-active {
   opacity: 1;
- 
+  z-index: 9999;
 }
 .active {
   width: 100%;
   left: 0;
   right: auto;
 }
-
+.nav-bar-active {
+  background-color: #ffffff99;
+  transition: 0.2s;
+}
 .toyota-center-icon {
   width: 150px;
+  top: 25%;
 }
-.honda-center-icon{
+.honda-center-icon {
   width: 170px;
-  filter: contrast(1.5)
+  filter: contrast(1.5);
 }
-.hyundai-center-icon{
+.hyundai-center-icon {
   width: 170px;
- filter: brightness(2);
-
+  filter: brightness(2);
 }
-.nissan-center-icon{
+.nissan-center-icon {
   width: 140px;
-
 }
-.mazda-center-icon{
+.mazda-center-icon {
   width: 160px;
   filter: brightness(1.2);
-
 }
 .badge {
   top: 25%;
 }
 .button-container {
   bottom: 20%;
-
 }
 .btn-custom {
   font-family: "M PLUS 1p", sans-serif;
   border: black 1px solid;
   border-radius: 50px;
-  background-color: rgb(58, 61, 65);
+  background-color: #2107b6b9;
   color: white;
   font-weight: 600;
   font-size: 12px;
-  width: 300px;
+  width: 370px;
   text-transform: uppercase;
-  z-index: 999;
   letter-spacing: 0.5px;
 }
 .btn-custom:hover {
@@ -136,7 +134,6 @@ left: 50%;
   color: white;
   opacity: 0.9;
 }
-
 
 @media (max-width: 991px) {
   .icons {
@@ -177,7 +174,6 @@ left: 50%;
     flex-direction: column;
   }
   .navbar {
-    background-color: rgba(255, 255, 255, 0.6);
     z-index: 99999;
   }
   .nav-link {
