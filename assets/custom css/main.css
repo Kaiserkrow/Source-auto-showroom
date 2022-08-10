@@ -1,3 +1,24 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -9,8 +30,8 @@ nav {
   z-index: 999999;
 }
 .logo {
-  width: 130px;
-  margin-top: -2rem;
+  width: 120px;
+  margin-top: -2.5rem;
 }
 .toyota {
   width: 55px;
@@ -47,7 +68,7 @@ nav {
 }
 
 section {
-  border: solid 5px red;
+  /* border: solid 5px red; */
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,7 +155,14 @@ section {
   color: white;
   opacity: 0.9;
 }
-
+.arrow-indicator {
+  filter: brightness(0);
+  left: 49.5%;
+  right: 50%;
+  width: 25px;
+  height: 15px;
+  animation: up-down 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
 @media (max-width: 991px) {
   .icons {
     display: flex;
@@ -160,6 +188,9 @@ section {
   }
 }
 @media (max-width: 760px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .button-container {
     display: flex;
     flex-direction: column;
@@ -183,5 +214,17 @@ section {
   }
   .btn-custom {
     width: 90vw;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 3%;
   }
 }
