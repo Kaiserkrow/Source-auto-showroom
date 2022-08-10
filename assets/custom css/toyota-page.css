@@ -5,7 +5,7 @@
   width: 90px;
 }
 section {
-  /* border: 5px solid red; */
+  border: 5px solid red;
 }
 .vios-logo {
   width: 80px;
@@ -16,28 +16,24 @@ section {
 .logo {
   margin-top: -1.5rem;
 }
+.car-container{
+  margin-top: 10rem;
+}
 .img-responsive{
-  top: 23%;
+  
   position: absolute;
   margin-left: 2rem;
   margin-top: -4rem;
   position: absolute;
   width: 80%;
-  max-width: 950px;
+  max-width: 850px;
+}
 
-}
-.msrp{
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: -.5rem;
-}
-.msrp-underline{
-  margin-top: 1.5rem;
-}
 .whole-title-container{
-  margin-top: 5rem;
-  width: 70%;
+  margin-top: 3rem;
+  width: 1200px;
   justify-content: space-between;
+  max-width: 90%;
 }
 .title{
   font-weight: bold;
@@ -45,8 +41,16 @@ section {
   font-size: 45px;
   margin-top: -3.4rem;
 }
+.msrp{
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: -.5rem;
+}
+.msrp-underline{
+  margin-top: 1.5rem;
+}
 .price{
-  font-size: 37px;
+  font-size: 30px;
   font-weight: bold;
 }
 .automatic{
@@ -70,7 +74,22 @@ section {
   height: 30px;
   background-color: #EB0A1E;
   margin: 0 .5rem;
-  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.75);
+}
+.platinum-white{
+  background-color: #ffffff;
+}
+.black{
+  background-color: #08112F;
+}
+.black-mica{
+  background-color: #000000;
+}
+.gray{
+  background-color: #515151;
+}
+.silver-metallic{
+  background-color: #BFBFBF;
 }
 .neg-margin{
   margin-top: -.6rem;
