@@ -1,20 +1,79 @@
 .fortuner-logo {
-  width: 150px;
+  width: 100px;
 }
 .innova-logo {
-  width: 120px;
+  width: 90px;
 }
 section {
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 .vios-logo {
-  width: 110px;
+  width: 80px;
 }
 .supra-logo {
-  width: 120px;
+  width: 100px;
 }
 .logo {
   margin-top: -1.5rem;
+}
+.img-responsive{
+  top: 23%;
+  position: absolute;
+  margin-left: 2rem;
+  margin-top: -4rem;
+  position: absolute;
+  width: 80%;
+  max-width: 950px;
+
+}
+.msrp{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -.5rem;
+}
+.msrp-underline{
+  margin-top: 1.5rem;
+}
+.whole-title-container{
+  margin-top: 5rem;
+  width: 70%;
+  justify-content: space-between;
+}
+.title{
+  font-weight: bold;
+  color: #EB0A1E;
+  font-size: 45px;
+  margin-top: -3.4rem;
+}
+.price{
+  font-size: 37px;
+  font-weight: bold;
+}
+.automatic{
+  font-size: 18px;
+  font-weight: 600;
+}
+.trans{
+  font-size: 10px;
+  margin-top: -.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.colorpick-container{
+  bottom: 20%;
+  z-index: 99999;
+}
+.circle{
+  cursor: pointer;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #EB0A1E;
+  margin: 0 .5rem;
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+}
+.neg-margin{
+  margin-top: -.6rem;
 }
 @media (max-width: 991px) {
   .logo {
