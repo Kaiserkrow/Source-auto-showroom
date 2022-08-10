@@ -23,7 +23,10 @@
     <link rel="stylesheet" href="/assets/custom css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
+    <nav
+      class="navbar navbar-expand-lg navbar-light position-fixed w-100"
+      id="nav-bar"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="assets/images/logo-2.png" class="logo ms-2"
@@ -37,6 +40,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onclick="buttonFunction()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,14 +51,16 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
               <a class="nav-link" href="#toyota-section"
-                ><img
+                ><span class="underline active"></span>
+                <img
                   src="assets/images/car-emblems/toyota-emblem.png"
                   class="toyota emblem"
               /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#honda-section">
-                <img
+                <span class="underline"></span
+                ><img
                   src="assets/images/car-emblems/honda-emblem.png"
                   class="honda emblem"
                 />
@@ -62,6 +68,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#hyundai-section"
+                ><span class="underline"></span
                 ><img
                   src="assets/images/car-emblems/hyundai-emblem.png"
                   class="hyundai emblem"
@@ -70,6 +77,7 @@
 
             <li class="nav-item">
               <a class="nav-link" href="#nissan-section"
+                ><span class="underline"></span
                 ><img
                   src="assets/images/car-emblems/nissan-emblem.png"
                   class="nissan emblem"
@@ -77,6 +85,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#mazda-section"
+                ><span class="underline"></span
                 ><img
                   src="assets/images/car-emblems/mazda-emblem.png"
                   class="nissan emblem"
@@ -104,42 +113,162 @@
         class="position-relative"
       >
         <div
-          class="button-container position-absolute d-md-flex justify-content-center align-items-center w-100"
+          class="badge-button-container position-fixed d-flex justify-content-center align-items-center animate animate-active"
         >
-          <button class="btn btn-custom me-md-4 py-2">Check out lineup</button>
-          <button class="btn btn-custom py-2">Check out lineup</button>
-        </div>
-        <div
-          class="position-relative h-100 d-flex justify-content-center align-items-center"
-        >
-          <div class="position-absolute badge">
-            <img
-              src="assets/images/brand-center-icon/toyota.png"
-              class="center-icon"
-            />
+          <div class="h-100 d-flex justify-content-center align-items-center">
+            <div class="position-fixed badge">
+              <img
+                src="assets/images/brand-center-icon/toyota.png"
+                class="toyota-center-icon"
+              />
+            </div>
+          </div>
+
+          <div
+            class="button-container position-fixed d-md-flex justify-content-center align-items-center"
+          >
+            <div>
+              <a href="toyota.html">
+                <button class="btn btn-custom py-2">Check out lineup</button>
+              </a>
+            </div>
           </div>
         </div>
+
+        <img
+          src="assets/images/arrow-indicator.png"
+          class="arrow-indicator position-absolute"
+        />
       </section>
 
       <section
         id="honda-section"
         style="background-image: url(assets/images/bg-img/honda-bg.webp)"
-      ></section>
+        class="position-relative"
+      >
+        <div
+          class="badge-button-container position-fixed d-flex justify-content-center align-items-center animate"
+        >
+          <div class="h-100 d-flex justify-content-center align-items-center">
+            <div class="position-fixed badge">
+              <img
+                src="assets/images/brand-center-icon/honda.png"
+                class="honda-center-icon"
+              />
+            </div>
+          </div>
+
+          <div
+            class="button-container position-fixed d-md-flex justify-content-center align-items-center"
+          >
+            <div>
+              <button class="btn btn-custom me-md-4 py-2">
+                Check out lineup
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-custom py-2">Check out lineup</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         id="hyundai-section"
         style="background-image: url(assets/images/bg-img/hyundai-bg.jpg)"
-      ></section>
+        class="position-relative"
+      >
+        <div
+          class="badge-button-container position-fixed d-flex justify-content-center align-items-center animate"
+        >
+          <div class="h-100 d-flex justify-content-center align-items-center">
+            <div class="position-fixed badge">
+              <img
+                src="assets/images/brand-center-icon/hyundai.png"
+                class="hyundai-center-icon"
+              />
+            </div>
+          </div>
+
+          <div
+            class="button-container position-fixed d-md-flex justify-content-center align-items-center"
+          >
+            <div>
+              <button class="btn btn-custom me-md-4 py-2">
+                Check out lineup
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-custom py-2">Check out lineup</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         id="nissan-section"
         style="background-image: url(assets/images/bg-img/nissan-bg.webp)"
-      ></section>
+        class="position-relative"
+      >
+        <div
+          class="badge-button-container position-fixed d-flex justify-content-center align-items-center animate"
+        >
+          <div class="h-100 d-flex justify-content-center align-items-center">
+            <div class="position-fixed badge">
+              <img
+                src="assets/images/brand-center-icon/nissan.png"
+                class="nissan-center-icon"
+              />
+            </div>
+          </div>
+
+          <div
+            class="button-container position-fixed d-md-flex justify-content-center align-items-center"
+          >
+            <div>
+              <button class="btn btn-custom me-md-4 py-2">
+                Check out lineup
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-custom py-2">Check out lineup</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         id="mazda-section"
         style="background-image: url(assets/images/bg-img/mazda-bg.webp)"
-      ></section>
+        class="position-relative"
+      >
+        <div
+          class="badge-button-container position-fixed d-flex justify-content-center align-items-center animate"
+        >
+          <div class="h-100 d-flex justify-content-center align-items-center">
+            <div class="position-fixed badge">
+              <img
+                src="assets/images/brand-center-icon/mazda.png"
+                class="mazda-center-icon"
+              />
+            </div>
+          </div>
+
+          <div
+            class="button-container position-fixed d-md-flex justify-content-center align-items-center"
+          >
+            <div>
+              <button class="btn btn-custom me-md-4 py-2">
+                Check out lineup
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-custom py-2">Check out lineup</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
-  <script src="assets/js/bootstrap.bundle.js"></script>
   <script src="assets/custom js/navbar-options.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
   <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
 </html>

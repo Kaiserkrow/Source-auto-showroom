@@ -1,0 +1,23 @@
+.fortuner-logo {
+  width: 150px;
+}
+.innova-logo {
+  width: 120px;
+}
+section {
+  border: 5px solid red;
+}
+.vios-logo {
+  width: 110px;
+}
+.supra-logo {
+  width: 120px;
+}
+.logo {
+  margin-top: -1.5rem;
+}
+@media (max-width: 991px) {
+  .logo {
+    margin-top: 0;
+  }
+}

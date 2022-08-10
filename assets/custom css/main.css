@@ -1,22 +1,44 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   scroll-behavior: smooth;
 }
-html {
-  overflow: hidden;
+a {
+  text-decoration: none;
+  color: white;
 }
 nav {
-  z-index: 99;
+  z-index: 999999;
 }
 .logo {
-  width: 130px;
-  margin-top: -2rem;
+  width: 120px;
+  margin-top: -2.5rem;
 }
 .toyota {
   width: 55px;
 }
 .honda {
   width: 50px;
-  margin-top: -0.25rem;
+  margin-top: -0.3rem;
 }
 .hyundai {
   width: 70px;
@@ -41,18 +63,18 @@ nav {
 }
 #sections {
   scroll-snap-type: y mandatory;
-  overflow: auto;
+  overflow-y: scroll;
   height: 100vh;
-  /* width: 100vw; */
 }
 
 section {
   /* border: solid 5px red; */
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .nav-link {
@@ -60,8 +82,7 @@ section {
   margin-top: 1rem;
 }
 
-.nav-link::after {
-  content: "";
+.underline {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -71,20 +92,46 @@ section {
   transition: width 0.2s ease;
 }
 
-.nav-link:hover:after {
+.badge-button-container {
+  left: 50%;
+}
+
+.animate {
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.animate-active {
+  opacity: 1;
+  z-index: 9999;
+}
+.active {
   width: 100%;
   left: 0;
   right: auto;
 }
-
-.center-icon {
+.nav-bar-active {
+  background-color: #ffffff99;
+  transition: 0.2s;
+}
+.toyota-center-icon {
   width: 150px;
+  top: 25%;
 }
-
-.active {
-  border-top: 1px solid #ea0f1e;
+.honda-center-icon {
+  width: 170px;
+  filter: contrast(1.5);
 }
-
+.hyundai-center-icon {
+  width: 170px;
+  filter: brightness(2);
+}
+.nissan-center-icon {
+  width: 140px;
+}
+.mazda-center-icon {
+  width: 160px;
+  filter: brightness(1.2);
+}
 .badge {
   top: 25%;
 }
@@ -95,19 +142,26 @@ section {
   font-family: "M PLUS 1p", sans-serif;
   border: black 1px solid;
   border-radius: 50px;
-  background-color: rgb(58, 61, 65);
+  background-color: #2107b6b9;
   color: white;
   font-weight: 600;
   font-size: 12px;
-  width: 300px;
+  width: 370px;
   text-transform: uppercase;
-  z-index: 999;
   letter-spacing: 0.5px;
 }
 .btn-custom:hover {
   background-color: grey;
   color: white;
   opacity: 0.9;
+}
+.arrow-indicator {
+  filter: brightness(0);
+  left: 49.5%;
+  right: 50%;
+  width: 25px;
+  height: 15px;
+  animation: up-down 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
 @media (max-width: 991px) {
   .icons {
@@ -116,6 +170,7 @@ section {
     flex-direction: row;
     justify-content: center;
     flex-direction: column-reverse;
+    z-index: 9999999;
   }
   .emblem-container li {
     margin-top: 1rem;
@@ -133,6 +188,9 @@ section {
   }
 }
 @media (max-width: 760px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .button-container {
     display: flex;
     flex-direction: column;
@@ -147,7 +205,7 @@ section {
     flex-direction: column;
   }
   .navbar {
-    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 99999;
   }
   .nav-link {
     display: flex;
@@ -156,5 +214,17 @@ section {
   }
   .btn-custom {
     width: 90vw;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 3%;
   }
 }
