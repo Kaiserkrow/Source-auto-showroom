@@ -1,3 +1,7 @@
+#exampleModal {
+  margin-top: -3rem;
+}
+
 .fortuner-logo {
   width: 100px;
 }
@@ -5,7 +9,7 @@
   width: 90px;
 }
 section {
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 .vios-logo {
   width: 80px;
@@ -16,86 +20,153 @@ section {
 .logo {
   margin-top: -1.5rem;
 }
-.car-container{
-  margin-top: 10rem;
+.car-container {
+  margin-top: 17vh;
 }
-.img-responsive{
-  
+.img-responsive {
   position: absolute;
-  margin-left: 2rem;
-  margin-top: -4rem;
+  top: 30vh;
   position: absolute;
   width: 80%;
-  max-width: 850px;
+  max-width: 550px;
 }
 
-.whole-title-container{
-  margin-top: 3rem;
+.whole-title-container {
+  margin-top: 2rem;
   width: 1200px;
   justify-content: space-between;
   max-width: 90%;
 }
-.title{
+.title {
   font-weight: bold;
-  color: #EB0A1E;
-  font-size: 45px;
-  margin-top: -3.4rem;
+  color: #eb0a1e;
+  font-size: 40px;
 }
-.msrp{
+.msrp {
   font-size: 13px;
   font-weight: 500;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
 }
-.msrp-underline{
+.msrp-underline {
   margin-top: 1.5rem;
 }
-.price{
+.price {
   font-size: 30px;
   font-weight: bold;
+  margin-top: 1rem;
 }
-.automatic{
+.automatic {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 0.5rem;
 }
-.trans{
+.trans {
   font-size: 10px;
-  margin-top: -.3rem;
+  margin-top: -0.3rem;
   text-transform: uppercase;
   font-weight: 600;
 }
-.colorpick-container{
+.colorpick-container {
   bottom: 20%;
-  z-index: 99999;
+  z-index: 99;
 }
-.circle{
+.fortuner-circle {
   cursor: pointer;
   border-radius: 10px;
   width: 30px;
   height: 30px;
-  background-color: #EB0A1E;
-  margin: 0 .5rem;
-  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.75);
+  background-color: #eb0a1e;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
 }
-.platinum-white{
+.platinum-white {
   background-color: #ffffff;
 }
-.black{
-  background-color: #08112F;
+.black {
+  background-color: #08112f;
 }
-.black-mica{
+.black-mica {
   background-color: #000000;
 }
-.gray{
+.gray {
   background-color: #515151;
 }
-.silver-metallic{
-  background-color: #BFBFBF;
+.silver-metallic {
+  background-color: #bfbfbf;
 }
-.neg-margin{
-  margin-top: -.6rem;
+.neg-margin {
+  margin-top: -0.6rem;
+}
+.btn-calculate {
+  position: absolute;
+  z-index: 9;
+  background-color: #eb0a1e;
+  color: white;
+  border-radius: 0;
+  width: 200px;
+
+  border-radius: 20px;
+}
+.btn-calculate:hover {
+  background-color: #a60a17;
+  color: white;
+}
+.btn-calculate:focus {
+  background-color: #eb0a1e;
+  color: white;
 }
 @media (max-width: 991px) {
   .logo {
     margin-top: 0;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 30px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .price {
+    font-size: 25px;
+  }
+  .msrp {
+    margin-left: 1.5rem;
+  }
+  .automatic {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .trans {
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .trans-seat {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .colorpick-container {
+    bottom: 200px;
+  }
+  .price-spec-container {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  .whole-title-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    font-size: 25px;
   }
 }
