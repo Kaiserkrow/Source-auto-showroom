@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #button {
+        border: 5px solid #ffab33;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        margin: auto;
+        background: #ff5733;
+      }
+
+      #button:hover {
+        background: #dff30b;
+      }
+
+      #message {
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .hide {
+        visibility: hidden;
+      }
+
+      .reveal {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="testMe" data-desc="Toyota" data-price="22000"
+      >click me</a
+    >
+
+    <h2>Banana</h2>
+    <p>Php 5.50</p>
+    <a href="#" class="addItem" data-amt="5" data-qty="1"> Add to Cart </a>
+    <br />
+    <br />
+    <a href="#" class="addItem" data-amt="15" data-qty="1"> Add to Cart2 </a>
+    <br />
+    <div id="container"></div>
+    <br />
+    <div id="container2"></div>
+  </body>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+
+  <script>
+    // Create Array of Items
+    const cart = [];
+    const price = [];
+
+    const btn = document.querySelectorAll(".addItem");
+
+    for (let i = 0; i < btn.length; i++) {
+      btn[i].addEventListener("click", () => {
+        const amt = Number(btn[i].getAttribute("data-amt"));
+        const qty = Number(btn[i].getAttribute("data-qty"));
+        const desc = btn[i].getAttribute("data-desc");
+        addToCart(amt, qty);
+        // console.log(amt);
+      });
+    }
+
+    // DOM Elements using jquery
+    // $(document).ready(function () {
+    //   $(".addItem").on("click", function () {
+    //     var dataAmt = Number($(this).attr("data-amt"));
+    //     var dataQty = Number($(this).attr("data-qty"));
+    //     addToCart(dataAmt, dataQty);
+    //   });
+    // });
+    // End of DOM Elements using jquery
+
+    // Add to Cart Function
+    addToCart = (amt, qty) => {
+      price.push(amt);
+      cart.push(qty);
+
+      let totalAmt = 0;
+      let totalQty = 0;
+
+      // Get the total amount
+      for (let i = 0; i < price.length; i += 1) {
+        totalAmt += price[i];
+      }
+
+      // Get the total quantity
+      for (let i = 0; i < cart.length; i += 1) {
+        totalQty += cart[i];
+      }
+
+      // Parse Total Amount to have decimal point rounded into zero
+      totalAmt = Number.parseFloat(totalAmt).toFixed(2);
+
+      //   Display Total Number of Item(cart) and Total Amount
+      document.getElementById(
+        "container"
+      ).innerHTML = `<p> Cart( ${totalQty} ) </p> `;
+      document.getElementById(
+        "container2"
+      ).innerHTML = `<p> Total( ${totalAmt} ) </p> `;
+    };
+  </script>
+</html>
