@@ -1,9 +1,19 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    // alert('hello world');
+    shoppingCart();
+});
 
-// Create Array of Items
-const cart = [];
-const price = [];
 
-const btn = document.querySelectorAll(".addItem");
+
+
+
+const shoppingCart = function(){
+    // Create Array of Items
+    const cart = [];
+    const price = [];
+
+    const btn = document.querySelectorAll(".addItem");
+    console.log(btn);
 
     for (const element of btn) {
       element.addEventListener("click", () => {
@@ -14,8 +24,8 @@ const btn = document.querySelectorAll(".addItem");
       });
     }
 
- // Add to Cart Function
- addToCart = (amt, qty) => {
+// Add to Cart Function
+addToCart = (amt, qty) => {
     price.push(amt);
     cart.push(qty);
 
@@ -40,9 +50,13 @@ const btn = document.querySelectorAll(".addItem");
     document.getElementsByClassName('total-cart')[0].innerHTML = totalQty;    
   };
 
+}
+
+ 
 
 // Add Products (card) function
 const  addItemCard = function(){
+
     let today = new Date();
     let min = today.getMinutes() ;
 
@@ -51,25 +65,32 @@ const  addItemCard = function(){
     let cardOtherInformation = document.getElementById("otherInformation").value;
     let cardTimeUpdate = "Last updated " + min + " mins ago";
     let cardImage = "assets/images/bg-img/toyota-bg.webp";
-
     
+
     document.getElementById("divCard").innerHTML += 
-    "<div class='col-md-3' >" +
-    
+    "<div class='col-md-3' >" +    
     "<div class='card'>" +
-
         `<img src='${cardImage}' class='card-img-top' alt='...' />` +
-
         "<div class='card-body'>" +
             `<h5 class='card-title'>Php ${cardPrice}</h5>` +
             `<p class='card-text'>${cardDesciption}</p>` +
             `<p class='card-text'>${cardOtherInformation}</p>` +
-
-            `<p class='card-text'> <small class='text-muted'>${cardTimeUpdate}</small></p>` +
-            
-            `<a href='#' id='btn' data-desc=${cardDesciption} data-amt=${cardPrice} data-qty='1' class='addItem btn btn-primary form-control' >Add to Cart </a>` +
-
+            `<p class='card-text'> <small class='text-muted'>${cardTimeUpdate}</small></p>` +            
+            `<a href='#' id='btn' data-desc='toyota' data-amt='5' data-qty='1' class='addItem2 btn btn-primary form-control' >Add to Cart </a>` +
         "</div>" +
     "</div>" +
     "</div>" ;
+
+    // shoppingCart();
+    const btn = document.querySelectorAll(".addItem2");
+    
+    for (const element of btn) {
+        element.addEventListener("click", () => {
+          const amt = Number(element.getAttribute("data-amt"));
+          const qty = Number(element.getAttribute("data-qty"));
+          const desc = element.getAttribute("data-desc");
+          addToCart(amt, qty);       
+        });
+      }
+
 }
