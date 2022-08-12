@@ -98,551 +98,169 @@
         </div>
       </div>
     </nav>
-    <div id="sections">
-      <section id="fortuner-section" class="position-relative">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="whole-title-container d-flex h-100 align-items-center">
-            <div>
-              <div>
+    <div id="blur-container">
+      <div id="sections">
+        <!--START OF FORTUNER-->
+        <section id="fortuner-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
                 <h1 class="title">FORTUNER 2.4 4x2 V AT</h1>
               </div>
               <div>
-                <div>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">...</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                          <button type="button" class="btn btn-primary">
-                            Save changes
-                          </button>
-                        </div>
-                      </div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 1,674,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Automatic</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">7</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Diesel</span>
+                      <span class="trans">fuel type</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="mt-5 price-spec-container">
-              <div class="position-relative price-container mt-4">
-                <div>
-                  <span class="price">₱ 1,894,000</span>
-                </div>
-                <div>
-                  <div class="position-absolute msrp">MSRP</div>
-                </div>
-              </div>
-              <hr class="msrp-underline" />
-              <div class="d-flex spec">
-                <div class="trans-seat d-flex">
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Automatic</span>
-                    <span class="trans">Transmission</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">7</span>
-                    <span class="trans">Seating Capacity</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Diesel</span>
-                    <span class="trans">fuel type</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="d-flex justify-content-center align-items-center car-container h-100 w-100"
-          >
-            <img
-              src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-              class="img-responsive"
-            />
-          </div>
-
-          <div class="position-absolute colorpick-container d-flex flex-column">
-            <span class="text-center mb-2 color-picker-text"
-              >Color name goes here</span
-            >
-
-            <div class="d-flex">
-              <div class="fortuner-circle platinum-white"></div>
-              <div class="fortuner-circle black"></div>
-              <div class="fortuner-circle black-mica"></div>
-              <div class="fortuner-circle gray"></div>
-              <div class="fortuner-circle silver-metallic"></div>
-            </div>
             <div>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-calculate mt-3 ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
               >
-                Calculate
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--END OF FORTUNER-->
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
+                  class="fortuner-img img-responsive hide appear"
+                />
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
+                  class="fortuner-img img-responsive hide"
+                />
 
-      <!--START OF INNOVA-->
-      <section id="innova-section" class="position-relative">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="whole-title-container d-flex h-100 align-items-center">
-            <div>
-              <div>
-                <h1 class="title">INNOVA 2.8 4X2 V MT</h1>
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
+                  class="fortuner-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
+                  class="fortuner-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
+                  class="fortuner-img img-responsive hide"
+                />
               </div>
-              <div>
-                <div>
-                  <!-- Modal -->
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="ftr-color-picker-text"
+                  >Platinum White Pearl Mica</span
+                >
+
+                <div class="d-flex justify-content-center">
                   <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">...</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                          <button type="button" class="btn btn-primary">
-                            Save changes
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-5 price-spec-container">
-              <div class="position-relative price-container mt-4">
-                <div>
-                  <span class="price">₱ 1,674,000</span>
-                </div>
-                <div>
-                  <div class="position-absolute msrp">MSRP</div>
-                </div>
-              </div>
-              <hr class="msrp-underline" />
-              <div class="d-flex spec">
-                <div class="trans-seat d-flex">
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Automatic</span>
-                    <span class="trans">Transmission</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">7</span>
-                    <span class="trans">Seating Capacity</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Diesel</span>
-                    <span class="trans">fuel type</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="d-flex justify-content-center align-items-center car-container h-100 w-100"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-              class="img-responsive"
-            /><img
-              src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-              class="img-responsive"
-            />
-
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-              class="img-responsive"
-            />
-          </div>
-
-          <div class="position-absolute colorpick-container d-flex flex-column">
-            <span class="text-center mb-2 color-picker-text"
-              >Color name goes here</span
-            >
-
-            <div class="d-flex">
-              <div class="fortuner-circle platinum-white"></div>
-              <div class="fortuner-circle black"></div>
-              <div class="fortuner-circle black-mica"></div>
-              <div class="fortuner-circle gray"></div>
-              <div class="fortuner-circle silver-metallic"></div>
-            </div>
-            <div>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-calculate mt-3 ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Calculate
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--END OF INNOVA-->
-      <!--START OF VIOS-->
-      <section id="vios-section" class="position-relative">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="whole-title-container d-flex h-100 align-items-center">
-            <div>
-              <div>
-                <h1 class="title">FORTUNER 2.4 4x2 V AT</h1>
-              </div>
-              <div>
-                <div>
-                  <!-- Modal -->
+                    class="fortuner-circle platinum-white btn-border"
+                    onclick="ftrPickWhite()"
+                  ></div>
                   <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">...</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                          <button type="button" class="btn btn-primary">
-                            Save changes
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-5 price-spec-container">
-              <div class="position-relative price-container mt-4">
-                <div>
-                  <span class="price">₱ 1,894,000</span>
-                </div>
-                <div>
-                  <div class="position-absolute msrp">MSRP</div>
-                </div>
-              </div>
-              <hr class="msrp-underline" />
-              <div class="d-flex spec">
-                <div class="trans-seat d-flex">
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Automatic</span>
-                    <span class="trans">Transmission</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">7</span>
-                    <span class="trans">Seating Capacity</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Diesel</span>
-                    <span class="trans">fuel type</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="d-flex justify-content-center align-items-center car-container h-100 w-100"
-          >
-            <img
-              src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-              class="img-responsive"
-            />
-          </div>
-
-          <div class="position-absolute colorpick-container d-flex flex-column">
-            <span class="text-center mb-2 color-picker-text"
-              >Color name goes here</span
-            >
-
-            <div class="d-flex">
-              <div class="fortuner-circle platinum-white"></div>
-              <div class="fortuner-circle black"></div>
-              <div class="fortuner-circle black-mica"></div>
-              <div class="fortuner-circle gray"></div>
-              <div class="fortuner-circle silver-metallic"></div>
-            </div>
-            <div>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-calculate mt-3 ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Calculate
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--END OF VIOS-->
-      <!--START OF SUPRA-->
-      <section id="supra-section" class="position-relative">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="whole-title-container d-flex h-100 align-items-center">
-            <div>
-              <div>
-                <h1 class="title">FORTUNER 2.4 4x2 V AT</h1>
-              </div>
-              <div>
-                <div>
-                  <!-- Modal -->
+                    class="fortuner-circle black"
+                    onclick="ftrPickBlack()"
+                  ></div>
                   <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
+                    class="fortuner-circle black-mica"
+                    onclick="ftrPickMicaBlack()"
+                  ></div>
+                  <div
+                    class="fortuner-circle gray"
+                    onclick="ftrPickGray()"
+                  ></div>
+                  <div
+                    class="fortuner-circle silver-metallic"
+                    onclick="ftrPickSilver()"
+                  ></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
                   >
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">...</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                          <button type="button" class="btn btn-primary">
-                            Save changes
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-5 price-spec-container">
-              <div class="position-relative price-container mt-4">
-                <div>
-                  <span class="price">₱ 1,894,000</span>
-                </div>
-                <div>
-                  <div class="position-absolute msrp">MSRP</div>
-                </div>
-              </div>
-              <hr class="msrp-underline" />
-              <div class="d-flex spec">
-                <div class="trans-seat d-flex">
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Automatic</span>
-                    <span class="trans">Transmission</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">7</span>
-                    <span class="trans">Seating Capacity</span>
-                  </div>
-                  <div class="d-flex flex-column me-md-3">
-                    <span class="automatic">Diesel</span>
-                    <span class="trans">fuel type</span>
-                  </div>
+                    Loan Options
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+        <!--END OF FORTUNER-->
 
-          <div
-            class="d-flex justify-content-center align-items-center car-container h-100 w-100"
-          >
-            <img
-              src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-              class="img-responsive"
-            />
-            <img
-              loading="lazy"
-              src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-              class="img-responsive"
-            />
-          </div>
-
-          <div class="position-absolute colorpick-container d-flex flex-column">
-            <span class="text-center mb-2 color-picker-text"
-              >Color name goes here</span
-            >
-
-            <div class="d-flex">
-              <div class="fortuner-circle platinum-white"></div>
-              <div class="fortuner-circle black"></div>
-              <div class="fortuner-circle black-mica"></div>
-              <div class="fortuner-circle gray"></div>
-              <div class="fortuner-circle silver-metallic"></div>
-            </div>
-            <div>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-calculate mt-3 ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Calculate
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--END OF SUPRA-->
+        <!--START OF INNOVA-->
+        <section id="innova-section" class="position-relative"></section>
+        <!--END OF INNOVA-->
+        <!--START OF VIOS-->
+        <section id="vios-section" class="position-relative"></section>
+        <!--END OF VIOS-->
+        <!--START OF SUPRA-->
+        <section id="supra-section" class="position-relative"></section>
+        <!--END OF SUPRA-->
+      </div>
     </div>
   </body>
   <script src="assets/custom js/navBarOptToyota.js"></script>
   <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="/assets/custom js/color-picker-toyota.js"></script>
 
   <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
 </html>

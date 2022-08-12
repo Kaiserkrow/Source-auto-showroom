@@ -19,6 +19,9 @@
   background: #555;
 }
 
+.blur {
+  filter: blur(3px) brightness(0.5);
+}
 * {
   scroll-behavior: smooth;
 }
@@ -35,6 +38,12 @@ nav {
 .logo {
   width: 120px;
   margin-top: -0.7rem;
+}
+.emblem {
+  opacity: 0.6;
+}
+.emblem-active {
+  opacity: 1;
 }
 .toyota {
   width: 50px;
@@ -111,7 +120,7 @@ section {
   right: auto;
 }
 .nav-bar-active {
-  background-color: #ffffff99;
+  background-color: #ffffffb0;
   transition: 0.2s;
 }
 .toyota-center-icon {
@@ -124,17 +133,17 @@ section {
 }
 .hyundai-center-icon {
   width: 170px;
-  filter: brightness(2);
+  filter: brightness(3.5);
 }
 .nissan-center-icon {
   width: 140px;
 }
 .mazda-center-icon {
   width: 160px;
-  filter: brightness(1.2);
+  filter: brightness(2);
 }
 .badge {
-  top: 25%;
+  top: 20%;
 }
 .button-container {
   bottom: 15%;
@@ -233,7 +242,6 @@ section {
     width: 80vw;
   }
 }
-
 @keyframes up-down {
   0% {
     bottom: 3%;
