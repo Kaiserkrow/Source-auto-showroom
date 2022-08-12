@@ -1,7 +1,10 @@
+//not the best code out there, but it works. Would refactor when there's time left
+
 let allSection = [...document.getElementsByClassName("badge-button-container")];
 let sections = document.getElementById("sections");
 let allCenterIcon = [...document.getElementsByClassName("center-icon")];
 let allEmblem = [...document.getElementsByClassName("emblem")];
+let body = document.getElementById("body");
 
 console.log(allCenterIcon);
 
@@ -97,14 +100,20 @@ sections.addEventListener("scroll", () => {
   }
 });
 let state = 0;
+
 function buttonFunction() {
+  let blurContainer = document.getElementById("blur-container");
   let bgWhite = document.getElementById("nav-bar");
   console.log(state);
   if (state === 0) {
     bgWhite.classList.add("nav-bar-active");
+    blurContainer.classList.add("blur");
+
     state = 1;
   } else if (state === 1) {
     bgWhite.classList.remove("nav-bar-active");
+    blurContainer.classList.remove("blur");
+
     state = 0;
   }
 }

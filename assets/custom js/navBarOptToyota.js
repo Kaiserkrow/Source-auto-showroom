@@ -32,13 +32,18 @@ sections.addEventListener("scroll", () => {
 });
 let state = 0;
 function buttonFunction() {
+  let blurContainer = document.getElementById("blur-container");
   let bgWhite = document.getElementById("nav-bar");
   console.log(state);
   if (state === 0) {
     bgWhite.classList.add("nav-bar-active");
+    blurContainer.classList.add("blur");
+
     state = 1;
   } else if (state === 1) {
     bgWhite.classList.remove("nav-bar-active");
+    blurContainer.classList.remove("blur");
+
     state = 0;
   }
 }

@@ -15,6 +15,7 @@
 }
 #exampleModal {
   margin-top: -3rem;
+  z-index: 9999;
 }
 .content-wrapper {
   width: 100%;
@@ -43,11 +44,10 @@ section {
 .logo {
   margin-top: 0;
 }
-
-.img-responsive {
-  width: 80%;
-  max-width: 650px;
-}
+/* .img-responsive {
+  width: 60%;
+  max-width: 450px;
+} */
 
 .title {
   font-weight: bold;
@@ -104,13 +104,13 @@ section {
   margin-top: -0.6rem;
 }
 .banner {
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 .btn-calculate {
   background-color: #eb0a1e;
   color: white;
   border-radius: 0;
-  width: 200px;
+  width: 250px;
   border-radius: 20px;
 }
 .btn-calculate:hover {
@@ -122,10 +122,23 @@ section {
   color: white;
 }
 .price-container {
-  margin-top: 5vh;
+  margin-top: 7vh;
 }
-
+.img-responsive {
+  width: 650px;
+  max-width: 80%;
+}
+@media (max-width: 1400px) and (max-height: 800px) {
+  .img-responsive {
+    width: 400px;
+    max-width: 70%;
+  }
+}
 @media (max-width: 900px) {
+  .img-responsive {
+    width: 450px;
+    max-width: 80%;
+  }
   .msrp-underline {
     width: 70%;
     margin-top: 0.5rem;
@@ -136,7 +149,7 @@ section {
   }
   .banner {
     flex-direction: column;
-    margin-top: 7vh;
+    margin-top: 9vh;
   }
   .title {
     font-size: 30px;
@@ -163,7 +176,9 @@ section {
     margin-top: 0.5rem;
     margin-left: 0.5rem;
   }
-
+  .price-container {
+    margin: 2vh;
+  }
   .price-spec-container {
     margin-top: -1rem;
   }
@@ -176,18 +191,21 @@ section {
   }
 }
 
-@media (max-width: 390px) {
-  .title {
-    font-size: 25px;
+@media (max-width: 389px) {
+  .banner {
+    margin-top: 11vh;
   }
-  .price {
+  .title {
     font-size: 22px;
   }
+  .price {
+    font-size: 20px;
+  }
   .msrp-underline {
-    width: 90%;
+    width: 80%;
   }
   .spec {
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
   }
 }

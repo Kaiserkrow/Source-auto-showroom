@@ -19,6 +19,9 @@
   background: #555;
 }
 
+.blur {
+  filter: blur(3px) brightness(0.5);
+}
 * {
   scroll-behavior: smooth;
 }
@@ -37,7 +40,7 @@ nav {
   margin-top: -0.7rem;
 }
 .emblem {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .emblem-active {
   opacity: 1;
@@ -117,7 +120,7 @@ section {
   right: auto;
 }
 .nav-bar-active {
-  background-color: #ffffff99;
+  background-color: #ffffffb0;
   transition: 0.2s;
 }
 .toyota-center-icon {
@@ -239,7 +242,6 @@ section {
     width: 80vw;
   }
 }
-
 @keyframes up-down {
   0% {
     bottom: 3%;
