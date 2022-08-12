@@ -1,6 +1,7 @@
 let allSection = [...document.getElementsByClassName("badge-button-container")];
 let sections = document.getElementById("sections");
 let allCenterIcon = [...document.getElementsByClassName("center-icon")];
+let allEmblem = [...document.getElementsByClassName("emblem")];
 
 console.log(allCenterIcon);
 
@@ -24,6 +25,11 @@ sections.addEventListener("scroll", () => {
     everyUnderline[2].classList.remove("active");
     everyUnderline[3].classList.remove("active");
     everyUnderline[4].classList.remove("active");
+    allEmblem[0].classList.add("emblem-active");
+    allEmblem[1].classList.remove("emblem-active");
+    allEmblem[2].classList.remove("emblem-active");
+    allEmblem[3].classList.remove("emblem-active");
+    allEmblem[4].classList.remove("emblem-active");
   } else if (scroll > height - height / 2 && scroll < height * 1.5) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.add("animate-active");
@@ -35,6 +41,11 @@ sections.addEventListener("scroll", () => {
     everyUnderline[2].classList.remove("active");
     everyUnderline[3].classList.remove("active");
     everyUnderline[4].classList.remove("active");
+    allEmblem[0].classList.remove("emblem-active");
+    allEmblem[1].classList.add("emblem-active");
+    allEmblem[2].classList.remove("emblem-active");
+    allEmblem[3].classList.remove("emblem-active");
+    allEmblem[4].classList.remove("emblem-active");
   } else if (scroll > height * 1 + height / 2 && scroll < height * 2.5) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.remove("animate-active");
@@ -46,6 +57,11 @@ sections.addEventListener("scroll", () => {
     everyUnderline[2].classList.add("active");
     everyUnderline[3].classList.remove("active");
     everyUnderline[4].classList.remove("active");
+    allEmblem[0].classList.remove("emblem-active");
+    allEmblem[1].classList.remove("emblem-active");
+    allEmblem[2].classList.add("emblem-active");
+    allEmblem[3].classList.remove("emblem-active");
+    allEmblem[4].classList.remove("emblem-active");
   } else if (scroll > height * 2 + height / 2 && scroll < height * 3.5) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.remove("animate-active");
@@ -57,6 +73,11 @@ sections.addEventListener("scroll", () => {
     everyUnderline[2].classList.remove("active");
     everyUnderline[3].classList.add("active");
     everyUnderline[4].classList.remove("active");
+    allEmblem[0].classList.remove("emblem-active");
+    allEmblem[1].classList.remove("emblem-active");
+    allEmblem[2].classList.remove("emblem-active");
+    allEmblem[3].classList.add("emblem-active");
+    allEmblem[4].classList.remove("emblem-active");
   } else if (scroll > height * 3 && scroll < height * 4) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.remove("animate-active");
@@ -68,6 +89,11 @@ sections.addEventListener("scroll", () => {
     everyUnderline[2].classList.remove("active");
     everyUnderline[3].classList.remove("active");
     everyUnderline[4].classList.add("active");
+    allEmblem[0].classList.remove("emblem-active");
+    allEmblem[1].classList.remove("emblem-active");
+    allEmblem[2].classList.remove("emblem-active");
+    allEmblem[3].classList.remove("emblem-active");
+    allEmblem[4].classList.add("emblem-active");
   }
 });
 let state = 0;

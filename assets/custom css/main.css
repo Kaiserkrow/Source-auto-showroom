@@ -36,6 +36,12 @@ nav {
   width: 120px;
   margin-top: -0.7rem;
 }
+.emblem {
+  opacity: 0.5;
+}
+.emblem-active {
+  opacity: 1;
+}
 .toyota {
   width: 50px;
 }

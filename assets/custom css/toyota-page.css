@@ -128,6 +128,7 @@ section {
 @media (max-width: 900px) {
   .msrp-underline {
     width: 70%;
+    margin-top: 0.5rem;
   }
   .spec {
     width: 70%;
@@ -135,7 +136,7 @@ section {
   }
   .banner {
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
   .title {
     font-size: 30px;
@@ -153,7 +154,19 @@ section {
     justify-content: space-evenly;
     width: 100%;
   }
+  .price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .msrp-container {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
 
+  .price-spec-container {
+    margin-top: -1rem;
+  }
   .colorpick-container {
     bottom: 200px;
   }
@@ -167,10 +180,14 @@ section {
   .title {
     font-size: 25px;
   }
+  .price {
+    font-size: 22px;
+  }
   .msrp-underline {
     width: 90%;
   }
   .spec {
     width: 90%;
+    justify-content: space-between;
   }
 }
