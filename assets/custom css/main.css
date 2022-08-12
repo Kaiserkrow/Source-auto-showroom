@@ -29,23 +29,26 @@ a {
 nav {
   z-index: 999999;
 }
+.navbar-brand {
+  margin-left: 0.5rem;
+}
 .logo {
   width: 120px;
-  margin-top: -2.5rem;
+  margin-top: -0.7rem;
 }
 .toyota {
-  width: 55px;
+  width: 50px;
 }
 .honda {
-  width: 50px;
+  width: 45px;
   margin-top: -0.3rem;
 }
 .hyundai {
-  width: 70px;
+  width: 65px;
   margin-top: -0.1rem;
 }
 .nissan {
-  width: 55px;
+  width: 50px;
   margin-top: -0.2rem;
 }
 .emblem-container li {
@@ -58,9 +61,7 @@ nav {
 .search-border::placeholder {
   color: rgba(0, 0, 0, 1);
 }
-.search {
-  margin-top: -1rem;
-}
+
 #sections {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -79,7 +80,7 @@ section {
 
 .nav-link {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 
 .underline {
@@ -136,22 +137,22 @@ section {
   top: 25%;
 }
 .button-container {
-  bottom: 20%;
+  bottom: 15%;
 }
 .btn-custom {
   font-family: "M PLUS 1p", sans-serif;
   border: black 1px solid;
   border-radius: 50px;
-  background-color: #2107b6b9;
+  background-color: #de1321cd;
   color: white;
-  font-weight: 600;
-  font-size: 12px;
-  width: 370px;
+  font-weight: 700;
+  font-size: 13px;
+  width: 350px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 .btn-custom:hover {
-  background-color: grey;
+  background-color: transparent;
   color: white;
   opacity: 0.9;
 }
@@ -195,8 +196,24 @@ section {
     display: flex;
     flex-direction: column;
   }
-  .btn-custom {
-    margin-top: 1rem;
+  .toyota-center-icon {
+    width: 120px;
+    top: 25%;
+  }
+  .honda-center-icon {
+    width: 140px;
+    filter: contrast(1.5);
+  }
+  .hyundai-center-icon {
+    width: 140px;
+    filter: brightness(2);
+  }
+  .nissan-center-icon {
+    width: 110px;
+  }
+  .mazda-center-icon {
+    width: 130px;
+    filter: brightness(1.2);
   }
 }
 @media (max-width: 450px) {
@@ -213,7 +230,7 @@ section {
     align-items: center;
   }
   .btn-custom {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
