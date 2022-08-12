@@ -61,9 +61,6 @@ nav {
 .search-border::placeholder {
   color: rgba(0, 0, 0, 1);
 }
-.search {
-  /* margin-top: -1rem; */
-}
 
 #sections {
   scroll-snap-type: y mandatory;
