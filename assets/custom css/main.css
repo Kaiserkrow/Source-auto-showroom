@@ -61,9 +61,6 @@ nav {
 .search-border::placeholder {
   color: rgba(0, 0, 0, 1);
 }
-.search {
-  /* margin-top: -1rem; */
-}
 
 #sections {
   scroll-snap-type: y mandatory;
@@ -127,17 +124,17 @@ section {
 }
 .hyundai-center-icon {
   width: 170px;
-  filter: brightness(2);
+  filter: brightness(3.5);
 }
 .nissan-center-icon {
   width: 140px;
 }
 .mazda-center-icon {
   width: 160px;
-  filter: brightness(1.2);
+  filter: brightness(2);
 }
 .badge {
-  top: 25%;
+  top: 20%;
 }
 .button-container {
   bottom: 15%;

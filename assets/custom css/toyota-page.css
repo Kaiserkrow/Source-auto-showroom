@@ -18,7 +18,7 @@ section {
   width: 100px;
 }
 .logo {
-  margin-top: -1.5rem;
+  margin-top: 0;
 }
 .car-container {
   margin-top: 17vh;
@@ -121,6 +121,9 @@ section {
   }
 }
 @media (max-width: 900px) {
+  .whole-section {
+    margin-top: -7rem;
+  }
   .title {
     font-size: 30px;
     margin-top: 4rem;
