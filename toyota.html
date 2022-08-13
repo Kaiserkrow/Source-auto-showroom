@@ -123,7 +123,54 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">...</div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="ftr-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="ftrCalculate()"
+                      >
+                        <option value=".2">20% ₱ 375,800</option>
+                        <option value=".25">25% ₱ 469,750</option>
+                        <option value=".30">30% ₱ 563,700</option>
+                        <option value=".35">35% ₱ 657,650</option>
+                        <option value=".40">40% ₱ 751,600</option>
+                        <option value=".45">45% ₱ 845,550</option>
+                        <option value=".50">50% ₱ 939,500</option>
+                      </select>
+                      <select
+                        id="ftr-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="ftrCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="per-month">118,575</span> / month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱ <span id="amount-financed">1,439,640</span> Amount
+                        Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Toyota Dealer for final
+                      quotation.
+                    </div>
+                  </div>
                   <div class="modal-footer">
                     <button
                       type="button"
@@ -132,8 +179,8 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary">
-                      Save changes
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
                     </button>
                   </div>
                 </div>
@@ -258,6 +305,7 @@
       </div>
     </div>
   </body>
+  <script src="/assets/custom js/calculate-toyota.js"></script>
   <script src="/assets/custom js/navBarOptToyota.js"></script>
   <script src="/assets/js/bootstrap.bundle.js"></script>
   <script src="/assets/custom js/color-picker-toyota.js"></script>

@@ -13,15 +13,37 @@
   margin-left: 0.5rem;
   font-size: 18px;
 }
+.disclaimer {
+  font-size: 11px;
+}
+.modal-body {
+  height: 30vh;
+}
 #exampleModal {
-  margin-top: -3rem;
   z-index: 9999;
+}
+.btn-order-now {
+  background-color: #eb0a1de4;
+  color: white;
+}
+.cost-per-month {
+  font-size: 1.4rem;
+  color: #eb0a1e;
+  font-weight: 500;
+}
+.display-amount-financed {
+  font-size: 0.9rem;
 }
 .content-wrapper {
   width: 100%;
   height: calc(100vh - 75px);
 }
-
+select {
+  background-color: #f4f3f3;
+}
+option {
+  padding: 1rem;
+}
 .fortuner-logo {
   width: 100px;
   opacity: 0.7;
