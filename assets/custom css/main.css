@@ -39,6 +39,7 @@ nav {
   width: 120px;
   margin-top: -0.7rem;
 }
+
 .emblem {
   opacity: 0.6;
 }
@@ -144,6 +145,7 @@ section {
 }
 .badge {
   top: 20%;
+  pointer-events: none;
 }
 .button-container {
   bottom: 15%;
