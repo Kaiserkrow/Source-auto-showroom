@@ -4,6 +4,15 @@ let allFortunerImg = document.getElementsByClassName("fortuner-img");
 let allFortunerCircle = document.getElementsByClassName("fortuner-circle");
 let allInnovaImg = document.getElementsByClassName("innova-img");
 let allInnovaCircle = document.getElementsByClassName("innova-circle");
+let allViosImg = document.getElementsByClassName("vios-img");
+let allViosCircle = document.getElementsByClassName("vios-circle");
+const viosColors = [
+  "White Pearl Crystal Shine",
+  "Black 1",
+  "Alumina Jade Metallic",
+  "Grayish Blue Mica Mettalic",
+  "Super Red V",
+];
 const innovaColors = [
   "White Pearl Crystal Shine",
   "Silver Metallic 1",
@@ -18,7 +27,20 @@ const fortunerColors = [
   "Gray Metallic",
   "Silver Metallic 3",
 ];
-
+function viosColorPicker(value) {
+  for (let i = 0; i < 5; i++) {
+    if (value === i) {
+      allViosCircle[i].classList.add("btn-border");
+      allViosImg[i].classList.add("appear");
+      document.getElementById(
+        "vios-color-picker-text"
+      ).innerHTML = `${viosColors[i]}`;
+    } else {
+      allViosCircle[i].classList.remove("btn-border");
+      allViosImg[i].classList.remove("appear");
+    }
+  }
+}
 function invColorPicker(value) {
   for (let i = 0; i < 5; i++) {
     if (value === i) {

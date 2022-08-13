@@ -11,7 +11,7 @@ sections.addEventListener("scroll", () => {
   const height = sections.offsetHeight;
   let scroll = sections.scrollTop;
   const direction = scroll - document.lastScrollPosition > 0 ? "down" : "up";
-
+  //note: refactor this using loops
   if (scroll === 0 || scroll < height * 0.5) {
     allSection[0].classList.add("animate-active");
     allSection[1].classList.remove("animate-active");

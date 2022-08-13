@@ -87,6 +87,7 @@ section {
 .price {
   font-size: 30px;
   font-weight: bold;
+  color: #1d1d1d;
 }
 .automatic {
   font-size: 18px;
@@ -106,7 +107,28 @@ section {
   margin: 0 0.5rem;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
 }
-
+.innova-circle {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
+}
+.vios-circle {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
+}
+.red {
+  background-color: #d6353c;
+}
+.grayish-blue {
+  background-color: #1b2429;
+}
 .platinum-white {
   background-color: #ffffff;
 }
@@ -128,14 +150,7 @@ section {
 .jade {
   background-color: #627564;
 }
-.innova-circle {
-  cursor: pointer;
-  border-radius: 10px;
-  width: 30px;
-  height: 30px;
-  margin: 0 0.5rem;
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
-}
+
 .pearl .neg-margin {
   margin-top: -0.6rem;
 }

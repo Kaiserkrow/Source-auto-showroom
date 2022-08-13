@@ -24,6 +24,19 @@ function invCalculate() {
   document.getElementById("inv-amount-financed").textContent = financed;
   document.getElementById("inv-per-month").textContent = result;
 }
+function viosCalculate() {
+  let viosPercent = document.getElementById("vios-percentage").value;
+  let viosMonth = document.getElementById("vios-months").value;
+  let result;
+  const cost = 980000;
+
+  result = cost * 1.06 - cost * viosPercent;
+  let financed = separateComma(result);
+  result = separateComma(result / viosMonth);
+
+  document.getElementById("vios-amount-financed").textContent = financed;
+  document.getElementById("vios-per-month").textContent = result;
+}
 
 function separateComma(val) {
   // remove sign if negative
