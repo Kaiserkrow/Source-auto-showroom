@@ -19,11 +19,11 @@ const supraColors = [
   "White Metallic",
 ];
 const viosColors = [
-  "White Pearl Crystal Shine",
+  "Super Red V",
   "Black 1",
   "Alumina Jade Metallic",
   "Grayish Blue Mica Mettalic",
-  "Super Red V",
+  "White Pearl Crystal Shine",
 ];
 const innovaColors = [
   "White Pearl Crystal Shine",
@@ -33,9 +33,10 @@ const innovaColors = [
   "Alumina Jade Metallic",
 ];
 const fortunerColors = [
-  "Platinum White Pearl Mica",
-  "Sparkling Black Pearl Crystal Shine",
   "Attitude Black Mica",
+  "Sparkling Black Pearl Crystal Shine",
+
+  "Platinum White Pearl Mica",
   "Gray Metallic",
   "Silver Metallic 3",
 ];
