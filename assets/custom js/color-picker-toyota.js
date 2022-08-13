@@ -6,6 +6,18 @@ let allInnovaImg = document.getElementsByClassName("innova-img");
 let allInnovaCircle = document.getElementsByClassName("innova-circle");
 let allViosImg = document.getElementsByClassName("vios-img");
 let allViosCircle = document.getElementsByClassName("vios-circle");
+let allSupraImg = document.getElementsByClassName("supra-img");
+let allSupraCircle = document.getElementsByClassName("supra-circle");
+const supraColors = [
+  "Lightning Yellow",
+  "Black Metallic 2",
+  "Prominence Red",
+
+  "Silver Metallic 5",
+  "Ice Gray Metallic",
+  "Deep Blue Metallic",
+  "White Metallic",
+];
 const viosColors = [
   "White Pearl Crystal Shine",
   "Black 1",
@@ -27,6 +39,20 @@ const fortunerColors = [
   "Gray Metallic",
   "Silver Metallic 3",
 ];
+function supraColorPicker(value) {
+  for (let i = 0; i < 7; i++) {
+    if (value === i) {
+      allSupraCircle[i].classList.add("btn-border");
+      allSupraImg[i].classList.add("appear");
+      document.getElementById(
+        "supra-color-picker-text"
+      ).innerHTML = `${supraColors[i]}`;
+    } else {
+      allSupraCircle[i].classList.remove("btn-border");
+      allSupraImg[i].classList.remove("appear");
+    }
+  }
+}
 function viosColorPicker(value) {
   for (let i = 0; i < 5; i++) {
     if (value === i) {

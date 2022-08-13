@@ -56,6 +56,13 @@
         >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
+              <a class="nav-link p-0 pt-3" href="#supra-section"
+                ><img
+                  src="/assets/images/toyota-page/car-model-logo/supra-logo.png"
+                  class="supra-logo neg-margin" /><span class="underline"></span
+              ></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#fortuner-section"
                 ><span class="underline active"></span>
                 <img
@@ -80,14 +87,6 @@
                   class="vios-logo"
               /></a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link p-0 pt-3" href="#supra-section"
-                ><img
-                  src="/assets/images/toyota-page/car-model-logo/supra-logo.png"
-                  class="supra-logo neg-margin" /><span class="underline"></span
-              ></a>
-            </li>
           </ul>
           <form class="d-flex search me-3 mt-1">
             <button class="btn" type="submit">
@@ -105,6 +104,218 @@
     </nav>
     <div id="blur-container">
       <div id="sections">
+        <!--START OF SUPRA-->
+        <section id="supra-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="supraModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="supra-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="supraCalculate()"
+                      >
+                        <option value=".2">20% ₱ 1,010,000</option>
+                        <option value=".25">25% ₱ 1,262,500</option>
+                        <option value=".30">30% ₱ 1,515,000</option>
+                        <option value=".35">35% ₱ 1,767,500</option>
+                        <option value=".40">40% ₱ 2,020,000</option>
+                        <option value=".45">45% ₱ 2,272,500</option>
+                        <option value=".50">50% ₱ 2,525,000</option>
+                      </select>
+                      <select
+                        id="supra-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="supraCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="supra-per-month">70,233</span> /
+                        month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="supra-amount-financed">842,800</span> Amount
+                        Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Toyota Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">GR SUPRA 3.0L A/T</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 5,050,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">8-Speed A/T</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">2</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Gas</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/toyota-page/supra-models/supra-yellow.webp"
+                  class="supra-img img-responsive hide appear"
+                />
+
+                <img
+                  src="/assets/images/toyota-page/supra-models/supra-black.webp"
+                  class="supra-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/supra-models/supra-red.webp"
+                  class="supra-img img-responsive hide"
+                />
+
+                <img
+                  src="/assets/images/toyota-page//supra-models/supra-silver.webp"
+                  class="supra-img img-responsive hide"
+                />
+
+                <img
+                  src="/assets/images/toyota-page//supra-models/supra-ice-gray.webp"
+                  class="supra-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/supra-models/supra-blue.webp"
+                  class="supra-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/supra-models/supra-white.webp"
+                  class="supra-img img-responsive hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="supra-color-picker-text"
+                  >White Pearl Crystal Shine</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="supra-circle yellow btn-border"
+                    onclick="supraColorPicker(0)"
+                  ></div>
+                  <div
+                    class="supra-circle black"
+                    onclick="supraColorPicker(1)"
+                  ></div>
+                  <div
+                    class="supra-circle red"
+                    onclick="supraColorPicker(2)"
+                  ></div>
+                  <div
+                    class="supra-circle silver-metallic"
+                    onclick="supraColorPicker(3)"
+                  ></div>
+                  <div
+                    class="supra-circle ice-gray"
+                    onclick="supraColorPicker(4)"
+                  ></div>
+                  <div
+                    class="supra-circle deep-blue"
+                    onclick="supraColorPicker(5)"
+                  ></div>
+                  <div
+                    class="supra-circle platinum-white"
+                    onclick="supraColorPicker(6)"
+                  ></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#viosModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF SUPRA-->
         <!--START OF FORTUNER-->
         <section id="fortuner-section" class="position-relative">
           <div
@@ -684,198 +895,6 @@
           </div>
         </section>
         <!--END OF VIOS-->
-        <!--START OF SUPRA-->
-        <section id="supra-section" class="position-relative">
-          <div
-            class="content-wrapper d-flex flex-column justify-content-between"
-          >
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="viosModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <form
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <select
-                        id="vios-percentage"
-                        class="p-2 px-1 rounded"
-                        onchange="viosCalculate()"
-                      >
-                        <option value=".2">20% ₱ 196,000</option>
-                        <option value=".25">25% ₱ 245,000</option>
-                        <option value=".30">30% ₱ 294,000</option>
-                        <option value=".35">35% ₱ 343,000</option>
-                        <option value=".40">40% ₱ 392,000</option>
-                        <option value=".45">45% ₱ 441,000</option>
-                        <option value=".50">50% ₱ 490,000</option>
-                      </select>
-                      <select
-                        id="vios-months"
-                        class="ms-2 p-2 px-1 rounded"
-                        onchange="viosCalculate()"
-                      >
-                        <option value="12">12 Months</option>
-                        <option value="18">18 Months</option>
-                        <option value="24">24 Months</option>
-                        <option value="36">36 Months</option>
-                        <option value="48">48 Months</option>
-                        <option value="60">60 Months</option>
-                      </select>
-                    </form>
-                    <div class="mt-4 d-flex flex-column">
-                      <span class="cost-per-month"
-                        >₱ <span id="vios-per-month">70,233</span> / month</span
-                      >
-
-                      <span class="display-amount-financed"
-                        >₱ <span id="vios-amount-financed">842,800</span> Amount
-                        Financed</span
-                      >
-                    </div>
-                    <div class="disclaimer mt-2">
-                      <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
-                      quotation.
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-order-now">
-                      Order Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 banner d-flex justify-content-around">
-              <!--banner of model-->
-              <div class="d-flex align-items-center title-container">
-                <h1 class="title">VIOS 1.5 G CVT</h1>
-              </div>
-              <div>
-                <div class="price-spec-container">
-                  <div class="position-relative price-container">
-                    <div>
-                      <span class="price">₱ 980,000</span>
-                    </div>
-                    <div class="msrp-container">
-                      <div class="msrp">MSRP</div>
-                    </div>
-                  </div>
-                  <hr class="msrp-underline mx-auto" />
-                  <div class="spec d-flex mx-auto">
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">CVT</span>
-                      <span class="trans">Transmission</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">5</span>
-                      <span class="trans">Seating Capacity</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Gas</span>
-                      <span class="trans">fuel type</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <!--Image container-->
-              <div
-                class="position-relative car-container d-flex justify-content-center"
-              >
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-white.jpg"
-                  class="vios-img img-responsive hide appear"
-                />
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-black.jpg"
-                  class="vios-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-jade.jpg"
-                  class="vios-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-grayish-blue.jpg"
-                  class="vios-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios red.jpg"
-                  class="vios-img img-responsive hide"
-                />
-              </div>
-            </div>
-            <div>
-              <!--Color picker-->
-              <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="vios-color-picker-text"
-                  >White Pearl Crystal Shine</span
-                >
-
-                <div class="d-flex justify-content-center">
-                  <div
-                    class="vios-circle platinum-white btn-border"
-                    onclick="viosColorPicker(0)"
-                  ></div>
-                  <div
-                    class="vios-circle black-mica"
-                    onclick="viosColorPicker(1)"
-                  ></div>
-                  <div
-                    class="vios-circle jade"
-                    onclick="viosColorPicker(2)"
-                  ></div>
-                  <div
-                    class="vios-circle grayish-blue"
-                    onclick="viosColorPicker(3)"
-                  ></div>
-                  <div
-                    class="vios-circle red"
-                    onclick="viosColorPicker(4)"
-                  ></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-calculate mt-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#viosModal"
-                  >
-                    Loan Options
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--END OF SUPRA-->
       </div>
     </div>
   </body>
