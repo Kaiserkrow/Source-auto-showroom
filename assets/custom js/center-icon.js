@@ -4,8 +4,6 @@ let allSection = [...document.getElementsByClassName("badge-button-container")];
 let sections = document.getElementById("sections");
 let allCenterIcon = [...document.getElementsByClassName("center-icon")];
 
-console.log(allCenterIcon);
-
 sections.addEventListener("scroll", () => {
   let everyUnderline = [...document.getElementsByClassName("underline")];
   const height = sections.offsetHeight;

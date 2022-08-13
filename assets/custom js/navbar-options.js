@@ -6,17 +6,12 @@ let allCenterIcon = [...document.getElementsByClassName("center-icon")];
 let allEmblem = [...document.getElementsByClassName("emblem")];
 let body = document.getElementById("body");
 
-console.log(allCenterIcon);
-
 sections.addEventListener("scroll", () => {
   let everyUnderline = [...document.getElementsByClassName("underline")];
   const height = sections.offsetHeight;
   let scroll = sections.scrollTop;
   const direction = scroll - document.lastScrollPosition > 0 ? "down" : "up";
 
-  console.log(direction);
-  console.log(allSection);
-  console.log(`height is: ${height} and scroll is ${scroll}`);
   if (scroll === 0 || scroll < height * 0.5) {
     allSection[0].classList.add("animate-active");
     allSection[1].classList.remove("animate-active");
@@ -81,7 +76,7 @@ sections.addEventListener("scroll", () => {
     allEmblem[2].classList.remove("emblem-active");
     allEmblem[3].classList.add("emblem-active");
     allEmblem[4].classList.remove("emblem-active");
-  } else if (scroll > height * 3 && scroll < height * 4) {
+  } else if (scroll > height * 3 && scroll < height * 4.5) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.remove("animate-active");
     allSection[2].classList.remove("animate-active");
@@ -104,7 +99,7 @@ let state = 0;
 function buttonFunction() {
   let blurContainer = document.getElementById("blur-container");
   let bgWhite = document.getElementById("nav-bar");
-  console.log(state);
+
   if (state === 0) {
     bgWhite.classList.add("nav-bar-active");
     blurContainer.classList.add("blur");

@@ -2,7 +2,6 @@
 
 let allFortunerImg = document.getElementsByClassName("fortuner-img");
 let allFortunerCircle = document.getElementsByClassName("fortuner-circle");
-console.log(allFortunerCircle, allFortunerImg);
 
 function ftrPickWhite() {
   allFortunerImg[0].classList.add("appear");

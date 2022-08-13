@@ -299,7 +299,196 @@
         <!--END OF FORTUNER-->
 
         <!--START OF INNOVA-->
-        <section id="innova-section" class="position-relative"></section>
+        <section id="innova-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="ftr-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="ftrCalculate()"
+                      >
+                        <option value=".2">20% ₱ 375,800</option>
+                        <option value=".25">25% ₱ 469,750</option>
+                        <option value=".30">30% ₱ 563,700</option>
+                        <option value=".35">35% ₱ 657,650</option>
+                        <option value=".40">40% ₱ 751,600</option>
+                        <option value=".45">45% ₱ 845,550</option>
+                        <option value=".50">50% ₱ 939,500</option>
+                      </select>
+                      <select
+                        id="ftr-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="ftrCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="per-month">118,575</span> / month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱ <span id="amount-financed">1,439,640</span> Amount
+                        Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Toyota Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">FORTUNER 2.4 4x2 V AT</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 1,674,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Automatic</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">7</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Diesel</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
+                  class="fortuner-img img-responsive hide appear"
+                />
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
+                  class="fortuner-img img-responsive hide"
+                />
+
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
+                  class="fortuner-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
+                  class="fortuner-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
+                  class="fortuner-img img-responsive hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="ftr-color-picker-text"
+                  >Platinum White Pearl Mica</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="fortuner-circle platinum-white btn-border"
+                    onclick="ftrPickWhite()"
+                  ></div>
+                  <div
+                    class="fortuner-circle black"
+                    onclick="ftrPickBlack()"
+                  ></div>
+                  <div
+                    class="fortuner-circle black-mica"
+                    onclick="ftrPickMicaBlack()"
+                  ></div>
+                  <div
+                    class="fortuner-circle gray"
+                    onclick="ftrPickGray()"
+                  ></div>
+                  <div
+                    class="fortuner-circle silver-metallic"
+                    onclick="ftrPickSilver()"
+                  ></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--END OF INNOVA-->
         <!--START OF VIOS-->
         <section id="vios-section" class="position-relative"></section>

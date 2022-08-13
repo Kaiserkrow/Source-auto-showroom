@@ -9,7 +9,6 @@ sections.addEventListener("scroll", () => {
   let scroll = sections.scrollTop;
   const direction = scroll - document.lastScrollPosition > 0 ? "down" : "up";
 
-  console.log(`height is: ${height} and scroll is ${scroll}`);
   if (scroll === 0 || scroll < height * 0.5) {
     everyUnderline[0].classList.add("active");
     everyUnderline[1].classList.remove("active");
