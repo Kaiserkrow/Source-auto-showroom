@@ -1,3 +1,5 @@
+//not the best code out there, but it works. Would refactor when there's time left
+
 let sections = document.getElementById("sections");
 let allCenterIcon = [...document.getElementsByClassName("center-icon")];
 

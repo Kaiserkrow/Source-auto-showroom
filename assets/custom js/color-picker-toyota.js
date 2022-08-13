@@ -1,3 +1,5 @@
+//not the best code out there, but it works. Would refactor when there's time left
+
 let allFortunerImg = document.getElementsByClassName("fortuner-img");
 let allFortunerCircle = document.getElementsByClassName("fortuner-circle");
 console.log(allFortunerCircle, allFortunerImg);

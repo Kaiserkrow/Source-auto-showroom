@@ -1,3 +1,5 @@
+//not the best code out there, but it works. Would refactor when there's time left
+
 function ftrCalculate() {
   let ftrPercent = document.getElementById("ftr-percentage").value;
   let ftrMonth = document.getElementById("ftr-months").value;
