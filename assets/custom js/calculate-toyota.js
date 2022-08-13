@@ -37,7 +37,19 @@ function viosCalculate() {
   document.getElementById("vios-amount-financed").textContent = financed;
   document.getElementById("vios-per-month").textContent = result;
 }
+function supraCalculate() {
+  let supraPercent = document.getElementById("supra-percentage").value;
+  let supraMonth = document.getElementById("supra-months").value;
+  let result;
+  const cost = 5050000;
 
+  result = cost * 1.06 - cost * supraPercent;
+  let financed = separateComma(result);
+  result = separateComma(result / supraMonth);
+
+  document.getElementById("supra-amount-financed").textContent = financed;
+  document.getElementById("supra-per-month").textContent = result;
+}
 function separateComma(val) {
   // remove sign if negative
   var sign = 1;
