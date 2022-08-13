@@ -1,5 +1,3 @@
-//not the best code out there, but it works. Would refactor when there's time left
-
 function ftrCalculate() {
   let ftrPercent = document.getElementById("ftr-percentage").value;
   let ftrMonth = document.getElementById("ftr-months").value;
@@ -10,8 +8,21 @@ function ftrCalculate() {
   let financed = separateComma(result);
   result = separateComma(result / ftrMonth);
 
-  document.getElementById("amount-financed").textContent = financed;
-  document.getElementById("per-month").textContent = result;
+  document.getElementById("ftr-amount-financed").textContent = financed;
+  document.getElementById("ftr-per-month").textContent = result;
+}
+function invCalculate() {
+  let invPercent = document.getElementById("inv-percentage").value;
+  let invMonth = document.getElementById("inv-months").value;
+  let result;
+  const cost = 1542000;
+
+  result = cost * 1.06 - cost * invPercent;
+  let financed = separateComma(result);
+  result = separateComma(result / invMonth);
+
+  document.getElementById("inv-amount-financed").textContent = financed;
+  document.getElementById("inv-per-month").textContent = result;
 }
 
 function separateComma(val) {
@@ -37,6 +48,7 @@ function separateComma(val) {
     count++;
   }
 
+  // add number after decimal point
   // return result with - sign if negative
   return sign < 0 ? "-" + result : result;
 }

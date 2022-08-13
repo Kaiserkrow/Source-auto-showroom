@@ -2,7 +2,78 @@
 
 let allFortunerImg = document.getElementsByClassName("fortuner-img");
 let allFortunerCircle = document.getElementsByClassName("fortuner-circle");
+let allInnovaImg = document.getElementsByClassName("innova-img");
+let allInnovaCircle = document.getElementsByClassName("innova-circle");
 
+function invPickPearlWhite() {
+  allInnovaImg[0].classList.add("appear");
+  allInnovaImg[1].classList.remove("appear");
+  allInnovaImg[2].classList.remove("appear");
+  allInnovaImg[3].classList.remove("appear");
+  allInnovaImg[4].classList.remove("appear");
+  allInnovaCircle[0].classList.add("btn-border");
+  allInnovaCircle[1].classList.remove("btn-border");
+  allInnovaCircle[2].classList.remove("btn-border");
+  allInnovaCircle[3].classList.remove("btn-border");
+  allInnovaCircle[4].classList.remove("btn-border");
+  document.getElementById("inv-color-picker-text").innerHTML =
+    "White Pearl Crystal Shine";
+}
+function invSilver() {
+  allInnovaImg[0].classList.remove("appear");
+  allInnovaImg[1].classList.add("appear");
+  allInnovaImg[2].classList.remove("appear");
+  allInnovaImg[3].classList.remove("appear");
+  allInnovaImg[4].classList.remove("appear");
+  allInnovaCircle[0].classList.remove("btn-border");
+  allInnovaCircle[1].classList.add("btn-border");
+  allInnovaCircle[2].classList.remove("btn-border");
+  allInnovaCircle[3].classList.remove("btn-border");
+  allInnovaCircle[4].classList.remove("btn-border");
+  document.getElementById("inv-color-picker-text").innerHTML =
+    "Silver Metallic 1";
+}
+function invPickMicaBlack() {
+  allInnovaImg[0].classList.remove("appear");
+  allInnovaImg[1].classList.remove("appear");
+  allInnovaImg[2].classList.add("appear");
+  allInnovaImg[3].classList.remove("appear");
+  allInnovaImg[4].classList.remove("appear");
+  allInnovaCircle[0].classList.remove("btn-border");
+  allInnovaCircle[1].classList.remove("btn-border");
+  allInnovaCircle[2].classList.add("btn-border");
+  allInnovaCircle[3].classList.remove("btn-border");
+  allInnovaCircle[4].classList.remove("btn-border");
+  document.getElementById("inv-color-picker-text").innerHTML = "Black 1";
+}
+function invPickMaroon() {
+  allInnovaImg[0].classList.remove("appear");
+  allInnovaImg[1].classList.remove("appear");
+  allInnovaImg[2].classList.remove("appear");
+  allInnovaImg[3].classList.add("appear");
+  allInnovaImg[4].classList.remove("appear");
+  allInnovaCircle[0].classList.remove("btn-border");
+  allInnovaCircle[1].classList.remove("btn-border");
+  allInnovaCircle[2].classList.remove("btn-border");
+  allInnovaCircle[3].classList.add("btn-border");
+  allInnovaCircle[4].classList.remove("btn-border");
+  document.getElementById("inv-color-picker-text").innerHTML =
+    "Blackish Red Mica";
+}
+function invPickJade() {
+  allInnovaImg[0].classList.remove("appear");
+  allInnovaImg[1].classList.remove("appear");
+  allInnovaImg[2].classList.remove("appear");
+  allInnovaImg[3].classList.remove("appear");
+  allInnovaImg[4].classList.add("appear");
+  allInnovaCircle[0].classList.remove("btn-border");
+  allInnovaCircle[1].classList.remove("btn-border");
+  allInnovaCircle[2].classList.remove("btn-border");
+  allInnovaCircle[3].classList.remove("btn-border");
+  allInnovaCircle[4].classList.add("btn-border");
+  document.getElementById("inv-color-picker-text").innerHTML =
+    "Alumina Jade Metallic";
+}
 function ftrPickWhite() {
   allFortunerImg[0].classList.add("appear");
   allFortunerImg[1].classList.remove("appear");

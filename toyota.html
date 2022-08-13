@@ -113,7 +113,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="exampleModal"
+              id="ftrModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -162,11 +162,12 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="per-month">118,575</span> / month</span
+                        >₱ <span id="ftr-per-month">119,970</span> / month</span
                       >
 
                       <span class="display-amount-financed"
-                        >₱ <span id="amount-financed">1,439,640</span> Amount
+                        >₱
+                        <span id="ftr-amount-financed">1,439,640</span> Amount
                         Financed</span
                       >
                     </div>
@@ -287,7 +288,7 @@
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#ftrModal"
                   >
                     Loan Options
                   </button>
@@ -306,7 +307,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="exampleModal"
+              id="invModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -328,22 +329,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="ftr-percentage"
+                        id="inv-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="ftrCalculate()"
+                        onchange="invCalculate()"
                       >
-                        <option value=".2">20% ₱ 375,800</option>
-                        <option value=".25">25% ₱ 469,750</option>
-                        <option value=".30">30% ₱ 563,700</option>
-                        <option value=".35">35% ₱ 657,650</option>
-                        <option value=".40">40% ₱ 751,600</option>
-                        <option value=".45">45% ₱ 845,550</option>
-                        <option value=".50">50% ₱ 939,500</option>
+                        <option value=".2">20% ₱ 308,400</option>
+                        <option value=".25">25% ₱ 385,500</option>
+                        <option value=".30">30% ₱ 469,600</option>
+                        <option value=".35">35% ₱ 539,700</option>
+                        <option value=".40">40% ₱ 616,800</option>
+                        <option value=".45">45% ₱ 693,900</option>
+                        <option value=".50">50% ₱ 771,00</option>
                       </select>
                       <select
-                        id="ftr-months"
+                        id="inv-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="ftrCalculate()"
+                        onchange="invCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -355,11 +356,12 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="per-month">118,575</span> / month</span
+                        >₱ <span id="inv-per-month">110,510</span> / month</span
                       >
 
                       <span class="display-amount-financed"
-                        >₱ <span id="amount-financed">1,439,640</span> Amount
+                        >₱
+                        <span id="inv-amount-financed">1,326,120</span> Amount
                         Financed</span
                       >
                     </div>
@@ -387,13 +389,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">FORTUNER 2.4 4x2 V AT</h1>
+                <h1 class="title">INNOVA 2.8L G DSL M/T</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 1,674,000</span>
+                      <span class="price">₱ 1,542,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -402,11 +404,11 @@
                   <hr class="msrp-underline mx-auto" />
                   <div class="spec d-flex mx-auto">
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Automatic</span>
+                      <span class="automatic">5-Speed MT</span>
                       <span class="trans">Transmission</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">7</span>
+                      <span class="automatic">8</span>
                       <span class="trans">Seating Capacity</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
@@ -423,56 +425,53 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-                  class="fortuner-img img-responsive hide appear"
+                  src="/assets/images/toyota-page/innova-models/innova-white.webp"
+                  class="innova-img img-responsive hide appear"
                 />
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/toyota-page/innova-models/innova-silver-metallic.webp"
+                  class="innova-img img-responsive hide"
                 />
 
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/toyota-page/innova-models/innova-black-1.webp"
+                  class="innova-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/toyota-page/innova-models/innova-blackish-red.webp"
+                  class="innova-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/toyota-page/innova-models/innova-jade.webp"
+                  class="innova-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="ftr-color-picker-text"
-                  >Platinum White Pearl Mica</span
+                <span class="text-center mb-2" id="inv-color-picker-text"
+                  >White Pearl Crystal Shine</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="fortuner-circle platinum-white btn-border"
-                    onclick="ftrPickWhite()"
+                    class="innova-circle platinum-white btn-border"
+                    onclick="invPickPearlWhite()"
                   ></div>
                   <div
-                    class="fortuner-circle black"
-                    onclick="ftrPickBlack()"
+                    class="innova-circle silver-metallic"
+                    onclick="invSilver()"
                   ></div>
                   <div
-                    class="fortuner-circle black-mica"
-                    onclick="ftrPickMicaBlack()"
+                    class="innova-circle black-mica"
+                    onclick="invPickMicaBlack()"
                   ></div>
                   <div
-                    class="fortuner-circle gray"
-                    onclick="ftrPickGray()"
+                    class="innova-circle maroon"
+                    onclick="invPickMaroon()"
                   ></div>
-                  <div
-                    class="fortuner-circle silver-metallic"
-                    onclick="ftrPickSilver()"
-                  ></div>
+                  <div class="innova-circle jade" onclick="invPickJade()"></div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <!-- Button trigger modal -->
@@ -480,7 +479,7 @@
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#invModal"
                   >
                     Loan Options
                   </button>
