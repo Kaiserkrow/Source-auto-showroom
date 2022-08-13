@@ -158,7 +158,6 @@ section {
   font-size: 13px;
   width: 350px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 .btn-custom:hover {
   background-color: transparent;
