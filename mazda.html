@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="/assets/css/bootstrap.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="/assets/custom css/main.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assets/custom css/mazda-page.css"
+    />
+  </head>
+  <body id="body">
+    <nav
+      class="navbar navbar-expand-lg navbar-light position-fixed w-100"
+      id="nav-bar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/assets/images/logo-2.png" class="logo ms-2"
+        /></a>
+
+        <button
+          class="navbar-toggler mt-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="buttonFunction()"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-md-5 icons"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
+            <li class="nav-item">
+              <a class="nav-link p-0 pt-3" href="#miata-section"
+                ><img
+                  src="/assets/images/mazda-page/car-logos/miata-logo.png"
+                  class="miata-logo neg-margin" /><span
+                  class="underline active"
+                ></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mda-section">
+                <span class="underline"></span
+                ><img
+                  src="/assets/images/mazda-page/car-logos/mazda3-logo.png"
+                  class="mda-logo"
+                />
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex search me-3 mt-1">
+            <button class="btn" type="submit">
+              <i class="fas fa-search fa-xl"></i>
+            </button>
+            <input
+              class="form-control search-border rounded"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="blur-container">
+      <div id="sections">
+        <!--START OF MIATA-->
+        <section id="miata-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="miataModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="miata-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="miataCalculate()"
+                      >
+                        <option value=".2">20% ₱ 404,000</option>
+                        <option value=".25">25% ₱ 505,000</option>
+                        <option value=".30">30% ₱ 606,000</option>
+                        <option value=".35">35% ₱ 707,,000</option>
+                        <option value=".40">40% ₱ 808,000</option>
+                        <option value=".45">45% ₱ 909,000</option>
+                        <option value=".50">50% ₱ 1,010,000</option>
+                      </select>
+                      <select
+                        id="miata-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="miataCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="miata-per-month">144,766</span> /
+                        month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="miata-amount-financed">1,737,200</span>
+                        Amount Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Mazda Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">Mazda MX-5 RF</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 2,020,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Automatic</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">2</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Gas</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/mazda-page/miata/mx5-blue.jpg"
+                  class="miata-img img-responsive-gtr hide appear"
+                />
+                <img
+                  src="/assets/images/mazda-page/miata/mx5-black.jpg"
+                  class="miata-img img-responsive-gtr hide"
+                />
+                <img
+                  src="/assets/images/mazda-page/miata/mx5-red.jpg"
+                  class="miata-img img-responsive-gtr hide"
+                />
+                <img
+                  src="/assets/images/mazda-page/miata/mx5-white.jpg"
+                  class="miata-img img-responsive-gtr hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="miata-color-picker-text"
+                  >Eternal Blue Mica</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="miata-circle cosmic-blue btn-border"
+                    onclick="miataColorPicker(0)"
+                  ></div>
+                  <div
+                    class="miata-circle black-mica"
+                    onclick="miataColorPicker(1)"
+                  ></div>
+                  <div
+                    class="miata-circle light-red"
+                    onclick="miataColorPicker(2)"
+                  ></div>
+                  <div
+                    class="miata-circle platinum-white"
+                    onclick="miataColorPicker(3)"
+                  ></div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#miataModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF MIATA-->
+        <!--START OF MAZDA 3-->
+        <section id="mda-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="mdaModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="mda-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="mdaCalculate()"
+                      >
+                        <option value=".2">20% ₱ 299,000</option>
+                        <option value=".25">25% ₱ 373,750</option>
+                        <option value=".30">30% ₱ 448,500</option>
+                        <option value=".35">35% ₱ 523,250</option>
+                        <option value=".40">40% ₱ 598,000</option>
+                        <option value=".45">45% ₱ 672,750</option>
+                        <option value=".50">50% ₱ 747,500</option>
+                      </select>
+                      <select
+                        id="mda-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="mdaCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="mda-per-month">107,141</span> / month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="mda-amount-financed">1,285,700</span>
+                        Amount Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Mazda Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">Mazda 3 Hatchback</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 1,495,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Automatic</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">5</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Gas</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/mazda-page/mazda-3/mazda3-red.webp"
+                  class="mda-img img-responsive-gtr hide appear"
+                />
+                <img
+                  src="/assets/images/mazda-page/mazda-3/mazda3-black.webp"
+                  class="mda-img img-responsive-gtr hide"
+                />
+                <img
+                  src="/assets/images/mazda-page/mazda-3/mazda3-gray.webp"
+                  class="mda-img img-responsive-gtr hide"
+                />
+                <img
+                  src="/assets/images/mazda-page/mazda-3/mazda3-silver.webp"
+                  class="mda-img img-responsive-gtr hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="mda-color-picker-text"
+                  >Soul Red Crystal Metallic</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="mda-circle light-red btn-border"
+                    onclick="mdaColorPicker(0)"
+                  ></div>
+                  <div
+                    class="mda-circle black-mica"
+                    onclick="mdaColorPicker(1)"
+                  ></div>
+                  <div
+                    class="mda-circle gray"
+                    onclick="mdaColorPicker(2)"
+                  ></div>
+                  <div
+                    class="mda-circle silver-metallic"
+                    onclick="mdaColorPicker(3)"
+                  ></div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mdaModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF MAZDA 3-->
+      </div>
+    </div>
+  </body>
+  <script src="/assets/custom js/calculate-mazda.js"></script>
+  <script src="/assets/custom js/navBarOptToyota.js"></script>
+  <script src="/assets/js/bootstrap.bundle.js"></script>
+  <script src="/assets/custom js/color-picker-mazda.js"></script>
+
+  <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
+</html>
