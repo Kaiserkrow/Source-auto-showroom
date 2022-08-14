@@ -13,18 +13,18 @@ function tucsonCalculate() {
   document.getElementById("tucson-per-month").textContent = result;
 }
 
-function crvCalculate() {
-  let crvPercent = document.getElementById("crv-percentage").value;
-  let crvMonth = document.getElementById("crv-months").value;
+function santafeCalculate() {
+  let santafePercent = document.getElementById("santafe-percentage").value;
+  let santafeMonth = document.getElementById("santafe-months").value;
   let result;
-  const cost = 2238000;
+  const cost = 2538000;
 
-  result = cost * 1.06 - cost * crvPercent;
+  result = cost * 1.06 - cost * santafePercent;
   let financed = separateComma(result);
-  result = separateComma(result / crvMonth);
+  result = separateComma(result / santafeMonth);
 
-  document.getElementById("crv-amount-financed").textContent = financed;
-  document.getElementById("crv-per-month").textContent = result;
+  document.getElementById("santafe-amount-financed").textContent = financed;
+  document.getElementById("santafe-per-month").textContent = result;
 }
 function accordCalculate() {
   let accordPercent = document.getElementById("accord-percentage").value;

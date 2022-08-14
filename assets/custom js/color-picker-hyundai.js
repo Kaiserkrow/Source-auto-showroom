@@ -2,8 +2,8 @@
 //should have used template literal
 let allTucsonImg = document.getElementsByClassName("tucson-img");
 let allTucsonCircle = document.getElementsByClassName("tucson-circle");
-let allCrvImg = document.getElementsByClassName("crv-img");
-let allCrvCircle = document.getElementsByClassName("crv-circle");
+let allSantafeImg = document.getElementsByClassName("santafe-img");
+let allSantafeCircle = document.getElementsByClassName("santafe-circle");
 let allAccordImg = document.getElementsByClassName("accord-img");
 let allAccordCircle = document.getElementsByClassName("accord-circle");
 let allBrioImg = document.getElementsByClassName("brio-img");
@@ -17,10 +17,11 @@ const tucsonColors = [
   "Shimmering Silver",
   "Crimson Red",
 ];
-const accordColors = [
-  "Crystal Black Pearl",
-  "Meteoroid Gray Metallic",
-  "Platinum White Pearl",
+const santafeColors = [
+  "Glacier White",
+  "Taiga Brown",
+  "Abyss Black",
+  "Lagoon Blue",
 ];
 const brioColors = [
   "Phoenix Orange Pearl",
@@ -43,17 +44,17 @@ function tucsonColorPicker(value) {
     }
   }
 }
-function crvColorPicker(value) {
+function santafeColorPicker(value) {
   for (let i = 0; i < 4; i++) {
     if (value === i) {
-      allCrvCircle[i].classList.add("btn-border");
-      allCrvImg[i].classList.add("appear");
+      allSantafeCircle[i].classList.add("btn-border");
+      allSantafeImg[i].classList.add("appear");
       document.getElementById(
-        "crv-color-picker-text"
-      ).innerHTML = `${crvColors[i]}`;
+        "santafe-color-picker-text"
+      ).innerHTML = `${santafeColors[i]}`;
     } else {
-      allCrvCircle[i].classList.remove("btn-border");
-      allCrvImg[i].classList.remove("appear");
+      allSantafeCircle[i].classList.remove("btn-border");
+      allSantafeImg[i].classList.remove("appear");
     }
   }
 }

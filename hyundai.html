@@ -98,7 +98,7 @@
     </nav>
     <div id="blur-container">
       <div id="sections">
-        <!--START OF CIVIC-->
+        <!--START OF TUCSON-->
         <section id="tucson-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
@@ -309,7 +309,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="crvModal"
+              id="santafeModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -331,22 +331,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="crv-percentage"
+                        id="santafe-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="crvCalculate()"
+                        onchange="santafeCalculate()"
                       >
-                        <option value=".2">20% ₱ 642,000</option>
-                        <option value=".25">25% ₱ 802,500</option>
-                        <option value=".30">30% ₱ 963,000</option>
-                        <option value=".35">35% ₱ 1,123,500</option>
-                        <option value=".40">40% ₱ 1,284,000</option>
-                        <option value=".45">45% ₱ 1,444,500</option>
-                        <option value=".50">50% ₱ 1,605,000</option>
+                        <option value=".2">20% ₱ 507,600</option>
+                        <option value=".25">25% ₱ 634,500</option>
+                        <option value=".30">30% ₱ 761,400</option>
+                        <option value=".35">35% ₱ 888,300</option>
+                        <option value=".40">40% ₱ 1,015,200</option>
+                        <option value=".45">45% ₱ 1,142,100</option>
+                        <option value=".50">50% ₱ 1,269,000</option>
                       </select>
                       <select
-                        id="crv-months"
+                        id="santafe-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="crvCalculate()"
+                        onchange="santafeCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -358,13 +358,14 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="crv-per-month">160,390</span> / month</span
+                        >₱ <span id="santafe-per-month">181,890</span> /
+                        month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="crv-amount-financed">1,924,680</span> Amount
-                        Financed</span
+                        <span id="santafe-amount-financed">2,182,680</span>
+                        Amount Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
@@ -391,13 +392,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">CR-V SX Diesel AWD</h1>
+                <h1 class="title">Santa Fe 2.2 R CRDi e-VGT</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 2,238,000</span>
+                      <span class="price">₱ 2,538,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -427,47 +428,46 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/honda-page/crv-models/crv-red.png"
-                  class="crv-img img-responsive-crv hide appear"
-                />
-
-                <img
-                  src="/assets/images/honda-page/crv-models/crv-blue-metallic.png"
-                  class="crv-img img-responsive-crv hide"
+                  src="/assets/images/hyundai-page/santafe-logo/santafe-glacier-white.webp"
+                  class="santafe-img img-responsive hide appear"
                 />
                 <img
-                  src="/assets/images/honda-page/crv-models/crv-gray.png"
-                  class="crv-img img-responsive-crv hide"
+                  src="/assets/images/hyundai-page/santafe-logo/santafe-taiga-brown.webp"
+                  class="santafe-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/honda-page/crv-models/crv-white.png"
-                  class="crv-img img-responsive-crv hide"
+                  src="/assets/images/hyundai-page/santafe-logo/santafe-phantom-black.webp"
+                  class="santafe-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/hyundai-page/santafe-logo/santafe-lagoon-blue.webp"
+                  class="santafe-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="crv-color-picker-text"
-                  >Ignite Red Metallic</span
+                <span class="text-center mb-2" id="santafe-color-picker-text"
+                  >Glacier White</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="crv-circle red btn-border"
-                    onclick="crvColorPicker(0)"
+                    class="santafe-circle platinum-white btn-border"
+                    onclick="santafeColorPicker(0)"
                   ></div>
                   <div
-                    class="crv-circle cosmic-blue"
-                    onclick="crvColorPicker(1)"
+                    class="santafe-circle brown"
+                    onclick="santafeColorPicker(1)"
                   ></div>
                   <div
-                    class="crv-circle black"
-                    onclick="crvColorPicker(2)"
+                    class="santafe-circle black-mica"
+                    onclick="santafeColorPicker(2)"
                   ></div>
                   <div
-                    class="crv-circle platinum-white"
-                    onclick="crvColorPicker(3)"
+                    class="santafe-circle black"
+                    onclick="santafeColorPicker(3)"
                   ></div>
                 </div>
 
@@ -477,7 +477,7 @@
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#crvModal"
+                    data-bs-target="#santafeModal"
                   >
                     Loan Options
                   </button>
