@@ -25,7 +25,7 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="/assets/custom css/toyota-page.css"
+      href="/assets/custom css/honda-page.css"
     />
   </head>
   <body id="body">
@@ -56,35 +56,37 @@
         >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
-              <a class="nav-link p-0 pt-3" href="#supra-section"
+              <a class="nav-link p-0 pt-3" href="#civic-section"
                 ><img
-                  src="/assets/images/toyota-page/car-model-logo/supra-logo.png"
-                  class="supra-logo neg-margin" /><span class="underline"></span
+                  src="/assets/images/honda-page/car-model logo/civic-logo.png"
+                  class="civic-logo neg-margin" /><span
+                  class="underline active"
+                ></span
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#fortuner-section"
-                ><span class="underline active"></span>
+              <a class="nav-link" href="#crv-section"
+                ><span class="underline"></span>
                 <img
-                  src="/assets/images/toyota-page/car-model-logo/fortuner-logo.png"
-                  class="fortuner-logo"
+                  src="/assets/images/honda-page/car-model logo/crv-logo.png"
+                  class="crv-logo"
               /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#innova-section">
+              <a class="nav-link" href="#accord-section">
                 <span class="underline"></span
                 ><img
-                  src="/assets/images/toyota-page/car-model-logo/innova-logo.png"
-                  class="innova-logo"
+                  src="/assets/images/honda-page/car-model logo/accord-logo.png"
+                  class="accord-logo"
                 />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#vios-section"
+              <a class="nav-link" href="#brio-section"
                 ><span class="underline"></span
                 ><img
-                  src="/assets/images/toyota-page/car-model-logo/vios-logo.png"
-                  class="vios-logo"
+                  src="/assets/images/honda-page/car-model logo/brio-logo.webp"
+                  class="brio-logo"
               /></a>
             </li>
           </ul>
@@ -104,15 +106,15 @@
     </nav>
     <div id="blur-container">
       <div id="sections">
-        <!--START OF SUPRA-->
-        <section id="supra-section" class="position-relative">
+        <!--START OF CIVIC-->
+        <section id="civic-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
             <!-- Modal -->
             <div
               class="modal fade"
-              id="supraModal"
+              id="civicModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -134,22 +136,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="supra-percentage"
+                        id="civic-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="supraCalculate()"
+                        onchange="civicCalculate()"
                       >
-                        <option value=".2">20% ₱ 1,010,000</option>
-                        <option value=".25">25% ₱ 1,262,500</option>
-                        <option value=".30">30% ₱ 1,515,000</option>
-                        <option value=".35">35% ₱ 1,767,500</option>
-                        <option value=".40">40% ₱ 2,020,000</option>
-                        <option value=".45">45% ₱ 2,272,500</option>
-                        <option value=".50">50% ₱ 2,525,000</option>
+                        <option value=".2">20% ₱ 642,000</option>
+                        <option value=".25">25% ₱ 802,500</option>
+                        <option value=".30">30% ₱ 963,000</option>
+                        <option value=".35">35% ₱ 1,123,500</option>
+                        <option value=".40">40% ₱ 1,284,000</option>
+                        <option value=".45">45% ₱ 1,444,500</option>
+                        <option value=".50">50% ₱ 1,605,000</option>
                       </select>
                       <select
-                        id="supra-months"
+                        id="civic-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="supraCalculate()"
+                        onchange="civicCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -161,19 +163,19 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="supra-per-month">361,916</span> /
+                        >₱ <span id="civic-per-month">230,050</span> /
                         month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="supra-amount-financed">4,343,000</span> Amount
+                        <span id="civic-amount-financed">2,760,600</span> Amount
                         Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
                       <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
+                      estimate only. Please contact any Honda Dealer for final
                       quotation.
                     </div>
                   </div>
@@ -195,13 +197,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">GR SUPRA 3.0L A/T</h1>
+                <h1 class="title">CIVIC RS TURBO CVT</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 5,050,000</span>
+                      <span class="price">₱ 3,210,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -210,11 +212,11 @@
                   <hr class="msrp-underline mx-auto" />
                   <div class="spec d-flex mx-auto">
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">8-Speed A/T</span>
+                      <span class="automatic">CVT</span>
                       <span class="trans">Transmission</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">2</span>
+                      <span class="automatic">5</span>
                       <span class="trans">Seating Capacity</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
@@ -231,82 +233,49 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/toyota-page/supra-models/supra-yellow.webp"
-                  class="supra-img img-responsive hide appear"
+                  src="/assets/images/honda-page/civic-models/civic-blue.png"
+                  class="civic-img img-responsive hide appear"
                 />
 
                 <img
-                  src="/assets/images/toyota-page/supra-models/supra-black.webp"
-                  class="supra-img img-responsive hide"
+                  src="/assets/images/honda-page/civic-models/civic-gray.png"
+                  class="civic-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/supra-models/supra-red.webp"
-                  class="supra-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page//supra-models/supra-silver.webp"
-                  class="supra-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page//supra-models/supra-ice-gray.webp"
-                  class="supra-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-blue.webp"
-                  class="supra-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-white.webp"
-                  class="supra-img img-responsive hide"
+                  src="/assets/images/honda-page/civic-models/civic-white.png"
+                  class="civic-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="supra-color-picker-text"
-                  >Lightning Yellow</span
+                <span class="text-center mb-2" id="civic-color-picker-text"
+                  >Racing Blue</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="supra-circle yellow btn-border"
-                    onclick="supraColorPicker(0)"
+                    class="civic-circle deep-blue btn-border"
+                    onclick="civicColorPicker(0)"
                   ></div>
                   <div
-                    class="supra-circle black"
-                    onclick="supraColorPicker(1)"
+                    class="civic-circle platinum-white"
+                    onclick="civicColorPicker(1)"
                   ></div>
                   <div
-                    class="supra-circle red"
-                    onclick="supraColorPicker(2)"
-                  ></div>
-                  <div
-                    class="supra-circle silver-metallic"
-                    onclick="supraColorPicker(3)"
-                  ></div>
-                  <div
-                    class="supra-circle ice-gray"
-                    onclick="supraColorPicker(4)"
-                  ></div>
-                  <div
-                    class="supra-circle deep-blue"
-                    onclick="supraColorPicker(5)"
-                  ></div>
-                  <div
-                    class="supra-circle platinum-white"
-                    onclick="supraColorPicker(6)"
+                    class="civic-circle gray"
+                    onclick="civicColorPicker(2)"
                   ></div>
                 </div>
+
                 <div class="d-flex justify-content-center">
                   <!-- Button trigger modal -->
                   <button
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#supraModal"
+                    data-bs-target="#civicModal"
                   >
                     Loan Options
                   </button>
@@ -315,9 +284,9 @@
             </div>
           </div>
         </section>
-        <!--END OF SUPRA-->
+        <!--END OF CIVIC-->
         <!--START OF FORTUNER-->
-        <section id="fortuner-section" class="position-relative">
+        <section id="crv-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
@@ -512,7 +481,7 @@
         <!--END OF FORTUNER-->
 
         <!--START OF INNOVA-->
-        <section id="innova-section" class="position-relative">
+        <section id="accord-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
@@ -705,7 +674,7 @@
         </section>
         <!--END OF INNOVA-->
         <!--START OF VIOS-->
-        <section id="vios-section" class="position-relative">
+        <section id="brio-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
@@ -900,10 +869,10 @@
       </div>
     </div>
   </body>
-  <script src="/assets/custom js/calculate-toyota.js"></script>
+  <script src="/assets/custom js/calculate-honda.js"></script>
   <script src="/assets/custom js/navBarOptToyota.js"></script>
   <script src="/assets/js/bootstrap.bundle.js"></script>
-  <script src="/assets/custom js/color-picker-toyota.js"></script>
+  <script src="/assets/custom js/color-picker-honda.js"></script>
 
   <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
 </html>

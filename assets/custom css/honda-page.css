@@ -1,0 +1,279 @@
+.hide {
+  display: none;
+}
+.appear {
+  display: block;
+}
+.disclaimer {
+  font-size: 11px;
+}
+.modal-body {
+  height: 30vh;
+}
+.modal {
+  z-index: 9999;
+}
+.btn-order-now {
+  background-color: #eb0a1de4;
+  color: white;
+}
+.cost-per-month {
+  font-size: 1.4rem;
+  color: #eb0a1e;
+  font-weight: 500;
+}
+.display-amount-financed {
+  font-size: 0.9rem;
+}
+.content-wrapper {
+  width: 100%;
+  height: calc(100vh - 75px);
+}
+select {
+  background-color: #f4f3f3;
+}
+option {
+  padding: 1rem;
+}
+.civic-logo {
+  margin: 0 0.5rem;
+  width: 75px;
+  opacity: 0.7;
+}
+.crv-logo {
+  width: 65px;
+  opacity: 0.7;
+}
+
+.accord-logo {
+  width: 100px;
+  opacity: 0.7;
+}
+.brio-logo {
+  width: 75px;
+  opacity: 0.7;
+}
+.logo {
+  margin-top: 0;
+}
+
+.title {
+  font-weight: bold;
+  color: #eb0a1e;
+  font-size: 40px;
+}
+.msrp {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: -0.5rem;
+}
+.msrp-underline {
+  margin-top: 1.5rem;
+}
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1d1d1d;
+}
+.automatic {
+  font-size: 18px;
+  font-weight: 600;
+}
+.trans {
+  font-size: 10px;
+  margin-top: -0.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.civic-circle {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
+}
+.accord-circle {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
+}
+.crv-circle {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
+}
+.brio-circle {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.75);
+}
+.btn-border {
+  border: 1px solid #eb0a1e;
+  width: 40px;
+  height: 40px;
+}
+.btn-border::after {
+  content: "✓";
+  color: white;
+  margin-left: 0.7rem;
+  font-size: 24px;
+}
+.red {
+  background-color: #d6353c;
+}
+.grayish-blue {
+  background-color: #1b2429;
+}
+.ice-gray {
+  background-color: #91a4ab;
+}
+.platinum-white {
+  background-color: #ffffff;
+}
+.black {
+  background-color: #08112f;
+}
+.black-mica {
+  background-color: #000000;
+}
+.deep-blue {
+  background-color: #0b7ddf;
+}
+.gray {
+  background-color: #515151;
+}
+.silver-metallic {
+  background-color: #bfbfbf;
+}
+.maroon {
+  background-color: #5d313a;
+}
+.jade {
+  background-color: #627564;
+}
+.yellow {
+  background-color: #e4a153;
+}
+
+.neg-margin {
+  margin-top: -0.9rem;
+}
+.banner {
+  margin-top: 6vh;
+}
+.btn-calculate {
+  background-color: #eb0a1e;
+  color: white;
+  border-radius: 0;
+  width: 250px;
+  border-radius: 20px;
+}
+.btn-calculate:hover {
+  background-color: #a60a17;
+  color: white;
+}
+.btn-calculate:focus {
+  background-color: #eb0a1e;
+  color: white;
+}
+.price-container {
+  margin-top: 7vh;
+}
+.img-responsive {
+  width: 1200px;
+  max-width: 90%;
+}
+section {
+  border: 5px solid red;
+}
+@media (max-width: 1400px) and (max-height: 800px) {
+  .img-responsive {
+    width: 700px;
+    max-width: 65%;
+  }
+}
+@media (max-width: 900px) {
+  .img-responsive {
+    width: 650px;
+    max-width: 100%;
+  }
+  .msrp-underline {
+    width: 70%;
+    margin-top: 0.5rem;
+  }
+  .spec {
+    width: 70%;
+    justify-content: space-around;
+  }
+  .banner {
+    flex-direction: column;
+    margin-top: 9vh;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .price {
+    font-size: 25px;
+  }
+  .automatic {
+    font-size: 15px;
+  }
+  .trans {
+    font-size: 10px;
+  }
+  .trans-seat {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .msrp-container {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .price-container {
+    margin: 2vh;
+  }
+  .price-spec-container {
+    margin-top: -1rem;
+  }
+  .colorpick-container {
+    bottom: 200px;
+  }
+  .title-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 389px) {
+  .banner {
+    margin-top: 11vh;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .msrp-underline {
+    width: 80%;
+  }
+  .spec {
+    width: 80%;
+    justify-content: space-between;
+  }
+}
