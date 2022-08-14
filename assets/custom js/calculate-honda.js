@@ -39,18 +39,18 @@ function accordCalculate() {
   document.getElementById("accord-amount-financed").textContent = financed;
   document.getElementById("accord-per-month").textContent = result;
 }
-function supraCalculate() {
-  let supraPercent = document.getElementById("supra-percentage").value;
-  let supraMonth = document.getElementById("supra-months").value;
+function brioCalculate() {
+  let brioPercent = document.getElementById("brio-percentage").value;
+  let brioMonth = document.getElementById("brio-months").value;
   let result;
-  const cost = 5050000;
+  const cost = 808000;
 
-  result = cost * 1.06 - cost * supraPercent;
+  result = cost * 1.06 - cost * brioPercent;
   let financed = separateComma(result);
-  result = separateComma(result / supraMonth);
+  result = separateComma(result / brioMonth);
 
-  document.getElementById("supra-amount-financed").textContent = financed;
-  document.getElementById("supra-per-month").textContent = result;
+  document.getElementById("brio-amount-financed").textContent = financed;
+  document.getElementById("brio-per-month").textContent = result;
 }
 
 function separateComma(val) {

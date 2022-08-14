@@ -6,8 +6,8 @@ let allCrvImg = document.getElementsByClassName("crv-img");
 let allCrvCircle = document.getElementsByClassName("crv-circle");
 let allAccordImg = document.getElementsByClassName("accord-img");
 let allAccordCircle = document.getElementsByClassName("accord-circle");
-let allSupraImg = document.getElementsByClassName("supra-img");
-let allSupraCircle = document.getElementsByClassName("supra-circle");
+let allBrioImg = document.getElementsByClassName("brio-img");
+let allBrioCircle = document.getElementsByClassName("brio-circle");
 const civicColors = ["Racing Blue", "Championship White", "Sonic Gray"];
 
 const crvColors = [
@@ -21,13 +21,12 @@ const accordColors = [
   "Meteoroid Gray Metallic",
   "Platinum White Pearl",
 ];
-const fortunerColors = [
-  "Attitude Black Mica",
-  "Sparkling Black Pearl Crystal Shine",
-
-  "Platinum White Pearl Mica",
-  "Gray Metallic",
-  "Silver Metallic 3",
+const brioColors = [
+  "Phoenix Orange Pearl",
+  "Carnival Yellow",
+  "Taffeta White",
+  "Modern Steel Metallic",
+  "Rallye Red",
 ];
 function civicColorPicker(value) {
   for (let i = 0; i < 3; i++) {
@@ -72,17 +71,17 @@ function accordColorPicker(value) {
   }
 }
 
-function ftrColorPicker(value) {
+function brioColorPicker(value) {
   for (let i = 0; i < 5; i++) {
     if (value === i) {
-      allFortunerCircle[i].classList.add("btn-border");
-      allFortunerImg[i].classList.add("appear");
+      allBrioCircle[i].classList.add("btn-border");
+      allBrioImg[i].classList.add("appear");
       document.getElementById(
-        "ftr-color-picker-text"
-      ).innerHTML = `${fortunerColors[i]}`;
+        "brio-color-picker-text"
+      ).innerHTML = `${brioColors[i]}`;
     } else {
-      allFortunerCircle[i].classList.remove("btn-border");
-      allFortunerImg[i].classList.remove("appear");
+      allBrioCircle[i].classList.remove("btn-border");
+      allBrioImg[i].classList.remove("appear");
     }
   }
 }

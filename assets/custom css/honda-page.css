@@ -131,6 +131,9 @@ option {
 .cosmic-blue {
   background-color: #707d9b;
 }
+.light-red {
+  background-color: rgb(177, 9, 9);
+}
 .red {
   background-color: #842020;
 }
@@ -143,8 +146,14 @@ option {
 .platinum-white {
   background-color: #ffffff;
 }
+.orange {
+  background-color: #d35a09;
+}
 .black {
   background-color: #08112f;
+}
+.yellow {
+  background-color: #d9ff00;
 }
 .black-mica {
   background-color: #000000;

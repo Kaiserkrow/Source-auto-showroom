@@ -651,7 +651,7 @@
           </div>
         </section>
         <!--END OF ACCORD-->
-        <!--START OF VIOS-->
+        <!--START OF BRIO-->
         <section id="brio-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
@@ -659,7 +659,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="viosModal"
+              id="brioModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -681,22 +681,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="vios-percentage"
+                        id="brio-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="viosCalculate()"
+                        onchange="brioCalculate()"
                       >
-                        <option value=".2">20% ₱ 196,000</option>
-                        <option value=".25">25% ₱ 245,000</option>
-                        <option value=".30">30% ₱ 294,000</option>
-                        <option value=".35">35% ₱ 343,000</option>
-                        <option value=".40">40% ₱ 392,000</option>
-                        <option value=".45">45% ₱ 441,000</option>
-                        <option value=".50">50% ₱ 490,000</option>
+                        <option value=".2">20% ₱ 470,000</option>
+                        <option value=".25">25% ₱ 587,500</option>
+                        <option value=".30">30% ₱ 705,000</option>
+                        <option value=".35">35% ₱ 822,500</option>
+                        <option value=".40">40% ₱ 940,000</option>
+                        <option value=".45">45% ₱ 1,057,500</option>
+                        <option value=".50">50% ₱ 1,175,000</option>
                       </select>
                       <select
-                        id="vios-months"
+                        id="brio-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="viosCalculate()"
+                        onchange="brioCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -708,17 +708,18 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="vios-per-month">70,233</span> / month</span
+                        >₱ <span id="brio-per-month">57,906</span> / month</span
                       >
 
                       <span class="display-amount-financed"
-                        >₱ <span id="vios-amount-financed">842,800</span> Amount
-                        Financed</span
+                        >₱
+                        <span id="brio-amount-financed">694,880</span>
+                        Amount Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
                       <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
+                      estimate only. Please contact any Honda Dealer for final
                       quotation.
                     </div>
                   </div>
@@ -740,13 +741,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">VIOS 1.5 G CVT</h1>
+                <h1 class="title">Brio 1.2 RS Black Top CVT</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 980,000</span>
+                      <span class="price">₱ 808,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -776,65 +777,65 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios red.jpg"
-                  class="vios-img img-responsive hide appear"
+                  src="/assets/images/honda-page/brio-models/brio-orange.png"
+                  class="brio-img img-responsive hide appear"
                 />
 
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios-black.jpg"
-                  class="vios-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-jade.jpg"
-                  class="vios-img img-responsive hide"
+                  src="/assets/images/honda-page/brio-models/brio-yellow.png"
+                  class="brio-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios-grayish-blue.jpg"
-                  class="vios-img img-responsive hide"
+                  src="/assets/images/honda-page/brio-models/brio-white.png"
+                  class="brio-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios-white.jpg"
-                  class="vios-img img-responsive hide"
+                  src="/assets/images/honda-page/brio-models/brio-black.png"
+                  class="brio-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/honda-page/brio-models/brio-red.png"
+                  class="brio-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="vios-color-picker-text"
-                  >Super Red V</span
+                <span class="text-center mb-2" id="brio-color-picker-text"
+                  >Crystal Black Pearl</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="vios-circle red btn-border"
-                    onclick="viosColorPicker(0)"
+                    class="brio-circle orange btn-border"
+                    onclick="brioColorPicker(0)"
                   ></div>
                   <div
-                    class="vios-circle black-mica"
-                    onclick="viosColorPicker(1)"
+                    class="brio-circle yellow"
+                    onclick="brioColorPicker(1)"
                   ></div>
                   <div
-                    class="vios-circle jade"
-                    onclick="viosColorPicker(2)"
+                    class="brio-circle platinum-white"
+                    onclick="brioColorPicker(2)"
                   ></div>
                   <div
-                    class="vios-circle grayish-blue"
-                    onclick="viosColorPicker(3)"
+                    class="brio-circle black"
+                    onclick="brioColorPicker(3)"
                   ></div>
                   <div
-                    class="vios-circle platinum-white"
-                    onclick="viosColorPicker(4)"
+                    class="brio-circle light-red"
+                    onclick="brioColorPicker(4)"
                   ></div>
                 </div>
+
                 <div class="d-flex justify-content-center">
                   <!-- Button trigger modal -->
                   <button
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#viosModal"
+                    data-bs-target="#brioModal"
                   >
                     Loan Options
                   </button>
@@ -843,7 +844,7 @@
             </div>
           </div>
         </section>
-        <!--END OF VIOS-->
+        <!--END OF BRIO-->
       </div>
     </div>
   </body>
