@@ -25,7 +25,7 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="/assets/custom css/honda-page.css"
+      href="/assets/custom css/hyundai-page.css"
     />
   </head>
   <body id="body">
@@ -56,38 +56,30 @@
         >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
-              <a class="nav-link p-0 pt-3" href="#civic-section"
+              <a class="nav-link p-0 pt-3" href="#tucson-section"
                 ><img
-                  src="/assets/images/honda-page/car-model logo/civic-logo.png"
-                  class="civic-logo neg-margin" /><span
+                  src="/assets/images/hyundai-page/car-model-logo/tucson-logo.png"
+                  class="tucson-logo neg-margin" /><span
                   class="underline active"
                 ></span
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#crv-section"
+              <a class="nav-link" href="#santafe-section"
                 ><span class="underline"></span>
                 <img
-                  src="/assets/images/honda-page/car-model logo/crv-logo.png"
-                  class="crv-logo"
+                  src="/assets/images/hyundai-page/car-model-logo/santafe-logo.svg"
+                  class="santafe-logo"
               /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#accord-section">
+              <a class="nav-link" href="#creta-section">
                 <span class="underline"></span
                 ><img
-                  src="/assets/images/honda-page/car-model logo/accord-logo.png"
-                  class="accord-logo"
+                  src="/assets/images/hyundai-page/car-model-logo/creta-logo.png"
+                  class="creta-logo"
                 />
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#brio-section"
-                ><span class="underline"></span
-                ><img
-                  src="/assets/images/honda-page/car-model logo/brio-logo.webp"
-                  class="brio-logo"
-              /></a>
             </li>
           </ul>
           <form class="d-flex search me-3 mt-1">
@@ -107,14 +99,14 @@
     <div id="blur-container">
       <div id="sections">
         <!--START OF CIVIC-->
-        <section id="civic-section" class="position-relative">
+        <section id="tucson-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
             <!-- Modal -->
             <div
               class="modal fade"
-              id="civicModal"
+              id="tucsonModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -136,22 +128,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="civic-percentage"
+                        id="tucson-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="civicCalculate()"
+                        onchange="tucsonCalculate()"
                       >
-                        <option value=".2">20% ₱ 642,000</option>
-                        <option value=".25">25% ₱ 802,500</option>
-                        <option value=".30">30% ₱ 963,000</option>
-                        <option value=".35">35% ₱ 1,123,500</option>
-                        <option value=".40">40% ₱ 1,284,000</option>
-                        <option value=".45">45% ₱ 1,444,500</option>
-                        <option value=".50">50% ₱ 1,605,000</option>
+                        <option value=".2">20% ₱ 343,000</option>
+                        <option value=".25">25% ₱ 428,750</option>
+                        <option value=".30">30% ₱ 514,500</option>
+                        <option value=".35">35% ₱ 600,250</option>
+                        <option value=".40">40% ₱ 686,000</option>
+                        <option value=".45">45% ₱ 771,750</option>
+                        <option value=".50">50% ₱ 857,500</option>
                       </select>
                       <select
-                        id="civic-months"
+                        id="tucson-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="civicCalculate()"
+                        onchange="tucsonCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -163,14 +155,14 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="civic-per-month">230,050</span> /
+                        >₱ <span id="tucson-per-month">122,908</span> /
                         month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="civic-amount-financed">2,760,600</span> Amount
-                        Financed</span
+                        <span id="tucson-amount-financed">1,474,900</span>
+                        Amount Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
@@ -197,13 +189,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">CIVIC RS TURBO CVT</h1>
+                <h1 class="title">Tucson - 2.0 CRDi GLS</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 3,210,000</span>
+                      <span class="price">₱ 1,715,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -212,7 +204,7 @@
                   <hr class="msrp-underline mx-auto" />
                   <div class="spec d-flex mx-auto">
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">CVT</span>
+                      <span class="automatic">Automatic</span>
                       <span class="trans">Transmission</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
@@ -233,39 +225,63 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/honda-page/civic-models/civic-blue.png"
-                  class="civic-img img-responsive hide appear"
+                  src="/assets/images/hyundai-page/tucson-models/tucson-amazon-gray.webp"
+                  class="tucson-img img-responsive hide appear"
                 />
 
                 <img
-                  src="/assets/images/honda-page/civic-models/civic-gray.png"
-                  class="civic-img img-responsive hide"
+                  src="/assets/images/hyundai-page/tucson-models/tucson-phantom-black.webp"
+                  class="tucson-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/honda-page/civic-models/civic-white.png"
-                  class="civic-img img-responsive hide"
+                  src="/assets/images/hyundai-page/tucson-models/tucson-white-cream.webp"
+                  class="tucson-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/hyundai-page/tucson-models/tucson-deep-sea.webp"
+                  class="tucson-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/hyundai-page/tucson-models/tucson-shimmering-silver.webp"
+                  class="tucson-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/hyundai-page/tucson-models/tucson-crimson-red.webp"
+                  class="tucson-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="civic-color-picker-text"
-                  >Racing Blue</span
+                <span class="text-center mb-2" id="tucson-color-picker-text"
+                  >Amazon Gray</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="civic-circle deep-blue btn-border"
-                    onclick="civicColorPicker(0)"
+                    class="tucson-circle amazon-gray btn-border"
+                    onclick="tucsonColorPicker(0)"
                   ></div>
                   <div
-                    class="civic-circle platinum-white"
-                    onclick="civicColorPicker(1)"
+                    class="tucson-circle black-mica"
+                    onclick="tucsonColorPicker(1)"
                   ></div>
                   <div
-                    class="civic-circle gray"
-                    onclick="civicColorPicker(2)"
+                    class="tucson-circle platinum-white"
+                    onclick="tucsonColorPicker(2)"
+                  ></div>
+                  <div
+                    class="tucson-circle black"
+                    onclick="tucsonColorPicker(3)"
+                  ></div>
+                  <div
+                    class="tucson-circle gray"
+                    onclick="tucsonColorPicker(4)"
+                  ></div>
+                  <div
+                    class="tucson-circle red"
+                    onclick="tucsonColorPicker(5)"
                   ></div>
                 </div>
 
@@ -275,7 +291,7 @@
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#civicModal"
+                    data-bs-target="#tucsonModal"
                   >
                     Loan Options
                   </button>
@@ -284,9 +300,9 @@
             </div>
           </div>
         </section>
-        <!--END OF CIVIC-->
-        <!--START OF CRV-->
-        <section id="crv-section" class="position-relative">
+        <!--END OF TUCSON-->
+        <!--START OF SANTAFE-->
+        <section id="santafe-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
@@ -473,7 +489,7 @@
         <!--END OF CRV-->
 
         <!--START OF ACCORD-->
-        <section id="accord-section" class="position-relative">
+        <section id="creta-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
@@ -651,207 +667,13 @@
           </div>
         </section>
         <!--END OF ACCORD-->
-        <!--START OF BRIO-->
-        <section id="brio-section" class="position-relative">
-          <div
-            class="content-wrapper d-flex flex-column justify-content-between"
-          >
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="brioModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <form
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <select
-                        id="brio-percentage"
-                        class="p-2 px-1 rounded"
-                        onchange="brioCalculate()"
-                      >
-                        <option value=".2">20% ₱ 470,000</option>
-                        <option value=".25">25% ₱ 587,500</option>
-                        <option value=".30">30% ₱ 705,000</option>
-                        <option value=".35">35% ₱ 822,500</option>
-                        <option value=".40">40% ₱ 940,000</option>
-                        <option value=".45">45% ₱ 1,057,500</option>
-                        <option value=".50">50% ₱ 1,175,000</option>
-                      </select>
-                      <select
-                        id="brio-months"
-                        class="ms-2 p-2 px-1 rounded"
-                        onchange="brioCalculate()"
-                      >
-                        <option value="12">12 Months</option>
-                        <option value="18">18 Months</option>
-                        <option value="24">24 Months</option>
-                        <option value="36">36 Months</option>
-                        <option value="48">48 Months</option>
-                        <option value="60">60 Months</option>
-                      </select>
-                    </form>
-                    <div class="mt-4 d-flex flex-column">
-                      <span class="cost-per-month"
-                        >₱ <span id="brio-per-month">57,906</span> / month</span
-                      >
-
-                      <span class="display-amount-financed"
-                        >₱
-                        <span id="brio-amount-financed">694,880</span>
-                        Amount Financed</span
-                      >
-                    </div>
-                    <div class="disclaimer mt-2">
-                      <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Honda Dealer for final
-                      quotation.
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-order-now">
-                      Order Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 banner d-flex justify-content-around">
-              <!--banner of model-->
-              <div class="d-flex align-items-center title-container">
-                <h1 class="title">Brio 1.2 RS Black Top CVT</h1>
-              </div>
-              <div>
-                <div class="price-spec-container">
-                  <div class="position-relative price-container">
-                    <div>
-                      <span class="price">₱ 808,000</span>
-                    </div>
-                    <div class="msrp-container">
-                      <div class="msrp">MSRP</div>
-                    </div>
-                  </div>
-                  <hr class="msrp-underline mx-auto" />
-                  <div class="spec d-flex mx-auto">
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">CVT</span>
-                      <span class="trans">Transmission</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">5</span>
-                      <span class="trans">Seating Capacity</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Gas</span>
-                      <span class="trans">fuel type</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <!--Image container-->
-              <div
-                class="position-relative car-container d-flex justify-content-center"
-              >
-                <img
-                  src="/assets/images/honda-page/brio-models/brio-orange.png"
-                  class="brio-img img-responsive hide appear"
-                />
-
-                <img
-                  src="/assets/images/honda-page/brio-models/brio-yellow.png"
-                  class="brio-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/honda-page/brio-models/brio-white.png"
-                  class="brio-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/honda-page/brio-models/brio-black.png"
-                  class="brio-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/honda-page/brio-models/brio-red.png"
-                  class="brio-img img-responsive hide"
-                />
-              </div>
-            </div>
-            <div>
-              <!--Color picker-->
-              <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="brio-color-picker-text"
-                  >Crystal Black Pearl</span
-                >
-
-                <div class="d-flex justify-content-center">
-                  <div
-                    class="brio-circle orange btn-border"
-                    onclick="brioColorPicker(0)"
-                  ></div>
-                  <div
-                    class="brio-circle yellow"
-                    onclick="brioColorPicker(1)"
-                  ></div>
-                  <div
-                    class="brio-circle platinum-white"
-                    onclick="brioColorPicker(2)"
-                  ></div>
-                  <div
-                    class="brio-circle black"
-                    onclick="brioColorPicker(3)"
-                  ></div>
-                  <div
-                    class="brio-circle light-red"
-                    onclick="brioColorPicker(4)"
-                  ></div>
-                </div>
-
-                <div class="d-flex justify-content-center">
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-calculate mt-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#brioModal"
-                  >
-                    Loan Options
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--END OF BRIO-->
       </div>
     </div>
   </body>
-  <script src="/assets/custom js/calculate-honda.js"></script>
+  <script src="/assets/custom js/calculate-hyundai.js"></script>
   <script src="/assets/custom js/navBarOptToyota.js"></script>
   <script src="/assets/js/bootstrap.bundle.js"></script>
-  <script src="/assets/custom js/color-picker-honda.js"></script>
+  <script src="/assets/custom js/color-picker-hyundai.js"></script>
 
   <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
 </html>
