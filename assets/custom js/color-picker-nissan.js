@@ -4,8 +4,8 @@ let allZImg = document.getElementsByClassName("z-img");
 let allZCircle = document.getElementsByClassName("z-circle");
 let allJukeImg = document.getElementsByClassName("juke-img");
 let allJukeCircle = document.getElementsByClassName("juke-circle");
-let allCretaImg = document.getElementsByClassName("creta-img");
-let allCretaCircle = document.getElementsByClassName("creta-circle");
+let allGtrImg = document.getElementsByClassName("gtr-img");
+let allGtrCircle = document.getElementsByClassName("gtr-circle");
 
 const zColors = [
   "Black Rose",
@@ -23,11 +23,11 @@ const jukeColors = [
   "Arctic White",
   "Pearl Black",
 ];
-const cretaColors = [
-  "Dragon Red",
-  "Midnight Black",
-  "Metallic Silver",
-  "Creamy White",
+const gtrColors = [
+  "Pearl Black",
+  "Vibrant Red",
+  "Gun Metallic Gray",
+  "Pearl White",
 ];
 function zColorPicker(value) {
   for (let i = 0; i < 6; i++) {
@@ -57,17 +57,17 @@ function jukeColorPicker(value) {
     }
   }
 }
-function cretaColorPicker(value) {
+function gtrColorPicker(value) {
   for (let i = 0; i < 4; i++) {
     if (value === i) {
-      allCretaCircle[i].classList.add("btn-border");
-      allCretaImg[i].classList.add("appear");
+      allGtrCircle[i].classList.add("btn-border");
+      allGtrImg[i].classList.add("appear");
       document.getElementById(
-        "creta-color-picker-text"
-      ).innerHTML = `${cretaColors[i]}`;
+        "gtr-color-picker-text"
+      ).innerHTML = `${gtrColors[i]}`;
     } else {
-      allCretaCircle[i].classList.remove("btn-border");
-      allCretaImg[i].classList.remove("appear");
+      allGtrCircle[i].classList.remove("btn-border");
+      allGtrImg[i].classList.remove("appear");
     }
   }
 }

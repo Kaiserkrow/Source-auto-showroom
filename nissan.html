@@ -56,30 +56,28 @@
         >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
-              <a class="nav-link p-0 pt-3" href="#tucson-section"
-                ><img
-                  src="/assets/images/nissan-page/car-logos/370z-logo.svg"
-                  class="z-logo neg-margin" /><span
-                  class="underline active"
-                ></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#santafe-section"
-                ><span class="underline"></span>
-                <img
-                  src="/assets/images/nissan-page/car-logos/juke-logo.png"
-                  class="juke-logo"
-              /></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#creta-section">
-                <span class="underline"></span
+              <a class="nav-link" href="#gtr-section">
+                <span class="underline active"></span
                 ><img
                   src="/assets/images/nissan-page/car-logos/gtr-logo.png"
                   class="gtr-logo"
                 />
               </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 pt-3" href="#z-section"
+                ><img
+                  src="/assets/images/nissan-page/car-logos/370z-logo.svg"
+                  class="z-logo neg-margin" /><span class="underline"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#juke-section"
+                ><span class="underline"></span>
+                <img
+                  src="/assets/images/nissan-page/car-logos/juke-logo.png"
+                  class="juke-logo"
+              /></a>
             </li>
           </ul>
           <form class="d-flex search me-3 mt-1">
@@ -98,6 +96,191 @@
     </nav>
     <div id="blur-container">
       <div id="sections">
+        <!--START OF GTR-->
+        <section id="gtr-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="gtrModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="gtr-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="gtrCalculate()"
+                      >
+                        <option value=".2">20% ₱ 1,470,000</option>
+                        <option value=".25">25% ₱ 1,837,500</option>
+                        <option value=".30">30% ₱ 2,205,000</option>
+                        <option value=".35">35% ₱ 2,572,000</option>
+                        <option value=".40">40% ₱ 2,970,000</option>
+                        <option value=".45">45% ₱ 3,307,500</option>
+                        <option value=".50">50% ₱ 3,675,000</option>
+                      </select>
+                      <select
+                        id="gtr-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="gtrCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="gtr-per-month">526,750</span> / month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="gtr-amount-financed">6,321,000</span>
+                        Amount Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Nissan Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">Nissan GT-R</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 7,350,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Automatic</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">4</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Gas</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/nissan-page/gtr-models/gtr-black.png"
+                  class="gtr-img img-responsive-gtr hide appear"
+                />
+                <img
+                  src="/assets/images/nissan-page/gtr-models/gtr-red.png"
+                  class="gtr-img img-responsive-gtr hide"
+                />
+                <img
+                  src="/assets/images/nissan-page/gtr-models/gtr-gray.png"
+                  class="gtr-img img-responsive-gtr hide"
+                />
+                <img
+                  src="/assets/images/nissan-page/gtr-models/gtr-white.png"
+                  class="gtr-img img-responsive-gtr hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="gtr-color-picker-text"
+                  >Pearl Black</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="gtr-circle black-mica btn-border"
+                    onclick="gtrColorPicker(0)"
+                  ></div>
+                  <div
+                    class="gtr-circle light-red"
+                    onclick="gtrColorPicker(1)"
+                  ></div>
+                  <div
+                    class="gtr-circle gray"
+                    onclick="gtrColorPicker(2)"
+                  ></div>
+                  <div
+                    class="gtr-circle platinum-white"
+                    onclick="gtrColorPicker(3)"
+                  ></div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#gtrModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF GTR-->
         <!--START OF 370z-->
         <section id="z-section" class="position-relative">
           <div
@@ -499,194 +682,7 @@
             </div>
           </div>
         </section>
-        <!--END OF SANTAFE-->
-
-        <!--START OF CRETA-->
-        <section id="creta-section" class="position-relative">
-          <div
-            class="content-wrapper d-flex flex-column justify-content-between"
-          >
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="cretaModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <form
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <select
-                        id="creta-percentage"
-                        class="p-2 px-1 rounded"
-                        onchange="cretaCalculate()"
-                      >
-                        <option value=".2">20% ₱ 199,600</option>
-                        <option value=".25">25% ₱ 249,500</option>
-                        <option value=".30">30% ₱ 299,400</option>
-                        <option value=".35">35% ₱ 349,300</option>
-                        <option value=".40">40% ₱ 399,200</option>
-                        <option value=".45">45% ₱ 449,100</option>
-                        <option value=".50">50% ₱ 549,000</option>
-                      </select>
-                      <select
-                        id="creta-months"
-                        class="ms-2 p-2 px-1 rounded"
-                        onchange="cretaCalculate()"
-                      >
-                        <option value="12">12 Months</option>
-                        <option value="18">18 Months</option>
-                        <option value="24">24 Months</option>
-                        <option value="36">36 Months</option>
-                        <option value="48">48 Months</option>
-                        <option value="60">60 Months</option>
-                      </select>
-                    </form>
-                    <div class="mt-4 d-flex flex-column">
-                      <span class="cost-per-month"
-                        >₱ <span id="creta-per-month">71,523</span> /
-                        month</span
-                      >
-
-                      <span class="display-amount-financed"
-                        >₱
-                        <span id="creta-amount-financed">858,280</span>
-                        Amount Financed</span
-                      >
-                    </div>
-                    <div class="disclaimer mt-2">
-                      <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Hyundai Dealer for final
-                      quotation.
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-order-now">
-                      Order Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 banner d-flex justify-content-around">
-              <!--banner of model-->
-              <div class="d-flex align-items-center title-container">
-                <h1 class="title">CRETA - 1.5 GL 6M/T</h1>
-              </div>
-              <div>
-                <div class="price-spec-container">
-                  <div class="position-relative price-container">
-                    <div>
-                      <span class="price">₱ 998,000</span>
-                    </div>
-                    <div class="msrp-container">
-                      <div class="msrp">MSRP</div>
-                    </div>
-                  </div>
-                  <hr class="msrp-underline mx-auto" />
-                  <div class="spec d-flex mx-auto">
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Manual</span>
-                      <span class="trans">Transmission</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">5</span>
-                      <span class="trans">Seating Capacity</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Gas</span>
-                      <span class="trans">fuel type</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <!--Image container-->
-              <div
-                class="position-relative car-container d-flex justify-content-center"
-              >
-                <img
-                  src="/assets/images/hyundai-page/creata-logo/creta-red.png"
-                  class="creta-img img-responsive hide appear"
-                />
-                <img
-                  src="/assets/images/hyundai-page/creata-logo/creta-midnight-black.png"
-                  class="creta-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/hyundai-page/creata-logo/creta-metallic-silver.png"
-                  class="creta-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/hyundai-page/creata-logo/creta-creamy-white.png"
-                  class="creta-img img-responsive hide"
-                />
-              </div>
-            </div>
-            <div>
-              <!--Color picker-->
-              <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="creta-color-picker-text"
-                  >Dragon Red</span
-                >
-
-                <div class="d-flex justify-content-center">
-                  <div
-                    class="creta-circle red btn-border"
-                    onclick="cretaColorPicker(0)"
-                  ></div>
-                  <div
-                    class="creta-circle black-mica"
-                    onclick="cretaColorPicker(1)"
-                  ></div>
-                  <div
-                    class="creta-circle silver-metallic"
-                    onclick="cretaColorPicker(2)"
-                  ></div>
-                  <div
-                    class="creta-circle platinum-white"
-                    onclick="cretaColorPicker(3)"
-                  ></div>
-                </div>
-
-                <div class="d-flex justify-content-center">
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-calculate mt-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cretaModal"
-                  >
-                    Loan Options
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--END OF CRETA-->
+        <!--END OF JUKE-->
       </div>
     </div>
   </body>

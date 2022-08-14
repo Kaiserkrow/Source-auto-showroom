@@ -26,31 +26,18 @@ function jukeCalculate() {
   document.getElementById("juke-amount-financed").textContent = financed;
   document.getElementById("juke-per-month").textContent = result;
 }
-function accordCalculate() {
-  let accordPercent = document.getElementById("accord-percentage").value;
-  let accordMonth = document.getElementById("accord-months").value;
+function gtrCalculate() {
+  let gtrPercent = document.getElementById("gtr-percentage").value;
+  let gtrMonth = document.getElementById("gtr-months").value;
   let result;
-  const cost = 2350000;
+  const cost = 7350000;
 
-  result = cost * 1.06 - cost * accordPercent;
+  result = cost * 1.06 - cost * gtrPercent;
   let financed = separateComma(result);
-  result = separateComma(result / accordMonth);
+  result = separateComma(result / gtrMonth);
 
-  document.getElementById("accord-amount-financed").textContent = financed;
-  document.getElementById("accord-per-month").textContent = result;
-}
-function cretaCalculate() {
-  let cretaPercent = document.getElementById("creta-percentage").value;
-  let cretaMonth = document.getElementById("creta-months").value;
-  let result;
-  const cost = 998000;
-
-  result = cost * 1.06 - cost * cretaPercent;
-  let financed = separateComma(result);
-  result = separateComma(result / cretaMonth);
-
-  document.getElementById("creta-amount-financed").textContent = financed;
-  document.getElementById("creta-per-month").textContent = result;
+  document.getElementById("gtr-amount-financed").textContent = financed;
+  document.getElementById("gtr-per-month").textContent = result;
 }
 
 function separateComma(val) {
