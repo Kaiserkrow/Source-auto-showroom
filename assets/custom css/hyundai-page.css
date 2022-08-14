@@ -13,9 +13,7 @@
 .modal {
   z-index: 9999;
 }
-section {
-  border: 5px solid red;
-}
+
 .btn-order-now {
   background-color: #eb0a1de4;
   color: white;

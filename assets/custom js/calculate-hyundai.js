@@ -39,18 +39,18 @@ function accordCalculate() {
   document.getElementById("accord-amount-financed").textContent = financed;
   document.getElementById("accord-per-month").textContent = result;
 }
-function brioCalculate() {
-  let brioPercent = document.getElementById("brio-percentage").value;
-  let brioMonth = document.getElementById("brio-months").value;
+function cretaCalculate() {
+  let cretaPercent = document.getElementById("creta-percentage").value;
+  let cretaMonth = document.getElementById("creta-months").value;
   let result;
-  const cost = 808000;
+  const cost = 998000;
 
-  result = cost * 1.06 - cost * brioPercent;
+  result = cost * 1.06 - cost * cretaPercent;
   let financed = separateComma(result);
-  result = separateComma(result / brioMonth);
+  result = separateComma(result / cretaMonth);
 
-  document.getElementById("brio-amount-financed").textContent = financed;
-  document.getElementById("brio-per-month").textContent = result;
+  document.getElementById("creta-amount-financed").textContent = financed;
+  document.getElementById("creta-per-month").textContent = result;
 }
 
 function separateComma(val) {

@@ -486,9 +486,9 @@
             </div>
           </div>
         </section>
-        <!--END OF CRV-->
+        <!--END OF SANTAFE-->
 
-        <!--START OF ACCORD-->
+        <!--START OF CRETA-->
         <section id="creta-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
@@ -496,7 +496,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="accordModal"
+              id="cretaModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -518,22 +518,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="accord-percentage"
+                        id="creta-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="accordCalculate()"
+                        onchange="cretaCalculate()"
                       >
-                        <option value=".2">20% ₱ 470,000</option>
-                        <option value=".25">25% ₱ 587,500</option>
-                        <option value=".30">30% ₱ 705,000</option>
-                        <option value=".35">35% ₱ 822,500</option>
-                        <option value=".40">40% ₱ 940,000</option>
-                        <option value=".45">45% ₱ 1,057,500</option>
-                        <option value=".50">50% ₱ 1,175,000</option>
+                        <option value=".2">20% ₱ 199,600</option>
+                        <option value=".25">25% ₱ 249,500</option>
+                        <option value=".30">30% ₱ 299,400</option>
+                        <option value=".35">35% ₱ 349,300</option>
+                        <option value=".40">40% ₱ 399,200</option>
+                        <option value=".45">45% ₱ 449,100</option>
+                        <option value=".50">50% ₱ 549,000</option>
                       </select>
                       <select
-                        id="accord-months"
+                        id="creta-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="accordCalculate()"
+                        onchange="cretaCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -545,19 +545,19 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="accord-per-month">168,416</span> /
+                        >₱ <span id="creta-per-month">71,523</span> /
                         month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="accord-amount-financed">2,021,000</span>
+                        <span id="creta-amount-financed">858,280</span>
                         Amount Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
                       <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Honda Dealer for final
+                      estimate only. Please contact any Hyundai Dealer for final
                       quotation.
                     </div>
                   </div>
@@ -579,13 +579,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">Accord 1.5 EL Turbo</h1>
+                <h1 class="title">CRETA - 1.5 GL 6M/T</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 2,350,000</span>
+                      <span class="price">₱ 998,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -594,7 +594,7 @@
                   <hr class="msrp-underline mx-auto" />
                   <div class="spec d-flex mx-auto">
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">CVT</span>
+                      <span class="automatic">Manual</span>
                       <span class="trans">Transmission</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
@@ -615,39 +615,46 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/honda-page/accord-models/accord-black.png"
-                  class="accord-img img-responsive hide appear"
-                />
-
-                <img
-                  src="/assets/images/honda-page/accord-models/accord-gray.png"
-                  class="accord-img img-responsive hide"
+                  src="/assets/images/hyundai-page/creata-logo/creta-red.png"
+                  class="creta-img img-responsive hide appear"
                 />
                 <img
-                  src="/assets/images/honda-page/accord-models/accord-white.png"
-                  class="accord-img img-responsive hide"
+                  src="/assets/images/hyundai-page/creata-logo/creta-midnight-black.png"
+                  class="creta-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/hyundai-page/creata-logo/creta-metallic-silver.png"
+                  class="creta-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/hyundai-page/creata-logo/creta-creamy-white.png"
+                  class="creta-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="accord-color-picker-text"
-                  >Crystal Black Pearl</span
+                <span class="text-center mb-2" id="creta-color-picker-text"
+                  >Dragon Red</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="accord-circle black-mica btn-border"
-                    onclick="accordColorPicker(0)"
+                    class="creta-circle red btn-border"
+                    onclick="cretaColorPicker(0)"
                   ></div>
                   <div
-                    class="accord-circle gray"
-                    onclick="accordColorPicker(1)"
+                    class="creta-circle black-mica"
+                    onclick="cretaColorPicker(1)"
                   ></div>
                   <div
-                    class="accord-circle platinum-white"
-                    onclick="accordColorPicker(2)"
+                    class="creta-circle silver-metallic"
+                    onclick="cretaColorPicker(2)"
+                  ></div>
+                  <div
+                    class="creta-circle platinum-white"
+                    onclick="cretaColorPicker(3)"
                   ></div>
                 </div>
 
@@ -657,7 +664,7 @@
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#accordModal"
+                    data-bs-target="#cretaModal"
                   >
                     Loan Options
                   </button>
@@ -666,7 +673,7 @@
             </div>
           </div>
         </section>
-        <!--END OF ACCORD-->
+        <!--END OF CRETA-->
       </div>
     </div>
   </body>

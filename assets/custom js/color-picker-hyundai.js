@@ -4,10 +4,8 @@ let allTucsonImg = document.getElementsByClassName("tucson-img");
 let allTucsonCircle = document.getElementsByClassName("tucson-circle");
 let allSantafeImg = document.getElementsByClassName("santafe-img");
 let allSantafeCircle = document.getElementsByClassName("santafe-circle");
-let allAccordImg = document.getElementsByClassName("accord-img");
-let allAccordCircle = document.getElementsByClassName("accord-circle");
-let allBrioImg = document.getElementsByClassName("brio-img");
-let allBrioCircle = document.getElementsByClassName("brio-circle");
+let allCretaImg = document.getElementsByClassName("creta-img");
+let allCretaCircle = document.getElementsByClassName("creta-circle");
 
 const tucsonColors = [
   "Amazon Gray",
@@ -23,12 +21,11 @@ const santafeColors = [
   "Abyss Black",
   "Lagoon Blue",
 ];
-const brioColors = [
-  "Phoenix Orange Pearl",
-  "Carnival Yellow",
-  "Taffeta White",
-  "Modern Steel Metallic",
-  "Rallye Red",
+const cretaColors = [
+  "Dragon Red",
+  "Midnight Black",
+  "Metallic Silver",
+  "Creamy White",
 ];
 function tucsonColorPicker(value) {
   for (let i = 0; i < 6; i++) {
@@ -58,32 +55,17 @@ function santafeColorPicker(value) {
     }
   }
 }
-function accordColorPicker(value) {
-  for (let i = 0; i < 3; i++) {
+function cretaColorPicker(value) {
+  for (let i = 0; i < 4; i++) {
     if (value === i) {
-      allAccordCircle[i].classList.add("btn-border");
-      allAccordImg[i].classList.add("appear");
+      allCretaCircle[i].classList.add("btn-border");
+      allCretaImg[i].classList.add("appear");
       document.getElementById(
-        "accord-color-picker-text"
-      ).innerHTML = `${accordColors[i]}`;
+        "creta-color-picker-text"
+      ).innerHTML = `${cretaColors[i]}`;
     } else {
-      allAccordCircle[i].classList.remove("btn-border");
-      allAccordImg[i].classList.remove("appear");
-    }
-  }
-}
-
-function brioColorPicker(value) {
-  for (let i = 0; i < 5; i++) {
-    if (value === i) {
-      allBrioCircle[i].classList.add("btn-border");
-      allBrioImg[i].classList.add("appear");
-      document.getElementById(
-        "brio-color-picker-text"
-      ).innerHTML = `${brioColors[i]}`;
-    } else {
-      allBrioCircle[i].classList.remove("btn-border");
-      allBrioImg[i].classList.remove("appear");
+      allCretaCircle[i].classList.remove("btn-border");
+      allCretaImg[i].classList.remove("appear");
     }
   }
 }
