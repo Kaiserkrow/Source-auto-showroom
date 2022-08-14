@@ -472,7 +472,7 @@
         </section>
         <!--END OF CRV-->
 
-        <!--START OF INNOVA-->
+        <!--START OF ACCORD-->
         <section id="accord-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
@@ -480,7 +480,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="invModal"
+              id="accordModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -502,22 +502,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="inv-percentage"
+                        id="accord-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="invCalculate()"
+                        onchange="accordCalculate()"
                       >
-                        <option value=".2">20% ₱ 308,400</option>
-                        <option value=".25">25% ₱ 385,500</option>
-                        <option value=".30">30% ₱ 469,600</option>
-                        <option value=".35">35% ₱ 539,700</option>
-                        <option value=".40">40% ₱ 616,800</option>
-                        <option value=".45">45% ₱ 693,900</option>
-                        <option value=".50">50% ₱ 771,00</option>
+                        <option value=".2">20% ₱ 642,000</option>
+                        <option value=".25">25% ₱ 802,500</option>
+                        <option value=".30">30% ₱ 963,000</option>
+                        <option value=".35">35% ₱ 1,123,500</option>
+                        <option value=".40">40% ₱ 1,284,000</option>
+                        <option value=".45">45% ₱ 1,444,500</option>
+                        <option value=".50">50% ₱ 1,605,000</option>
                       </select>
                       <select
-                        id="inv-months"
+                        id="accord-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="invCalculate()"
+                        onchange="accordCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -529,18 +529,19 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="inv-per-month">110,510</span> / month</span
+                        >₱ <span id="accord-per-month">160,390</span> /
+                        month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="inv-amount-financed">1,326,120</span> Amount
-                        Financed</span
+                        <span id="accord-amount-financed">1,924,680</span>
+                        Amount Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
                       <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
+                      estimate only. Please contact any Honda Dealer for final
                       quotation.
                     </div>
                   </div>
@@ -562,13 +563,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">INNOVA 2.8L G DSL M/T</h1>
+                <h1 class="title">Accord 1.5 EL Turbo</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 1,542,000</span>
+                      <span class="price">₱ 2,350,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -577,15 +578,15 @@
                   <hr class="msrp-underline mx-auto" />
                   <div class="spec d-flex mx-auto">
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">5-Speed MT</span>
+                      <span class="automatic">CVT</span>
                       <span class="trans">Transmission</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">8</span>
+                      <span class="automatic">5</span>
                       <span class="trans">Seating Capacity</span>
                     </div>
                     <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Diesel</span>
+                      <span class="automatic">Gas</span>
                       <span class="trans">fuel type</span>
                     </div>
                   </div>
@@ -598,64 +599,49 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/toyota-page/innova-models/innova-white.webp"
-                  class="innova-img img-responsive hide appear"
-                />
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-silver-metallic.webp"
-                  class="innova-img img-responsive hide"
+                  src="/assets/images/honda-page/accord-models/accord-black.png"
+                  class="accord-img img-responsive hide appear"
                 />
 
                 <img
-                  src="/assets/images/toyota-page/innova-models/innova-black-1.webp"
-                  class="innova-img img-responsive hide"
+                  src="/assets/images/honda-page/accord-models/accord-gray.png"
+                  class="accord-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/innova-models/innova-blackish-red.webp"
-                  class="innova-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-jade.webp"
-                  class="innova-img img-responsive hide"
+                  src="/assets/images/honda-page/accord-models/accord-white.png"
+                  class="accord-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="inv-color-picker-text"
-                  >White Pearl Crystal Shine</span
+                <span class="text-center mb-2" id="accord-color-picker-text"
+                  >Racing Blue</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="innova-circle platinum-white btn-border"
-                    onclick="invColorPicker(0)"
+                    class="accord-circle black-mica btn-border"
+                    onclick="accordColorPicker(0)"
                   ></div>
                   <div
-                    class="innova-circle silver-metallic"
-                    onclick="invColorPicker(1)"
+                    class="accord-circle gray"
+                    onclick="accordColorPicker(1)"
                   ></div>
                   <div
-                    class="innova-circle black-mica"
-                    onclick="invColorPicker(2)"
-                  ></div>
-                  <div
-                    class="innova-circle maroon"
-                    onclick="invColorPicker(3)"
-                  ></div>
-                  <div
-                    class="innova-circle jade"
-                    onclick="invColorPicker(4)"
+                    class="accord-circle platinum-white"
+                    onclick="accordColorPicker(2)"
                   ></div>
                 </div>
+
                 <div class="d-flex justify-content-center">
                   <!-- Button trigger modal -->
                   <button
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#invModal"
+                    data-bs-target="#crvModal"
                   >
                     Loan Options
                   </button>
@@ -664,7 +650,7 @@
             </div>
           </div>
         </section>
-        <!--END OF INNOVA-->
+        <!--END OF ACCORD-->
         <!--START OF VIOS-->
         <section id="brio-section" class="position-relative">
           <div

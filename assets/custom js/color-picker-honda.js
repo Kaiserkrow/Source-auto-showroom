@@ -4,8 +4,8 @@ let allCivicImg = document.getElementsByClassName("civic-img");
 let allCivicCircle = document.getElementsByClassName("civic-circle");
 let allCrvImg = document.getElementsByClassName("crv-img");
 let allCrvCircle = document.getElementsByClassName("crv-circle");
-let allViosImg = document.getElementsByClassName("vios-img");
-let allViosCircle = document.getElementsByClassName("vios-circle");
+let allAccordImg = document.getElementsByClassName("accord-img");
+let allAccordCircle = document.getElementsByClassName("accord-circle");
 let allSupraImg = document.getElementsByClassName("supra-img");
 let allSupraCircle = document.getElementsByClassName("supra-circle");
 const civicColors = ["Racing Blue", "Championship White", "Sonic Gray"];
@@ -16,12 +16,10 @@ const crvColors = [
   "Meteoroid Gray Metallic",
   "Platinum White Pearl",
 ];
-const innovaColors = [
-  "White Pearl Crystal Shine",
-  "Silver Metallic 1",
-  "Black 1",
-  "Blackish Red Mica",
-  "Alumina Jade Metallic",
+const accordColors = [
+  "Crystal Black Pearl",
+  "Meteoroid Gray Metallic",
+  "Platinum White Pearl",
 ];
 const fortunerColors = [
   "Attitude Black Mica",
@@ -46,7 +44,7 @@ function civicColorPicker(value) {
   }
 }
 function crvColorPicker(value) {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 3; i++) {
     if (value === i) {
       allCrvCircle[i].classList.add("btn-border");
       allCrvImg[i].classList.add("appear");
@@ -59,17 +57,17 @@ function crvColorPicker(value) {
     }
   }
 }
-function invColorPicker(value) {
-  for (let i = 0; i < 5; i++) {
+function accordColorPicker(value) {
+  for (let i = 0; i < 3; i++) {
     if (value === i) {
-      allInnovaCircle[i].classList.add("btn-border");
-      allInnovaImg[i].classList.add("appear");
+      allAccordCircle[i].classList.add("btn-border");
+      allAccordImg[i].classList.add("appear");
       document.getElementById(
-        "inv-color-picker-text"
-      ).innerHTML = `${innovaColors[i]}`;
+        "accord-color-picker-text"
+      ).innerHTML = `${accordColors[i]}`;
     } else {
-      allInnovaCircle[i].classList.remove("btn-border");
-      allInnovaImg[i].classList.remove("appear");
+      allAccordCircle[i].classList.remove("btn-border");
+      allAccordImg[i].classList.remove("appear");
     }
   }
 }

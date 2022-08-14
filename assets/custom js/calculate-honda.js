@@ -26,18 +26,18 @@ function crvCalculate() {
   document.getElementById("crv-amount-financed").textContent = financed;
   document.getElementById("crv-per-month").textContent = result;
 }
-function viosCalculate() {
-  let viosPercent = document.getElementById("vios-percentage").value;
-  let viosMonth = document.getElementById("vios-months").value;
+function accordCalculate() {
+  let accordPercent = document.getElementById("accord-percentage").value;
+  let accordMonth = document.getElementById("accord-months").value;
   let result;
-  const cost = 980000;
+  const cost = 2350000;
 
-  result = cost * 1.06 - cost * viosPercent;
+  result = cost * 1.06 - cost * accordPercent;
   let financed = separateComma(result);
-  result = separateComma(result / viosMonth);
+  result = separateComma(result / accordMonth);
 
-  document.getElementById("vios-amount-financed").textContent = financed;
-  document.getElementById("vios-per-month").textContent = result;
+  document.getElementById("accord-amount-financed").textContent = financed;
+  document.getElementById("accord-per-month").textContent = result;
 }
 function supraCalculate() {
   let supraPercent = document.getElementById("supra-percentage").value;
