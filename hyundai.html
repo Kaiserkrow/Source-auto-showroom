@@ -25,7 +25,7 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="/assets/custom css/toyota-page.css"
+      href="/assets/custom css/honda-page.css"
     />
   </head>
   <body id="body">
@@ -56,37 +56,37 @@
         >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-1 emblem-container">
             <li class="nav-item">
-              <a class="nav-link p-0 pt-3" href="#supra-section">
-                <span class="underline active"></span
+              <a class="nav-link p-0 pt-3" href="#civic-section"
                 ><img
-                  src="/assets/images/toyota-page/car-model-logo/supra-logo.png"
-                  class="supra-logo neg-margin"
-                />
-              </a>
+                  src="/assets/images/honda-page/car-model logo/civic-logo.png"
+                  class="civic-logo neg-margin" /><span
+                  class="underline active"
+                ></span
+              ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#fortuner-section"
+              <a class="nav-link" href="#crv-section"
                 ><span class="underline"></span>
                 <img
-                  src="/assets/images/toyota-page/car-model-logo/fortuner-logo.png"
-                  class="fortuner-logo"
+                  src="/assets/images/honda-page/car-model logo/crv-logo.png"
+                  class="crv-logo"
               /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#innova-section">
+              <a class="nav-link" href="#accord-section">
                 <span class="underline"></span
                 ><img
-                  src="/assets/images/toyota-page/car-model-logo/innova-logo.png"
-                  class="innova-logo"
+                  src="/assets/images/honda-page/car-model logo/accord-logo.png"
+                  class="accord-logo"
                 />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#vios-section"
+              <a class="nav-link" href="#brio-section"
                 ><span class="underline"></span
                 ><img
-                  src="/assets/images/toyota-page/car-model-logo/vios-logo.png"
-                  class="vios-logo"
+                  src="/assets/images/honda-page/car-model logo/brio-logo.webp"
+                  class="brio-logo"
               /></a>
             </li>
           </ul>
@@ -106,15 +106,15 @@
     </nav>
     <div id="blur-container">
       <div id="sections">
-        <!--START OF SUPRA-->
-        <section id="supra-section" class="position-relative">
+        <!--START OF CIVIC-->
+        <section id="civic-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
           >
             <!-- Modal -->
             <div
               class="modal fade"
-              id="supraModal"
+              id="civicModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -136,22 +136,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="supra-percentage"
+                        id="civic-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="supraCalculate()"
+                        onchange="civicCalculate()"
                       >
-                        <option value=".2">20% ₱ 1,010,000</option>
-                        <option value=".25">25% ₱ 1,262,500</option>
-                        <option value=".30">30% ₱ 1,515,000</option>
-                        <option value=".35">35% ₱ 1,767,500</option>
-                        <option value=".40">40% ₱ 2,020,000</option>
-                        <option value=".45">45% ₱ 2,272,500</option>
-                        <option value=".50">50% ₱ 2,525,000</option>
+                        <option value=".2">20% ₱ 642,000</option>
+                        <option value=".25">25% ₱ 802,500</option>
+                        <option value=".30">30% ₱ 963,000</option>
+                        <option value=".35">35% ₱ 1,123,500</option>
+                        <option value=".40">40% ₱ 1,284,000</option>
+                        <option value=".45">45% ₱ 1,444,500</option>
+                        <option value=".50">50% ₱ 1,605,000</option>
                       </select>
                       <select
-                        id="supra-months"
+                        id="civic-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="supraCalculate()"
+                        onchange="civicCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -163,19 +163,19 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="supra-per-month">361,916</span> /
+                        >₱ <span id="civic-per-month">230,050</span> /
                         month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="supra-amount-financed">4,343,000</span> Amount
+                        <span id="civic-amount-financed">2,760,600</span> Amount
                         Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
                       <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
+                      estimate only. Please contact any Honda Dealer for final
                       quotation.
                     </div>
                   </div>
@@ -197,611 +197,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">GR Supra 3.0L A/T</h1>
+                <h1 class="title">CIVIC RS TURBO CVT</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 5,050,000</span>
-                    </div>
-                    <div class="msrp-container">
-                      <div class="msrp">MSRP</div>
-                    </div>
-                  </div>
-                  <hr class="msrp-underline mx-auto" />
-                  <div class="spec d-flex mx-auto">
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">8-Speed A/T</span>
-                      <span class="trans">Transmission</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">2</span>
-                      <span class="trans">Seating Capacity</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Gas</span>
-                      <span class="trans">fuel type</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <!--Image container-->
-              <div
-                class="position-relative car-container d-flex justify-content-center"
-              >
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-yellow.webp"
-                  class="supra-img img-responsive hide appear"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-black.webp"
-                  class="supra-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-red.webp"
-                  class="supra-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page//supra-models/supra-silver.webp"
-                  class="supra-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page//supra-models/supra-ice-gray.webp"
-                  class="supra-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-blue.webp"
-                  class="supra-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/supra-models/supra-white.webp"
-                  class="supra-img img-responsive hide"
-                />
-              </div>
-            </div>
-            <div>
-              <!--Color picker-->
-              <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="supra-color-picker-text"
-                  >Lightning Yellow</span
-                >
-
-                <div class="d-flex justify-content-center">
-                  <div
-                    class="supra-circle yellow btn-border"
-                    onclick="supraColorPicker(0)"
-                  ></div>
-                  <div
-                    class="supra-circle black"
-                    onclick="supraColorPicker(1)"
-                  ></div>
-                  <div
-                    class="supra-circle red"
-                    onclick="supraColorPicker(2)"
-                  ></div>
-                  <div
-                    class="supra-circle silver-metallic"
-                    onclick="supraColorPicker(3)"
-                  ></div>
-                  <div
-                    class="supra-circle ice-gray"
-                    onclick="supraColorPicker(4)"
-                  ></div>
-                  <div
-                    class="supra-circle deep-blue"
-                    onclick="supraColorPicker(5)"
-                  ></div>
-                  <div
-                    class="supra-circle platinum-white"
-                    onclick="supraColorPicker(6)"
-                  ></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-calculate mt-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#supraModal"
-                  >
-                    Loan Options
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--END OF SUPRA-->
-        <!--START OF FORTUNER-->
-        <section id="fortuner-section" class="position-relative">
-          <div
-            class="content-wrapper d-flex flex-column justify-content-between"
-          >
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="ftrModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <form
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <select
-                        id="ftr-percentage"
-                        class="p-2 px-1 rounded"
-                        onchange="ftrCalculate()"
-                      >
-                        <option value=".2">20% ₱ 375,800</option>
-                        <option value=".25">25% ₱ 469,750</option>
-                        <option value=".30">30% ₱ 563,700</option>
-                        <option value=".35">35% ₱ 657,650</option>
-                        <option value=".40">40% ₱ 751,600</option>
-                        <option value=".45">45% ₱ 845,550</option>
-                        <option value=".50">50% ₱ 939,500</option>
-                      </select>
-                      <select
-                        id="ftr-months"
-                        class="ms-2 p-2 px-1 rounded"
-                        onchange="ftrCalculate()"
-                      >
-                        <option value="12">12 Months</option>
-                        <option value="18">18 Months</option>
-                        <option value="24">24 Months</option>
-                        <option value="36">36 Months</option>
-                        <option value="48">48 Months</option>
-                        <option value="60">60 Months</option>
-                      </select>
-                    </form>
-                    <div class="mt-4 d-flex flex-column">
-                      <span class="cost-per-month"
-                        >₱ <span id="ftr-per-month">119,970</span> / month</span
-                      >
-
-                      <span class="display-amount-financed"
-                        >₱
-                        <span id="ftr-amount-financed">1,439,640</span> Amount
-                        Financed</span
-                      >
-                    </div>
-                    <div class="disclaimer mt-2">
-                      <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
-                      quotation.
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-order-now">
-                      Order Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 banner d-flex justify-content-around">
-              <!--banner of model-->
-              <div class="d-flex align-items-center title-container">
-                <h1 class="title">Fortuner 2.4 4x2 V AT</h1>
-              </div>
-              <div>
-                <div class="price-spec-container">
-                  <div class="position-relative price-container">
-                    <div>
-                      <span class="price">₱ 1,674,000</span>
-                    </div>
-                    <div class="msrp-container">
-                      <div class="msrp">MSRP</div>
-                    </div>
-                  </div>
-                  <hr class="msrp-underline mx-auto" />
-                  <div class="spec d-flex mx-auto">
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Automatic</span>
-                      <span class="trans">Transmission</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">7</span>
-                      <span class="trans">Seating Capacity</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Diesel</span>
-                      <span class="trans">fuel type</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <!--Image container-->
-              <div
-                class="position-relative car-container d-flex justify-content-center"
-              >
-                <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-                  class="fortuner-img img-responsive hide appear"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-                  class="fortuner-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-                  class="fortuner-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-                  class="fortuner-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-                  class="fortuner-img img-responsive hide"
-                />
-              </div>
-            </div>
-            <div>
-              <!--Color picker-->
-              <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="ftr-color-picker-text"
-                  >Attitude Black Mica</span
-                >
-
-                <div class="d-flex justify-content-center">
-                  <div
-                    class="fortuner-circle black-mica btn-border"
-                    onclick="ftrColorPicker(0)"
-                  ></div>
-                  <div
-                    class="fortuner-circle black"
-                    onclick="ftrColorPicker(1)"
-                  ></div>
-                  <div
-                    class="fortuner-circle platinum-white"
-                    onclick="ftrColorPicker(2)"
-                  ></div>
-                  <div
-                    class="fortuner-circle gray"
-                    onclick="ftrColorPicker(3)"
-                  ></div>
-                  <div
-                    class="fortuner-circle silver-metallic"
-                    onclick="ftrColorPicker(4)"
-                  ></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-calculate mt-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ftrModal"
-                  >
-                    Loan Options
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--END OF FORTUNER-->
-
-        <!--START OF INNOVA-->
-        <section id="innova-section" class="position-relative">
-          <div
-            class="content-wrapper d-flex flex-column justify-content-between"
-          >
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="invModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <form
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <select
-                        id="inv-percentage"
-                        class="p-2 px-1 rounded"
-                        onchange="invCalculate()"
-                      >
-                        <option value=".2">20% ₱ 308,400</option>
-                        <option value=".25">25% ₱ 385,500</option>
-                        <option value=".30">30% ₱ 469,600</option>
-                        <option value=".35">35% ₱ 539,700</option>
-                        <option value=".40">40% ₱ 616,800</option>
-                        <option value=".45">45% ₱ 693,900</option>
-                        <option value=".50">50% ₱ 771,00</option>
-                      </select>
-                      <select
-                        id="inv-months"
-                        class="ms-2 p-2 px-1 rounded"
-                        onchange="invCalculate()"
-                      >
-                        <option value="12">12 Months</option>
-                        <option value="18">18 Months</option>
-                        <option value="24">24 Months</option>
-                        <option value="36">36 Months</option>
-                        <option value="48">48 Months</option>
-                        <option value="60">60 Months</option>
-                      </select>
-                    </form>
-                    <div class="mt-4 d-flex flex-column">
-                      <span class="cost-per-month"
-                        >₱ <span id="inv-per-month">110,510</span> / month</span
-                      >
-
-                      <span class="display-amount-financed"
-                        >₱
-                        <span id="inv-amount-financed">1,326,120</span> Amount
-                        Financed</span
-                      >
-                    </div>
-                    <div class="disclaimer mt-2">
-                      <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
-                      quotation.
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-order-now">
-                      Order Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 banner d-flex justify-content-around">
-              <!--banner of model-->
-              <div class="d-flex align-items-center title-container">
-                <h1 class="title">Innova 2.8L G DSL M/T</h1>
-              </div>
-              <div>
-                <div class="price-spec-container">
-                  <div class="position-relative price-container">
-                    <div>
-                      <span class="price">₱ 1,542,000</span>
-                    </div>
-                    <div class="msrp-container">
-                      <div class="msrp">MSRP</div>
-                    </div>
-                  </div>
-                  <hr class="msrp-underline mx-auto" />
-                  <div class="spec d-flex mx-auto">
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">5-Speed MT</span>
-                      <span class="trans">Transmission</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">8</span>
-                      <span class="trans">Seating Capacity</span>
-                    </div>
-                    <div class="d-flex flex-column me-md-3">
-                      <span class="automatic">Diesel</span>
-                      <span class="trans">fuel type</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <!--Image container-->
-              <div
-                class="position-relative car-container d-flex justify-content-center"
-              >
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-white.webp"
-                  class="innova-img img-responsive hide appear"
-                />
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-silver-metallic.webp"
-                  class="innova-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-black-1.webp"
-                  class="innova-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-blackish-red.webp"
-                  class="innova-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/innova-models/innova-jade.webp"
-                  class="innova-img img-responsive hide"
-                />
-              </div>
-            </div>
-            <div>
-              <!--Color picker-->
-              <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="inv-color-picker-text"
-                  >White Pearl Crystal Shine</span
-                >
-
-                <div class="d-flex justify-content-center">
-                  <div
-                    class="innova-circle platinum-white btn-border"
-                    onclick="invColorPicker(0)"
-                  ></div>
-                  <div
-                    class="innova-circle silver-metallic"
-                    onclick="invColorPicker(1)"
-                  ></div>
-                  <div
-                    class="innova-circle black-mica"
-                    onclick="invColorPicker(2)"
-                  ></div>
-                  <div
-                    class="innova-circle maroon"
-                    onclick="invColorPicker(3)"
-                  ></div>
-                  <div
-                    class="innova-circle jade"
-                    onclick="invColorPicker(4)"
-                  ></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-calculate mt-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#invModal"
-                  >
-                    Loan Options
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--END OF INNOVA-->
-        <!--START OF VIOS-->
-        <section id="vios-section" class="position-relative">
-          <div
-            class="content-wrapper d-flex flex-column justify-content-between"
-          >
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="viosModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div
-                    class="modal-body d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <form
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <select
-                        id="vios-percentage"
-                        class="p-2 px-1 rounded"
-                        onchange="viosCalculate()"
-                      >
-                        <option value=".2">20% ₱ 196,000</option>
-                        <option value=".25">25% ₱ 245,000</option>
-                        <option value=".30">30% ₱ 294,000</option>
-                        <option value=".35">35% ₱ 343,000</option>
-                        <option value=".40">40% ₱ 392,000</option>
-                        <option value=".45">45% ₱ 441,000</option>
-                        <option value=".50">50% ₱ 490,000</option>
-                      </select>
-                      <select
-                        id="vios-months"
-                        class="ms-2 p-2 px-1 rounded"
-                        onchange="viosCalculate()"
-                      >
-                        <option value="12">12 Months</option>
-                        <option value="18">18 Months</option>
-                        <option value="24">24 Months</option>
-                        <option value="36">36 Months</option>
-                        <option value="48">48 Months</option>
-                        <option value="60">60 Months</option>
-                      </select>
-                    </form>
-                    <div class="mt-4 d-flex flex-column">
-                      <span class="cost-per-month"
-                        >₱ <span id="vios-per-month">70,233</span> / month</span
-                      >
-
-                      <span class="display-amount-financed"
-                        >₱ <span id="vios-amount-financed">842,800</span> Amount
-                        Financed</span
-                      >
-                    </div>
-                    <div class="disclaimer mt-2">
-                      <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
-                      quotation.
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-order-now">
-                      Order Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 banner d-flex justify-content-around">
-              <!--banner of model-->
-              <div class="d-flex align-items-center title-container">
-                <h1 class="title">Vios 1.5 G CVT</h1>
-              </div>
-              <div>
-                <div class="price-spec-container">
-                  <div class="position-relative price-container">
-                    <div>
-                      <span class="price">₱ 980,000</span>
+                      <span class="price">₱ 3,210,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -831,65 +233,49 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios red.jpg"
-                  class="vios-img img-responsive hide appear"
+                  src="/assets/images/honda-page/civic-models/civic-blue.png"
+                  class="civic-img img-responsive hide appear"
                 />
 
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios-black.jpg"
-                  class="vios-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-jade.jpg"
-                  class="vios-img img-responsive hide"
+                  src="/assets/images/honda-page/civic-models/civic-gray.png"
+                  class="civic-img img-responsive hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/vios-models/vios-grayish-blue.jpg"
-                  class="vios-img img-responsive hide"
-                />
-                <img
-                  src="/assets/images/toyota-page/vios-models/vios-white.jpg"
-                  class="vios-img img-responsive hide"
+                  src="/assets/images/honda-page/civic-models/civic-white.png"
+                  class="civic-img img-responsive hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="vios-color-picker-text"
-                  >Super Red V</span
+                <span class="text-center mb-2" id="civic-color-picker-text"
+                  >Racing Blue</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="vios-circle red btn-border"
-                    onclick="viosColorPicker(0)"
+                    class="civic-circle deep-blue btn-border"
+                    onclick="civicColorPicker(0)"
                   ></div>
                   <div
-                    class="vios-circle black-mica"
-                    onclick="viosColorPicker(1)"
+                    class="civic-circle platinum-white"
+                    onclick="civicColorPicker(1)"
                   ></div>
                   <div
-                    class="vios-circle jade"
-                    onclick="viosColorPicker(2)"
-                  ></div>
-                  <div
-                    class="vios-circle grayish-blue"
-                    onclick="viosColorPicker(3)"
-                  ></div>
-                  <div
-                    class="vios-circle platinum-white"
-                    onclick="viosColorPicker(4)"
+                    class="civic-circle gray"
+                    onclick="civicColorPicker(2)"
                   ></div>
                 </div>
+
                 <div class="d-flex justify-content-center">
                   <!-- Button trigger modal -->
                   <button
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#viosModal"
+                    data-bs-target="#civicModal"
                   >
                     Loan Options
                   </button>
@@ -898,14 +284,574 @@
             </div>
           </div>
         </section>
-        <!--END OF VIOS-->
+        <!--END OF CIVIC-->
+        <!--START OF CRV-->
+        <section id="crv-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="crvModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="crv-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="crvCalculate()"
+                      >
+                        <option value=".2">20% ₱ 642,000</option>
+                        <option value=".25">25% ₱ 802,500</option>
+                        <option value=".30">30% ₱ 963,000</option>
+                        <option value=".35">35% ₱ 1,123,500</option>
+                        <option value=".40">40% ₱ 1,284,000</option>
+                        <option value=".45">45% ₱ 1,444,500</option>
+                        <option value=".50">50% ₱ 1,605,000</option>
+                      </select>
+                      <select
+                        id="crv-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="crvCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="crv-per-month">160,390</span> / month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="crv-amount-financed">1,924,680</span> Amount
+                        Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Honda Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">CR-V SX Diesel AWD</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 2,238,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Automatic</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">7</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Diesel</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/honda-page/crv-models/crv-red.png"
+                  class="crv-img img-responsive-crv hide appear"
+                />
+
+                <img
+                  src="/assets/images/honda-page/crv-models/crv-blue-metallic.png"
+                  class="crv-img img-responsive-crv hide"
+                />
+                <img
+                  src="/assets/images/honda-page/crv-models/crv-gray.png"
+                  class="crv-img img-responsive-crv hide"
+                />
+                <img
+                  src="/assets/images/honda-page/crv-models/crv-white.png"
+                  class="crv-img img-responsive-crv hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="crv-color-picker-text"
+                  >Ignite Red Metallic</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="crv-circle red btn-border"
+                    onclick="crvColorPicker(0)"
+                  ></div>
+                  <div
+                    class="crv-circle cosmic-blue"
+                    onclick="crvColorPicker(1)"
+                  ></div>
+                  <div
+                    class="crv-circle black"
+                    onclick="crvColorPicker(2)"
+                  ></div>
+                  <div
+                    class="crv-circle platinum-white"
+                    onclick="crvColorPicker(3)"
+                  ></div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#crvModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF CRV-->
+
+        <!--START OF ACCORD-->
+        <section id="accord-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="accordModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="accord-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="accordCalculate()"
+                      >
+                        <option value=".2">20% ₱ 470,000</option>
+                        <option value=".25">25% ₱ 587,500</option>
+                        <option value=".30">30% ₱ 705,000</option>
+                        <option value=".35">35% ₱ 822,500</option>
+                        <option value=".40">40% ₱ 940,000</option>
+                        <option value=".45">45% ₱ 1,057,500</option>
+                        <option value=".50">50% ₱ 1,175,000</option>
+                      </select>
+                      <select
+                        id="accord-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="accordCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="accord-per-month">168,416</span> /
+                        month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="accord-amount-financed">2,021,000</span>
+                        Amount Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Honda Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">Accord 1.5 EL Turbo</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 2,350,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">CVT</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">5</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Gas</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/honda-page/accord-models/accord-black.png"
+                  class="accord-img img-responsive hide appear"
+                />
+
+                <img
+                  src="/assets/images/honda-page/accord-models/accord-gray.png"
+                  class="accord-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/honda-page/accord-models/accord-white.png"
+                  class="accord-img img-responsive hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="accord-color-picker-text"
+                  >Crystal Black Pearl</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="accord-circle black-mica btn-border"
+                    onclick="accordColorPicker(0)"
+                  ></div>
+                  <div
+                    class="accord-circle gray"
+                    onclick="accordColorPicker(1)"
+                  ></div>
+                  <div
+                    class="accord-circle platinum-white"
+                    onclick="accordColorPicker(2)"
+                  ></div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#accordModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF ACCORD-->
+        <!--START OF BRIO-->
+        <section id="brio-section" class="position-relative">
+          <div
+            class="content-wrapper d-flex flex-column justify-content-between"
+          >
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="brioModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <form
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <select
+                        id="brio-percentage"
+                        class="p-2 px-1 rounded"
+                        onchange="brioCalculate()"
+                      >
+                        <option value=".2">20% ₱ 470,000</option>
+                        <option value=".25">25% ₱ 587,500</option>
+                        <option value=".30">30% ₱ 705,000</option>
+                        <option value=".35">35% ₱ 822,500</option>
+                        <option value=".40">40% ₱ 940,000</option>
+                        <option value=".45">45% ₱ 1,057,500</option>
+                        <option value=".50">50% ₱ 1,175,000</option>
+                      </select>
+                      <select
+                        id="brio-months"
+                        class="ms-2 p-2 px-1 rounded"
+                        onchange="brioCalculate()"
+                      >
+                        <option value="12">12 Months</option>
+                        <option value="18">18 Months</option>
+                        <option value="24">24 Months</option>
+                        <option value="36">36 Months</option>
+                        <option value="48">48 Months</option>
+                        <option value="60">60 Months</option>
+                      </select>
+                    </form>
+                    <div class="mt-4 d-flex flex-column">
+                      <span class="cost-per-month"
+                        >₱ <span id="brio-per-month">57,906</span> / month</span
+                      >
+
+                      <span class="display-amount-financed"
+                        >₱
+                        <span id="brio-amount-financed">694,880</span>
+                        Amount Financed</span
+                      >
+                    </div>
+                    <div class="disclaimer mt-2">
+                      <span class="text-danger">*</span>Computations are
+                      estimate only. Please contact any Honda Dealer for final
+                      quotation.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-order-now">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 banner d-flex justify-content-around">
+              <!--banner of model-->
+              <div class="d-flex align-items-center title-container">
+                <h1 class="title">Brio 1.2 RS Black Top CVT</h1>
+              </div>
+              <div>
+                <div class="price-spec-container">
+                  <div class="position-relative price-container">
+                    <div>
+                      <span class="price">₱ 808,000</span>
+                    </div>
+                    <div class="msrp-container">
+                      <div class="msrp">MSRP</div>
+                    </div>
+                  </div>
+                  <hr class="msrp-underline mx-auto" />
+                  <div class="spec d-flex mx-auto">
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">CVT</span>
+                      <span class="trans">Transmission</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">5</span>
+                      <span class="trans">Seating Capacity</span>
+                    </div>
+                    <div class="d-flex flex-column me-md-3">
+                      <span class="automatic">Gas</span>
+                      <span class="trans">fuel type</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!--Image container-->
+              <div
+                class="position-relative car-container d-flex justify-content-center"
+              >
+                <img
+                  src="/assets/images/honda-page/brio-models/brio-orange.png"
+                  class="brio-img img-responsive hide appear"
+                />
+
+                <img
+                  src="/assets/images/honda-page/brio-models/brio-yellow.png"
+                  class="brio-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/honda-page/brio-models/brio-white.png"
+                  class="brio-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/honda-page/brio-models/brio-black.png"
+                  class="brio-img img-responsive hide"
+                />
+                <img
+                  src="/assets/images/honda-page/brio-models/brio-red.png"
+                  class="brio-img img-responsive hide"
+                />
+              </div>
+            </div>
+            <div>
+              <!--Color picker-->
+              <div class="colorpick-container d-flex flex-column">
+                <span class="text-center mb-2" id="brio-color-picker-text"
+                  >Crystal Black Pearl</span
+                >
+
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="brio-circle orange btn-border"
+                    onclick="brioColorPicker(0)"
+                  ></div>
+                  <div
+                    class="brio-circle yellow"
+                    onclick="brioColorPicker(1)"
+                  ></div>
+                  <div
+                    class="brio-circle platinum-white"
+                    onclick="brioColorPicker(2)"
+                  ></div>
+                  <div
+                    class="brio-circle black"
+                    onclick="brioColorPicker(3)"
+                  ></div>
+                  <div
+                    class="brio-circle light-red"
+                    onclick="brioColorPicker(4)"
+                  ></div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-calculate mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#brioModal"
+                  >
+                    Loan Options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END OF BRIO-->
       </div>
     </div>
   </body>
-  <script src="/assets/custom js/calculate-toyota.js"></script>
+  <script src="/assets/custom js/calculate-honda.js"></script>
   <script src="/assets/custom js/navBarOptToyota.js"></script>
   <script src="/assets/js/bootstrap.bundle.js"></script>
-  <script src="/assets/custom js/color-picker-toyota.js"></script>
+  <script src="/assets/custom js/color-picker-honda.js"></script>
 
   <!-- <script src="assets/custom js/navbar-selection.js"></script> -->
 </html>
