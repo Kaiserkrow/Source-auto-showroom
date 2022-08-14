@@ -44,7 +44,7 @@ function civicColorPicker(value) {
   }
 }
 function crvColorPicker(value) {
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     if (value === i) {
       allCrvCircle[i].classList.add("btn-border");
       allCrvImg[i].classList.add("appear");
