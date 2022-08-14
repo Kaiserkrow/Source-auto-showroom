@@ -13,18 +13,18 @@ function civicCalculate() {
   document.getElementById("civic-per-month").textContent = result;
 }
 
-function invCalculate() {
-  let invPercent = document.getElementById("inv-percentage").value;
-  let invMonth = document.getElementById("inv-months").value;
+function crvCalculate() {
+  let crvPercent = document.getElementById("crv-percentage").value;
+  let crvMonth = document.getElementById("crv-months").value;
   let result;
-  const cost = 1542000;
+  const cost = 2238000;
 
-  result = cost * 1.06 - cost * invPercent;
+  result = cost * 1.06 - cost * crvPercent;
   let financed = separateComma(result);
-  result = separateComma(result / invMonth);
+  result = separateComma(result / crvMonth);
 
-  document.getElementById("inv-amount-financed").textContent = financed;
-  document.getElementById("inv-per-month").textContent = result;
+  document.getElementById("crv-amount-financed").textContent = financed;
+  document.getElementById("crv-per-month").textContent = result;
 }
 function viosCalculate() {
   let viosPercent = document.getElementById("vios-percentage").value;

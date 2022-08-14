@@ -285,7 +285,7 @@
           </div>
         </section>
         <!--END OF CIVIC-->
-        <!--START OF FORTUNER-->
+        <!--START OF CRV-->
         <section id="crv-section" class="position-relative">
           <div
             class="content-wrapper d-flex flex-column justify-content-between"
@@ -293,7 +293,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="ftrModal"
+              id="crvModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -315,22 +315,22 @@
                       class="d-flex align-items-center justify-content-center"
                     >
                       <select
-                        id="ftr-percentage"
+                        id="crv-percentage"
                         class="p-2 px-1 rounded"
-                        onchange="ftrCalculate()"
+                        onchange="crvCalculate()"
                       >
-                        <option value=".2">20% ₱ 375,800</option>
-                        <option value=".25">25% ₱ 469,750</option>
-                        <option value=".30">30% ₱ 563,700</option>
-                        <option value=".35">35% ₱ 657,650</option>
-                        <option value=".40">40% ₱ 751,600</option>
-                        <option value=".45">45% ₱ 845,550</option>
-                        <option value=".50">50% ₱ 939,500</option>
+                        <option value=".2">20% ₱ 642,000</option>
+                        <option value=".25">25% ₱ 802,500</option>
+                        <option value=".30">30% ₱ 963,000</option>
+                        <option value=".35">35% ₱ 1,123,500</option>
+                        <option value=".40">40% ₱ 1,284,000</option>
+                        <option value=".45">45% ₱ 1,444,500</option>
+                        <option value=".50">50% ₱ 1,605,000</option>
                       </select>
                       <select
-                        id="ftr-months"
+                        id="crv-months"
                         class="ms-2 p-2 px-1 rounded"
-                        onchange="ftrCalculate()"
+                        onchange="crvCalculate()"
                       >
                         <option value="12">12 Months</option>
                         <option value="18">18 Months</option>
@@ -342,18 +342,18 @@
                     </form>
                     <div class="mt-4 d-flex flex-column">
                       <span class="cost-per-month"
-                        >₱ <span id="ftr-per-month">119,970</span> / month</span
+                        >₱ <span id="crv-per-month">160,390</span> / month</span
                       >
 
                       <span class="display-amount-financed"
                         >₱
-                        <span id="ftr-amount-financed">1,439,640</span> Amount
+                        <span id="crv-amount-financed">1,924,680</span> Amount
                         Financed</span
                       >
                     </div>
                     <div class="disclaimer mt-2">
                       <span class="text-danger">*</span>Computations are
-                      estimate only. Please contact any Toyota Dealer for final
+                      estimate only. Please contact any Honda Dealer for final
                       quotation.
                     </div>
                   </div>
@@ -375,13 +375,13 @@
             <div class="w-100 banner d-flex justify-content-around">
               <!--banner of model-->
               <div class="d-flex align-items-center title-container">
-                <h1 class="title">FORTUNER 2.4 4x2 V AT</h1>
+                <h1 class="title">CR-V SX Diesel AWD</h1>
               </div>
               <div>
                 <div class="price-spec-container">
                   <div class="position-relative price-container">
                     <div>
-                      <span class="price">₱ 1,674,000</span>
+                      <span class="price">₱ 2,238,000</span>
                     </div>
                     <div class="msrp-container">
                       <div class="msrp">MSRP</div>
@@ -411,65 +411,57 @@
                 class="position-relative car-container d-flex justify-content-center"
               >
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-black-mica.webp"
-                  class="fortuner-img img-responsive hide appear"
+                  src="/assets/images/honda-page/crv-models/crv-red.png"
+                  class="crv-img img-responsive-crv hide appear"
                 />
 
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-black.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/honda-page/crv-models/crv-blue-metallic.png"
+                  class="crv-img img-responsive-crv hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-platinum-white.webp"
-                  class="fortuner-img img-responsive hide"
-                />
-
-                <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-gray.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/honda-page/crv-models/crv-gray.png"
+                  class="crv-img img-responsive-crv hide"
                 />
                 <img
-                  src="/assets/images/toyota-page/fortuner-models/fortuner-silver-metallic.webp"
-                  class="fortuner-img img-responsive hide"
+                  src="/assets/images/honda-page/crv-models/crv-white.png"
+                  class="crv-img img-responsive-crv hide"
                 />
               </div>
             </div>
             <div>
               <!--Color picker-->
               <div class="colorpick-container d-flex flex-column">
-                <span class="text-center mb-2" id="ftr-color-picker-text"
-                  >Attitude Black Mica</span
+                <span class="text-center mb-2" id="crv-color-picker-text"
+                  >Racing Blue</span
                 >
 
                 <div class="d-flex justify-content-center">
                   <div
-                    class="fortuner-circle black-mica btn-border"
-                    onclick="ftrColorPicker(0)"
+                    class="crv-circle red btn-border"
+                    onclick="crvColorPicker(0)"
                   ></div>
                   <div
-                    class="fortuner-circle black"
-                    onclick="ftrColorPicker(1)"
+                    class="crv-circle cosmic-blue"
+                    onclick="crvColorPicker(1)"
                   ></div>
                   <div
-                    class="fortuner-circle platinum-white"
-                    onclick="ftrColorPicker(2)"
+                    class="crv-circle black"
+                    onclick="crvColorPicker(2)"
                   ></div>
                   <div
-                    class="fortuner-circle gray"
-                    onclick="ftrColorPicker(3)"
-                  ></div>
-                  <div
-                    class="fortuner-circle silver-metallic"
-                    onclick="ftrColorPicker(4)"
+                    class="crv-circle platinum-white"
+                    onclick="crvColorPicker(3)"
                   ></div>
                 </div>
+
                 <div class="d-flex justify-content-center">
                   <!-- Button trigger modal -->
                   <button
                     type="button"
                     class="btn btn-calculate mt-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#ftrModal"
+                    data-bs-target="#crvModal"
                   >
                     Loan Options
                   </button>
@@ -478,7 +470,7 @@
             </div>
           </div>
         </section>
-        <!--END OF FORTUNER-->
+        <!--END OF CRV-->
 
         <!--START OF INNOVA-->
         <section id="accord-section" class="position-relative">

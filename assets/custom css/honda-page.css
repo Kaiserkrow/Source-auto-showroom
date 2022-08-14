@@ -128,8 +128,11 @@ option {
   margin-left: 0.7rem;
   font-size: 24px;
 }
+.cosmic-blue {
+  background-color: #707d9b;
+}
 .red {
-  background-color: #d6353c;
+  background-color: #842020;
 }
 .grayish-blue {
   background-color: #1b2429;
@@ -193,6 +196,10 @@ option {
   width: 1200px;
   max-width: 90%;
 }
+.img-responsive-crv {
+  width: 800px;
+  max-width: 90%;
+}
 section {
   border: 5px solid red;
 }
@@ -201,11 +208,19 @@ section {
     width: 700px;
     max-width: 65%;
   }
+  .img-responsive-crv {
+    width: 380px;
+    max-width: 65%;
+  }
 }
 @media (max-width: 900px) {
   .img-responsive {
     width: 650px;
     max-width: 100%;
+  }
+  .img-responsive-crv {
+    width: 400px;
+    max-width: 90%;
   }
   .msrp-underline {
     width: 70%;

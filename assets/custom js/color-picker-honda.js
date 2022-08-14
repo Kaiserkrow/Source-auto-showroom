@@ -2,20 +2,19 @@
 
 let allCivicImg = document.getElementsByClassName("civic-img");
 let allCivicCircle = document.getElementsByClassName("civic-circle");
-let allInnovaImg = document.getElementsByClassName("innova-img");
-let allInnovaCircle = document.getElementsByClassName("innova-circle");
+let allCrvImg = document.getElementsByClassName("crv-img");
+let allCrvCircle = document.getElementsByClassName("crv-circle");
 let allViosImg = document.getElementsByClassName("vios-img");
 let allViosCircle = document.getElementsByClassName("vios-circle");
 let allSupraImg = document.getElementsByClassName("supra-img");
 let allSupraCircle = document.getElementsByClassName("supra-circle");
 const civicColors = ["Racing Blue", "Championship White", "Sonic Gray"];
 
-const viosColors = [
-  "Super Red V",
-  "Black 1",
-  "Alumina Jade Metallic",
-  "Grayish Blue Mica Mettalic",
-  "White Pearl Crystal Shine",
+const crvColors = [
+  "Ignite Red Metallic",
+  "Cosmic Blue Metallic",
+  "Meteoroid Gray Metallic",
+  "Platinum White Pearl",
 ];
 const innovaColors = [
   "White Pearl Crystal Shine",
@@ -46,17 +45,17 @@ function civicColorPicker(value) {
     }
   }
 }
-function viosColorPicker(value) {
+function crvColorPicker(value) {
   for (let i = 0; i < 5; i++) {
     if (value === i) {
-      allViosCircle[i].classList.add("btn-border");
-      allViosImg[i].classList.add("appear");
+      allCrvCircle[i].classList.add("btn-border");
+      allCrvImg[i].classList.add("appear");
       document.getElementById(
-        "vios-color-picker-text"
-      ).innerHTML = `${viosColors[i]}`;
+        "crv-color-picker-text"
+      ).innerHTML = `${crvColors[i]}`;
     } else {
-      allViosCircle[i].classList.remove("btn-border");
-      allViosImg[i].classList.remove("appear");
+      allCrvCircle[i].classList.remove("btn-border");
+      allCrvImg[i].classList.remove("appear");
     }
   }
 }
