@@ -37,6 +37,7 @@ nav {
 }
 .logo {
   width: 110px;
+  margin-top: -0.7rem;
 }
 
 .emblem {
@@ -173,6 +174,46 @@ section {
   height: 15px;
   animation: up-down 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
+.footer-logo {
+  margin: 3rem auto 1rem auto;
+  width: 170px;
+  filter: invert();
+}
+.social-logos {
+  width: 40px;
+  margin: 0.5rem 0.7rem;
+  cursor: pointer;
+  filter: invert();
+  opacity: 0.4;
+}
+.red-text {
+  color: #ea0f1e;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+.red-text ~ div {
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70vw;
+  height: 100vh;
+  background-color: black;
+}
+.black {
+  background-color: black;
+}
+.footer-block {
+  display: flex;
+  margin: 0 10rem;
+}
+.footer-block div {
+  cursor: pointer;
+}
 @media (max-width: 991px) {
   .icons {
     display: flex;
@@ -198,6 +239,17 @@ section {
   }
 }
 @media (max-width: 760px) {
+  .footer-block {
+    margin: 0 1rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: black;
+  }
   ::-webkit-scrollbar {
     display: none;
   }

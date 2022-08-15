@@ -76,7 +76,7 @@ sections.addEventListener("scroll", () => {
     allEmblem[2].classList.remove("emblem-active");
     allEmblem[3].classList.add("emblem-active");
     allEmblem[4].classList.remove("emblem-active");
-  } else if (scroll > height * 3 && scroll < height * 4.5) {
+  } else if (scroll > height * 3 && scroll < height * 4.1) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.remove("animate-active");
     allSection[2].classList.remove("animate-active");
@@ -92,6 +92,22 @@ sections.addEventListener("scroll", () => {
     allEmblem[2].classList.remove("emblem-active");
     allEmblem[3].classList.remove("emblem-active");
     allEmblem[4].classList.add("emblem-active");
+  } else if (scroll > height * 4.1) {
+    allSection[0].classList.remove("animate-active");
+    allSection[1].classList.remove("animate-active");
+    allSection[2].classList.remove("animate-active");
+    allSection[3].classList.remove("animate-active");
+    allSection[4].classList.remove("animate-active");
+    everyUnderline[0].classList.remove("active");
+    everyUnderline[1].classList.remove("active");
+    everyUnderline[2].classList.remove("active");
+    everyUnderline[3].classList.remove("active");
+    everyUnderline[4].classList.remove("active");
+    allEmblem[0].classList.remove("emblem-active");
+    allEmblem[1].classList.remove("emblem-active");
+    allEmblem[2].classList.remove("emblem-active");
+    allEmblem[3].classList.remove("emblem-active");
+    allEmblem[4].classList.remove("emblem-active");
   }
 });
 let state = 0;
