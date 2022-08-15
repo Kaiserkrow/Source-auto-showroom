@@ -297,7 +297,8 @@ section {
     align-items: center;
   }
   .btn-custom {
-    width: 80vw;
+    width: 70vw;
+    font-size: 12px;
   }
 }
 @keyframes up-down {
