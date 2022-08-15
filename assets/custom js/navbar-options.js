@@ -5,6 +5,7 @@ let sections = document.getElementById("sections");
 let allCenterIcon = [...document.getElementsByClassName("center-icon")];
 let allEmblem = [...document.getElementsByClassName("emblem")];
 let body = document.getElementById("body");
+let search = [...document.getElementsByClassName("search")];
 
 sections.addEventListener("scroll", () => {
   let everyUnderline = [...document.getElementsByClassName("underline")];
@@ -92,6 +93,7 @@ sections.addEventListener("scroll", () => {
     allEmblem[2].classList.remove("emblem-active");
     allEmblem[3].classList.remove("emblem-active");
     allEmblem[4].classList.add("emblem-active");
+    search[0].classList.add("animate-active");
   } else if (scroll > height * 4.1) {
     allSection[0].classList.remove("animate-active");
     allSection[1].classList.remove("animate-active");
@@ -108,6 +110,7 @@ sections.addEventListener("scroll", () => {
     allEmblem[2].classList.remove("emblem-active");
     allEmblem[3].classList.remove("emblem-active");
     allEmblem[4].classList.remove("emblem-active");
+    search[0].classList.remove("animate-active");
   }
 });
 let state = 0;
