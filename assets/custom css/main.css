@@ -186,6 +186,13 @@ section {
   filter: invert();
   opacity: 0.4;
 }
+.social-logos:hover {
+  opacity: 0.3;
+}
+.red-text:hover,
+.red-text ~ div:hover {
+  opacity: 0.4;
+}
 .red-text {
   color: #ea0f1e;
   font-weight: 600;
