@@ -151,13 +151,12 @@ section {
   bottom: 15%;
 }
 .btn-custom {
-  font-family: "Open Sans", sans-serif;
   border: black 1px solid;
   border-radius: 50px;
   background-color: #de1321cd;
   color: white;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   width: 350px;
   text-transform: capitalize;
 }
